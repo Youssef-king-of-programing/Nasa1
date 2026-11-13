@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#030814" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="Junior Astronaut Training Platform — an independent educational Academy, five-day space station simulation, NASA Mars Trek exploration center, and Science Library. Not an official NASA product." />
+  <title>Junior Astronaut Training Platform</title>
+  <link rel="icon" type="image/svg+xml" href="src/assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="boot-screen" role="status" aria-live="polite">
+      <div class="boot-orbit" aria-hidden="true">
+        <span class="boot-core"></span>
+        <span class="boot-ring boot-ring-a"></span>
+        <span class="boot-ring boot-ring-b"></span>
+      </div>
+      <div class="boot-brand">
+        <strong>JUNIOR ASTRONAUT</strong>
+        <span>TRAINING PLATFORM</span>
+      </div>
+      <p>Initialising mission systems…</p>
+      <div class="boot-progress"><span></span></div>
+      <small>Loading Academy, mission scenario, and Science Library datasets</small>
+    </div>
+  </div>
+  <noscript>
+    <div class="noscript-card">
+      <h1>JavaScript is required</h1>
+      <p>This platform is an interactive training application. Enable JavaScript and reload the page.</p>
+    </div>
+  </noscript>
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

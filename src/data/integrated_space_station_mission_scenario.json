@@ -1,0 +1,2208 @@
+{
+  "meta": {
+    "id": "integrated-space-station-mission-scenario",
+    "title": "Integrated Space Station Mission Scenario",
+    "subtitle": "Five-Day Crew Operations Simulation",
+    "version": "1.0.0",
+    "role": "Crew Operations Support Officer",
+    "duration_days": 5,
+    "content_status": "Platform edition. The original attached scenario file was not present in the build workspace. This scenario is a transparent educational reconstruction built for this platform and must be replaced with the team-confirmed source file if supplied.",
+    "disclaimer": "This is a fictional educational simulation. It is not an official NASA product, not a real operational procedure, and must never be used for actual spaceflight decisions.",
+    "clock_label": "SIMULATION MET",
+    "status_scale": [
+      "nominal",
+      "watch",
+      "degraded",
+      "critical"
+    ],
+    "status_meaning": {
+      "nominal": "Within the scenario's expected operating band.",
+      "watch": "A trend or condition needs monitoring and a planned response.",
+      "degraded": "The condition is limiting normal simulated operations.",
+      "critical": "The condition requires immediate simulated intervention."
+    }
+  },
+  "initial_state": {
+    "systems": {
+      "crew_health": {
+        "label": "Crew Health",
+        "status": "nominal",
+        "icon": "heart",
+        "description": "Integrated crew physical and behavioral health outlook."
+      },
+      "sleep_fatigue": {
+        "label": "Sleep & Fatigue",
+        "status": "watch",
+        "icon": "moon",
+        "description": "Crew sleep opportunity, fatigue reports, and schedule pressure."
+      },
+      "nutrition": {
+        "label": "Nutrition",
+        "status": "nominal",
+        "icon": "nutrition",
+        "description": "Menu adequacy, variety, hydration, and crew intake."
+      },
+      "radiation": {
+        "label": "Radiation",
+        "status": "nominal",
+        "icon": "radiation",
+        "description": "Solar particle event exposure and shielding posture."
+      },
+      "atmosphere": {
+        "label": "Oxygen & Atmosphere",
+        "status": "nominal",
+        "icon": "oxygen",
+        "description": "Cabin atmosphere monitoring and life-support readiness."
+      },
+      "water": {
+        "label": "Water Recovery",
+        "status": "watch",
+        "icon": "water",
+        "description": "Water recovery loop status and hygiene water availability."
+      },
+      "food": {
+        "label": "Food Inventory",
+        "status": "nominal",
+        "icon": "food",
+        "description": "Food inventory confidence and menu rotation coverage."
+      },
+      "power": {
+        "label": "Power System",
+        "status": "nominal",
+        "icon": "power",
+        "description": "Station electrical generation, storage, and load outlook."
+      },
+      "equipment": {
+        "label": "Station Equipment",
+        "status": "nominal",
+        "icon": "equipment",
+        "description": "Exercise hardware, maintenance items, and station equipment health."
+      }
+    },
+    "mission_clock": {
+      "day": 1,
+      "phase": "Briefing"
+    },
+    "pending_tasks": [
+      {
+        "id": "task-d1-sleep",
+        "label": "Review crew sleep and wake schedule",
+        "added_day": 1,
+        "due_day": 1,
+        "category": "Crew",
+        "detail": "Confirm protected sleep opportunity, handover timing, and lighting plan."
+      },
+      {
+        "id": "task-d1-food",
+        "label": "Verify food inventory against the menu plan",
+        "added_day": 1,
+        "due_day": 1,
+        "category": "Resources",
+        "detail": "Reconcile available food with the planned menu before the next supply cycle."
+      },
+      {
+        "id": "task-d1-water",
+        "label": "Confirm water recovery status before hygiene operations",
+        "added_day": 1,
+        "due_day": 1,
+        "category": "Life Support",
+        "detail": "Check the qualitative recovery status and coordinate hygiene water use."
+      }
+    ],
+    "baseline_notes": [
+      "All monitored systems use qualitative statuses. No oxygen, water, food, power, or radiation quantities are invented by this scenario.",
+      "The mission follows a fixed five-day structure. Events are not randomized.",
+      "The simulation clock is a scenario device, not a real mission timeline."
+    ]
+  },
+  "days": [
+    {
+      "day": 1,
+      "codename": "ORBIT-01",
+      "title": "Station Preparation & Resource Management",
+      "briefing": [
+        "Welcome aboard, Crew Operations Support Officer. Your role is to protect crew readiness while the station team prepares for five days of integrated operations.",
+        "Day 1 focuses on the fundamentals: sleep protection, food inventory confidence, and water recovery discipline. Every choice you record will carry forward into the mission state and the final report."
+      ],
+      "situation": "The crew is transitioning into a new operations schedule. Sleep and fatigue begin at WATCH because the schedule has changed. Water recovery begins at WATCH because a routine checkout is still in progress. Food, power, atmosphere, radiation, and equipment begin NOMINAL. No numerical quantities are provided, so all reporting stays qualitative.",
+      "science_brief": [
+        {
+          "title": "Sleep is an operational system",
+          "text": "Crew performance, mood, and decision quality depend on protected sleep opportunity. A schedule that looks efficient on paper can create fatigue risk that appears later in the mission.",
+          "course_id": "sleep-circadian-rhythm",
+          "module_id": "sleep-m5"
+        },
+        {
+          "title": "Inventory confidence is a safety tool",
+          "text": "A verified food inventory supports menu planning, avoids surprise shortages, and helps the crew make informed choices. Inventory confidence is different from inventing a precise quantity.",
+          "course_id": "nutrition-diet",
+          "module_id": "nutrition-m5"
+        },
+        {
+          "title": "Water recovery and hygiene are linked",
+          "text": "Hygiene operations depend on water recovery status. Coordinating use protects both personal care and the shared life-support system.",
+          "course_id": "hygiene-personal-care",
+          "module_id": "hygiene-m1"
+        }
+      ],
+      "events": [
+        {
+          "id": "d1-e1",
+          "title": "Crew Sleep Schedule Under Pressure",
+          "event_type": "crew_schedule",
+          "narrative": [
+            "The crew is asked to accept a compressed handover so that a station preparation task can finish early. The revised schedule would shorten the protected sleep opportunity for two crew members.",
+            "The team asks you how to proceed. No emergency requires the compressed schedule."
+          ],
+          "prompt": "How do you protect crew readiness while keeping station preparation moving?",
+          "academy_links": [
+            {
+              "course_id": "sleep-circadian-rhythm",
+              "course_title": "Sleep & Circadian Rhythm",
+              "module_id": "sleep-m5",
+              "module_title": "Monitoring Sleep and Crew Scheduling"
+            }
+          ],
+          "options": [
+            {
+              "id": "d1-e1-a",
+              "label": "Protect the sleep opportunity and stagger the handover",
+              "summary": "Keep the protected sleep window, move the non-urgent task, and use a staged handover.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The team accepts a staged handover. The preparation task finishes later but the crew keeps a protected sleep opportunity. You record the decision and add a sleep-log monitoring task for the next day.",
+                "immediate_results": [
+                  "Sleep and fatigue improves from WATCH toward NOMINAL.",
+                  "Crew health remains stable and supported.",
+                  "The sleep schedule review is completed.",
+                  "A 24-hour sleep-log monitoring task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "improve",
+                    "note": "Protected sleep opportunity retained."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "improve",
+                    "note": "Fatigue risk reduced."
+                  }
+                ],
+                "tasks_complete": [
+                  "task-d1-sleep"
+                ],
+                "tasks_add": [
+                  {
+                    "id": "task-d1-sleep-log",
+                    "label": "Monitor crew sleep logs for 24 hours",
+                    "due_day": 2,
+                    "category": "Crew",
+                    "detail": "Review qualitative sleep reports and flag persistent fatigue for follow-up."
+                  }
+                ],
+                "report_note": "Protected sleep opportunity and staged the handover."
+              }
+            },
+            {
+              "id": "d1-e1-b",
+              "label": "Keep the schedule and authorize an optional nap",
+              "summary": "Allow the compressed schedule but offer a short recovery nap later in the day.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "The compressed schedule proceeds with an optional nap. The crew can recover some alertness, but the schedule still removes protected rest. You mark the review as partially addressed and keep fatigue on watch.",
+                "immediate_results": [
+                  "Sleep and fatigue remains at WATCH.",
+                  "The sleep schedule review remains open.",
+                  "Crew members are told to report fatigue promptly."
+                ],
+                "effects": [
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "hold",
+                    "note": "Optional nap added, but protected sleep was reduced."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "No immediate change recorded."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Kept the compressed schedule with an optional recovery nap."
+              }
+            },
+            {
+              "id": "d1-e1-c",
+              "label": "Approve the compressed schedule as proposed",
+              "summary": "Accept the shorter sleep opportunity to gain schedule margin.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "The compressed schedule is approved. The preparation task finishes early, but the crew begins the mission with less recovery. Fatigue risk is now a standing item for the next day.",
+                "immediate_results": [
+                  "Sleep and fatigue worsens from WATCH to DEGRADED.",
+                  "Crew health moves to WATCH.",
+                  "The sleep schedule review is not adequately closed.",
+                  "A fatigue follow-up task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "worsen",
+                    "note": "Protected sleep opportunity shortened without mitigation."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "worsen",
+                    "note": "Cumulative fatigue risk increased."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d1-fatigue-watch",
+                    "label": "Add a fatigue watch to the next crew handover",
+                    "due_day": 2,
+                    "category": "Crew",
+                    "detail": "Check for slowed responses, mood changes, and reports of insufficient sleep."
+                  }
+                ],
+                "report_note": "Approved the compressed schedule without a protected recovery window."
+              }
+            }
+          ]
+        },
+        {
+          "id": "d1-e2",
+          "title": "Food Inventory Confidence",
+          "event_type": "resource_management",
+          "narrative": [
+            "The next supply cycle is still ahead. The crew reports that some menu items may be running low, but the inventory has not been reconciled.",
+            "A complete verification would take time. Skipping it would leave the menu plan built on assumptions."
+          ],
+          "prompt": "How do you establish food inventory confidence before the next operations block?",
+          "academy_links": [
+            {
+              "course_id": "nutrition-diet",
+              "course_title": "Nutrition & Diet",
+              "module_id": "nutrition-m5",
+              "module_title": "Menu Planning, Variety, and Food Safety"
+            }
+          ],
+          "options": [
+            {
+              "id": "d1-e2-a",
+              "label": "Reconcile the inventory and publish a realistic menu rotation",
+              "summary": "Verify what is available, prioritize perishable items, and build the menu around actual stock.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The inventory is reconciled. The crew identifies which items need to be used first and agrees on a menu rotation with acceptable variety. Nutrition status stays strong and the team gains confidence in the plan.",
+                "immediate_results": [
+                  "Food inventory confidence is confirmed for the current cycle.",
+                  "Nutrition remains NOMINAL.",
+                  "A three-day menu rotation task is added.",
+                  "The inventory verification is complete."
+                ],
+                "effects": [
+                  {
+                    "system": "food",
+                    "direction": "improve",
+                    "note": "Inventory reconciled against the plan."
+                  },
+                  {
+                    "system": "nutrition",
+                    "direction": "improve",
+                    "note": "Menu built on verified stock and variety."
+                  }
+                ],
+                "tasks_complete": [
+                  "task-d1-food"
+                ],
+                "tasks_add": [
+                  {
+                    "id": "task-d1-menu",
+                    "label": "Publish the three-day menu rotation",
+                    "due_day": 2,
+                    "category": "Resources",
+                    "detail": "Share the rotation with the crew and flag any items that need earlier use."
+                  }
+                ],
+                "report_note": "Reconciled inventory and published a realistic menu rotation."
+              }
+            },
+            {
+              "id": "d1-e2-b",
+              "label": "Use the existing menu plan and recheck inventory tomorrow",
+              "summary": "Keep the current plan, accept some uncertainty, and schedule a follow-up.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "The crew keeps the existing menu plan. The uncertainty is documented and a follow-up is scheduled. Nutrition remains adequate for now, but inventory confidence is still not fully established.",
+                "immediate_results": [
+                  "Food inventory remains NOMINAL but unverified.",
+                  "Nutrition remains NOMINAL.",
+                  "The inventory task remains open."
+                ],
+                "effects": [
+                  {
+                    "system": "food",
+                    "direction": "hold",
+                    "note": "Inventory confidence not yet confirmed."
+                  },
+                  {
+                    "system": "nutrition",
+                    "direction": "hold",
+                    "note": "Existing menu plan retained."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Deferred inventory verification by one day."
+              }
+            },
+            {
+              "id": "d1-e2-c",
+              "label": "Skip verification and let the crew choose meals freely",
+              "summary": "Avoid the time cost and rely on crew preference instead of a verified plan.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "Inventory verification is skipped. Crew preference temporarily solves the immediate meal question, but the team no longer has a shared picture of available food. Nutrition and inventory confidence become less predictable.",
+                "immediate_results": [
+                  "Food inventory confidence moves to WATCH.",
+                  "Nutrition moves to WATCH.",
+                  "The inventory task remains open and needs follow-up."
+                ],
+                "effects": [
+                  {
+                    "system": "food",
+                    "direction": "worsen",
+                    "note": "No shared inventory picture."
+                  },
+                  {
+                    "system": "nutrition",
+                    "direction": "worsen",
+                    "note": "Menu planning replaced by ad hoc choices."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Skipped inventory verification and used ad hoc meal choices."
+              }
+            }
+          ]
+        },
+        {
+          "id": "d1-e3",
+          "title": "Water Recovery and Hygiene Coordination",
+          "event_type": "life_support",
+          "narrative": [
+            "The water recovery loop is completing a routine checkout. The crew wants to schedule hygiene operations for the day.",
+            "Running all hygiene activities at once would be convenient, but the recovery status is still on watch."
+          ],
+          "prompt": "What is the most responsible hygiene plan while water recovery is on watch?",
+          "academy_links": [
+            {
+              "course_id": "hygiene-personal-care",
+              "course_title": "Hygiene & Personal Care",
+              "module_id": "hygiene-m1",
+              "module_title": "Water: A Precious Resource"
+            }
+          ],
+          "options": [
+            {
+              "id": "d1-e3-a",
+              "label": "Confirm recovery status and sequence hygiene water use",
+              "summary": "Check the qualitative loop status, schedule hygiene in stages, and log use.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The recovery status is confirmed as suitable for planned hygiene use. Hygiene is sequenced across the day and the crew logs its use. The shared system stays stable and the water watch is closed.",
+                "immediate_results": [
+                  "Water recovery improves from WATCH to NOMINAL.",
+                  "The water status task is completed.",
+                  "A hygiene water-use log task is added.",
+                  "Equipment remains NOMINAL."
+                ],
+                "effects": [
+                  {
+                    "system": "water",
+                    "direction": "improve",
+                    "note": "Recovery status confirmed and use sequenced."
+                  },
+                  {
+                    "system": "equipment",
+                    "direction": "hold",
+                    "note": "No equipment stress recorded."
+                  }
+                ],
+                "tasks_complete": [
+                  "task-d1-water"
+                ],
+                "tasks_add": [
+                  {
+                    "id": "task-d1-water-log",
+                    "label": "Log hygiene water use for the next day",
+                    "due_day": 2,
+                    "category": "Life Support",
+                    "detail": "Record qualitative use patterns and flag any unexpected demand."
+                  }
+                ],
+                "report_note": "Confirmed recovery status and sequenced hygiene water use."
+              }
+            },
+            {
+              "id": "d1-e3-b",
+              "label": "Run a shortened hygiene block with conservative use",
+              "summary": "Proceed with essential hygiene only and keep the loop under observation.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "The crew completes only essential hygiene tasks and keeps water use conservative. The recovery loop remains on watch, but no new stress is reported. The team schedules a follow-up check.",
+                "immediate_results": [
+                  "Water recovery remains WATCH.",
+                  "The water status task remains open.",
+                  "Hygiene needs are partially addressed."
+                ],
+                "effects": [
+                  {
+                    "system": "water",
+                    "direction": "hold",
+                    "note": "Conservative use, watch retained."
+                  },
+                  {
+                    "system": "equipment",
+                    "direction": "hold",
+                    "note": "No new stress recorded."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Ran a shortened hygiene block with conservative water use."
+              }
+            },
+            {
+              "id": "d1-e3-c",
+              "label": "Run the full hygiene schedule immediately",
+              "summary": "Prioritize convenience and complete all hygiene tasks at once.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "The full hygiene schedule runs while the recovery loop is still being checked. Crew needs are met, but the water system shows additional strain and the equipment team requests an inspection.",
+                "immediate_results": [
+                  "Water recovery worsens from WATCH to DEGRADED.",
+                  "Station equipment moves to WATCH.",
+                  "A water-system inspection task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "water",
+                    "direction": "worsen",
+                    "note": "High simultaneous demand during recovery checkout."
+                  },
+                  {
+                    "system": "equipment",
+                    "direction": "worsen",
+                    "note": "Water-system inspection requested."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d1-water-inspect",
+                    "label": "Inspect the water recovery system after high demand",
+                    "due_day": 2,
+                    "category": "Life Support",
+                    "detail": "Review the qualitative system status and confirm readiness for the next hygiene block."
+                  }
+                ],
+                "report_note": "Ran the full hygiene schedule during a recovery checkout."
+              }
+            }
+          ]
+        }
+      ],
+      "report_prompts": [
+        "Which resource decision most affected crew readiness today?",
+        "What remains open before Day 2?"
+      ]
+    },
+    {
+      "day": 2,
+      "codename": "ORBIT-02",
+      "title": "Solar Particle Event",
+      "briefing": [
+        "A solar particle event is under way. The station team is monitoring the radiation environment and reviewing shielding options.",
+        "Your job is to balance crew safety, operational continuity, and clear communication. This is a fictional scenario; follow the scenario's qualitative status changes, not real operational thresholds."
+      ],
+      "situation": "Radiation begins at NOMINAL because no event effect has yet been applied. The event requires a shielding decision and a review of planned external activity. Crew anxiety is a relevant human factor. The mission state carries forward every Day 1 decision, including fatigue and water-system status.",
+      "science_brief": [
+        {
+          "title": "Shielding and time reduce exposure",
+          "text": "In this simulation, radiation risk is managed through shielding, time, and distance. The scenario uses qualitative protection measures rather than invented dose values.",
+          "course_id": "human-body-microgravity",
+          "module_id": "body-m5"
+        },
+        {
+          "title": "Communication is a countermeasure",
+          "text": "Uncertainty can amplify stress. A clear, honest crew briefing supports trust and helps the team follow the agreed protection plan.",
+          "course_id": "mental-health-psychology",
+          "module_id": "mind-m2"
+        },
+        {
+          "title": "Fatigue changes risk tolerance",
+          "text": "A tired crew is more likely to make errors and less likely to notice subtle changes. Fatigue management remains part of radiation-event readiness.",
+          "course_id": "sleep-circadian-rhythm",
+          "module_id": "sleep-m3"
+        }
+      ],
+      "events": [
+        {
+          "id": "d2-e1",
+          "title": "Select a Radiation Protection Posture",
+          "event_type": "radiation",
+          "narrative": [
+            "The radiation monitor shows a changing environment during the solar particle event. Mission Control offers three protection postures.",
+            "One option maximizes shielding, one balances protection with limited operations, and one preserves the schedule at the expense of protection."
+          ],
+          "prompt": "Which protection posture do you recommend for the crew?",
+          "academy_links": [
+            {
+              "course_id": "human-body-microgravity",
+              "course_title": "Human Body in Microgravity",
+              "module_id": "body-m5",
+              "module_title": "Neuro-ocular and Immune Changes; Return to Gravity"
+            }
+          ],
+          "options": [
+            {
+              "id": "d2-e1-a",
+              "label": "Move the crew to the shielded area and pause nonessential operations",
+              "summary": "Prioritize protection, keep essential monitoring running, and plan a post-event survey.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The crew moves to the shielded area. Nonessential work pauses while essential monitoring continues. The team stays informed and a post-event survey is scheduled. Radiation protection improves and crew confidence remains strong.",
+                "immediate_results": [
+                  "Radiation improves from NOMINAL toward a protected posture.",
+                  "Crew health remains NOMINAL.",
+                  "A post-event radiation survey task is added.",
+                  "Nonessential operations are paused."
+                ],
+                "effects": [
+                  {
+                    "system": "radiation",
+                    "direction": "improve",
+                    "note": "Crew moved to the shielded area."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "Protection measures applied."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d2-rad-survey",
+                    "label": "Conduct the post-event radiation survey",
+                    "due_day": 2,
+                    "category": "Radiation",
+                    "detail": "Review the scenario radiation status and confirm the crew can return to normal operations."
+                  }
+                ],
+                "report_note": "Moved the crew to the shielded area and paused nonessential work."
+              }
+            },
+            {
+              "id": "d2-e1-b",
+              "label": "Continue limited operations with enhanced monitoring",
+              "summary": "Keep essential tasks running and accept a higher monitoring burden.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "Limited operations continue under enhanced monitoring. The crew completes priority tasks, but the radiation environment stays on watch. A follow-up survey is added so the team can reassess.",
+                "immediate_results": [
+                  "Radiation remains at WATCH.",
+                  "Crew health remains NOMINAL.",
+                  "Enhanced monitoring continues."
+                ],
+                "effects": [
+                  {
+                    "system": "radiation",
+                    "direction": "hold",
+                    "note": "Limited operations with enhanced monitoring."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "No immediate health change recorded."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d2-rad-survey",
+                    "label": "Conduct the post-event radiation survey",
+                    "due_day": 2,
+                    "category": "Radiation",
+                    "detail": "Review the scenario radiation status and confirm the crew can return to normal operations."
+                  }
+                ],
+                "report_note": "Continued limited operations with enhanced radiation monitoring."
+              }
+            },
+            {
+              "id": "d2-e1-c",
+              "label": "Keep the normal schedule and reassess later",
+              "summary": "Protect the timeline and defer the protection decision.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "The normal schedule continues. The event is monitored, but the crew remains in the standard operations area longer than the protection plan recommends. Radiation and crew health risk increase.",
+                "immediate_results": [
+                  "Radiation worsens from NOMINAL to WATCH.",
+                  "Crew health moves to WATCH.",
+                  "A radiation review task is added for the next day."
+                ],
+                "effects": [
+                  {
+                    "system": "radiation",
+                    "direction": "worsen",
+                    "note": "Protection decision deferred during a solar particle event."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "worsen",
+                    "note": "Increased exposure risk in the simulation."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d2-rad-review",
+                    "label": "Review the deferred radiation protection decision",
+                    "due_day": 3,
+                    "category": "Radiation",
+                    "detail": "Document the rationale and confirm the crew's status before the next operations block."
+                  }
+                ],
+                "report_note": "Kept the normal schedule and deferred the protection decision."
+              }
+            }
+          ]
+        },
+        {
+          "id": "d2-e2",
+          "title": "Planned External Activity",
+          "event_type": "operations",
+          "narrative": [
+            "A planned external activity is on the schedule. The radiation environment is still unsettled, and the team asks whether to proceed.",
+            "The activity is valuable but not urgent. A replan would preserve the work for a later opportunity."
+          ],
+          "prompt": "What should happen to the planned external activity?",
+          "academy_links": [
+            {
+              "course_id": "physical-health-exercise",
+              "course_title": "Physical Health & Exercise",
+              "module_id": "fitness-m5",
+              "module_title": "Injury Prevention and Team Safety"
+            }
+          ],
+          "options": [
+            {
+              "id": "d2-e2-a",
+              "label": "Postpone the activity and replan it for a safer opportunity",
+              "summary": "Preserve the work, protect the crew, and use available remote observations.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The external activity is postponed. The team captures the scientific value through remote observations and schedules a replan. Radiation protection stays strong and no equipment risk is added.",
+                "immediate_results": [
+                  "Radiation posture remains protected.",
+                  "The external activity is replanned.",
+                  "Equipment remains NOMINAL."
+                ],
+                "effects": [
+                  {
+                    "system": "radiation",
+                    "direction": "improve",
+                    "note": "External exposure avoided during the event."
+                  },
+                  {
+                    "system": "equipment",
+                    "direction": "hold",
+                    "note": "No external equipment stress."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d2-eva-replan",
+                    "label": "Publish the external activity replan",
+                    "due_day": 3,
+                    "category": "Operations",
+                    "detail": "Record the new opportunity and confirm the crew and equipment are ready."
+                  }
+                ],
+                "report_note": "Postponed the external activity and replanned it."
+              }
+            },
+            {
+              "id": "d2-e2-b",
+              "label": "Shorten the activity and keep a monitoring watch",
+              "summary": "Complete a reduced version of the task with tighter oversight.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "A shortened version of the activity proceeds under close monitoring. The task is partly completed, but the team accepts residual radiation and schedule risk.",
+                "immediate_results": [
+                  "Radiation remains at WATCH.",
+                  "The activity is partially completed.",
+                  "A replan task remains open."
+                ],
+                "effects": [
+                  {
+                    "system": "radiation",
+                    "direction": "hold",
+                    "note": "Shortened activity with monitoring."
+                  },
+                  {
+                    "system": "equipment",
+                    "direction": "hold",
+                    "note": "No new equipment issue recorded."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d2-eva-replan",
+                    "label": "Publish the external activity replan",
+                    "due_day": 3,
+                    "category": "Operations",
+                    "detail": "Record the remaining work and confirm the next opportunity."
+                  }
+                ],
+                "report_note": "Shortened the external activity and kept it under monitoring."
+              }
+            },
+            {
+              "id": "d2-e2-c",
+              "label": "Proceed with the full activity as planned",
+              "summary": "Protect the schedule and complete the original task.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "The full external activity proceeds. The task is completed, but the crew spends longer outside the protected posture than the event plan supports. Radiation and equipment risk rise.",
+                "immediate_results": [
+                  "Radiation worsens from WATCH to DEGRADED.",
+                  "Station equipment moves to WATCH.",
+                  "A post-activity inspection task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "radiation",
+                    "direction": "worsen",
+                    "note": "Full external activity during an unsettled event."
+                  },
+                  {
+                    "system": "equipment",
+                    "direction": "worsen",
+                    "note": "Post-activity inspection requested."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d2-eva-inspect",
+                    "label": "Inspect external equipment after the activity",
+                    "due_day": 3,
+                    "category": "Equipment",
+                    "detail": "Confirm the equipment is ready for the next operations block."
+                  }
+                ],
+                "report_note": "Proceeded with the full external activity during the event."
+              }
+            }
+          ]
+        },
+        {
+          "id": "d2-e3",
+          "title": "Crew Uncertainty and Communication",
+          "event_type": "behavioral_health",
+          "narrative": [
+            "The crew has questions about the radiation event and the changing schedule. Some members are quiet; others want more frequent updates.",
+            "A short briefing can reduce uncertainty, but it takes time away from operations."
+          ],
+          "prompt": "How do you communicate with the crew during the event?",
+          "academy_links": [
+            {
+              "course_id": "mental-health-psychology",
+              "course_title": "Mental Health & Psychology",
+              "module_id": "mind-m2",
+              "module_title": "Communication and Team Cohesion"
+            }
+          ],
+          "options": [
+            {
+              "id": "d2-e3-a",
+              "label": "Hold a clear briefing and check in with each crew member",
+              "summary": "Explain what is known, what is uncertain, and how the team will decide next steps.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The team briefs the crew in plain language and checks in individually. Concerns are acknowledged without promising certainty. Trust improves, and the crew reports feeling better prepared for the next decision.",
+                "immediate_results": [
+                  "Crew health improves.",
+                  "Sleep and fatigue remains stable.",
+                  "A crew check-in task is added for Day 3.",
+                  "Communication is documented in the decision history."
+                ],
+                "effects": [
+                  {
+                    "system": "crew_health",
+                    "direction": "improve",
+                    "note": "Clear briefing and individual check-ins."
+                  },
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "hold",
+                    "note": "No new fatigue effect recorded."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d2-checkin",
+                    "label": "Run a crew check-in at the start of Day 3",
+                    "due_day": 3,
+                    "category": "Crew",
+                    "detail": "Ask about sleep, workload, and concerns before the next operations block."
+                  }
+                ],
+                "report_note": "Held a clear crew briefing and individual check-ins."
+              }
+            },
+            {
+              "id": "d2-e3-b",
+              "label": "Send a concise written update",
+              "summary": "Share the facts and keep the crew working.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "The crew receives a concise written update. The information is useful, but there is little room for questions. The team continues working with a moderate level of uncertainty.",
+                "immediate_results": [
+                  "Crew health remains NOMINAL.",
+                  "No new tasks are added.",
+                  "Communication is logged."
+                ],
+                "effects": [
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "Written update provided."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Sent a concise written update to the crew."
+              }
+            },
+            {
+              "id": "d2-e3-c",
+              "label": "Delay communication until the situation is fully resolved",
+              "summary": "Avoid incomplete information by waiting for a complete picture.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "Communication is delayed. The crew notices the silence and fills the gap with speculation. Anxiety rises, and the next briefing has to repair trust as well as share facts.",
+                "immediate_results": [
+                  "Crew health worsens from NOMINAL to WATCH.",
+                  "Sleep and fatigue moves to WATCH or remains there.",
+                  "A follow-up conversation is added."
+                ],
+                "effects": [
+                  {
+                    "system": "crew_health",
+                    "direction": "worsen",
+                    "note": "Delayed communication increased uncertainty."
+                  },
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "worsen",
+                    "note": "Uncertainty may affect rest."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d2-comm-repair",
+                    "label": "Follow up with the crew after the communication delay",
+                    "due_day": 3,
+                    "category": "Crew",
+                    "detail": "Address concerns and agree on a clear update rhythm for the rest of the mission."
+                  }
+                ],
+                "report_note": "Delayed communication until the event was fully resolved."
+              }
+            }
+          ]
+        }
+      ],
+      "report_prompts": [
+        "Did the radiation response protect both crew and operations?",
+        "How did communication affect crew readiness?"
+      ]
+    },
+    {
+      "day": 3,
+      "codename": "ORBIT-03",
+      "title": "Exercise Equipment Fault",
+      "briefing": [
+        "An exercise equipment fault is reported. The resistance device is not behaving as expected during a crew workout.",
+        "Exercise protects bone, muscle, and cardiovascular health in microgravity. The team must decide how to preserve the exercise plan while the fault is investigated."
+      ],
+      "situation": "Station equipment begins NOMINAL unless Day 2 decisions introduced a fault. The exercise equipment issue creates a crew health and maintenance trade-off. The crew still needs daily movement, but the faulty device cannot be treated as fully available.",
+      "science_brief": [
+        {
+          "title": "Exercise is a countermeasure",
+          "text": "In microgravity, the body experiences reduced mechanical loading. Exercise supports bone, muscle, cardiovascular, and sensorimotor health, and it contributes to crew morale.",
+          "course_id": "physical-health-exercise",
+          "module_id": "fitness-m2"
+        },
+        {
+          "title": "Hardware has procedures",
+          "text": "A suspected fault is not a reason to improvise. The safe response is to stop using the affected equipment, document the issue, and use approved alternatives.",
+          "course_id": "physical-health-exercise",
+          "module_id": "fitness-m5"
+        },
+        {
+          "title": "Nutrition supports repair and adaptation",
+          "text": "Adequate energy, protein, calcium, and vitamin D support the body during reduced loading. Cutting meals is not a substitute for an exercise countermeasure plan.",
+          "course_id": "nutrition-diet",
+          "module_id": "nutrition-m3"
+        }
+      ],
+      "events": [
+        {
+          "id": "d3-e1",
+          "title": "Resistance Device Fault",
+          "event_type": "equipment",
+          "narrative": [
+            "A crew member reports that the resistance device is not providing the expected feel during a workout. The fault could be mechanical, a sensor issue, or a setup problem.",
+            "The crew wants to know whether to continue the session."
+          ],
+          "prompt": "What is your immediate call on the faulty exercise device?",
+          "academy_links": [
+            {
+              "course_id": "physical-health-exercise",
+              "course_title": "Physical Health & Exercise",
+              "module_id": "fitness-m3",
+              "module_title": "Exercise Hardware on Station"
+            }
+          ],
+          "options": [
+            {
+              "id": "d3-e1-a",
+              "label": "Stop use, document the fault, and substitute approved movement",
+              "summary": "Take the device out of service and protect the exercise plan with approved alternatives.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The session stops and the fault is documented. The crew switches to approved alternatives for aerobic and resistance work. The equipment is flagged for repair, and crew health remains protected.",
+                "immediate_results": [
+                  "Station equipment moves to WATCH.",
+                  "Crew health remains NOMINAL.",
+                  "An equipment repair task is added.",
+                  "The exercise plan continues with approved alternatives."
+                ],
+                "effects": [
+                  {
+                    "system": "equipment",
+                    "direction": "worsen",
+                    "note": "Device removed from service for inspection."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "Exercise maintained with approved alternatives."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d3-ared-repair",
+                    "label": "Inspect and repair the resistance device",
+                    "due_day": 3,
+                    "category": "Equipment",
+                    "detail": "Document the fault, complete the approved inspection, and confirm return-to-service criteria."
+                  }
+                ],
+                "report_note": "Stopped use of the faulty device, documented it, and substituted approved exercise."
+              }
+            },
+            {
+              "id": "d3-e1-b",
+              "label": "Continue at reduced load while monitoring the device",
+              "summary": "Keep the workout going with a lighter setting and watch for changes.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "The crew continues at a reduced load. The session is completed, but the fault remains unresolved and the equipment stays under observation. A proper inspection is still needed.",
+                "immediate_results": [
+                  "Station equipment moves to WATCH.",
+                  "Crew health remains NOMINAL.",
+                  "The repair task is added but not completed."
+                ],
+                "effects": [
+                  {
+                    "system": "equipment",
+                    "direction": "worsen",
+                    "note": "Faulty device kept in limited use."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "Reduced-load session completed."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d3-ared-inspect",
+                    "label": "Inspect the resistance device before the next session",
+                    "due_day": 3,
+                    "category": "Equipment",
+                    "detail": "Confirm whether the device is safe for continued limited use."
+                  }
+                ],
+                "report_note": "Continued the session at reduced load with monitoring."
+              }
+            },
+            {
+              "id": "d3-e1-c",
+              "label": "Complete the planned workout as if the device were normal",
+              "summary": "Protect the training schedule and finish the session.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "The workout continues as planned. The crew finishes the session, but the device fault worsens and the team loses confidence in the equipment. A more serious repair is now required.",
+                "immediate_results": [
+                  "Station equipment worsens from NOMINAL to DEGRADED.",
+                  "Crew health moves to WATCH.",
+                  "A priority repair task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "equipment",
+                    "direction": "worsen",
+                    "note": "Faulty device used under full load."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "worsen",
+                    "note": "Potential injury risk and lost confidence in equipment."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d3-ared-priority",
+                    "label": "Complete a priority inspection of the resistance device",
+                    "due_day": 3,
+                    "category": "Equipment",
+                    "detail": "Treat the fault as a priority and confirm the device cannot be used until cleared."
+                  }
+                ],
+                "report_note": "Completed the full workout despite the reported equipment fault."
+              }
+            }
+          ]
+        },
+        {
+          "id": "d3-e2",
+          "title": "Repair Scheduling Trade-off",
+          "event_type": "maintenance",
+          "narrative": [
+            "The maintenance team can inspect the resistance device today, but the repair window overlaps with a high-demand operations block.",
+            "Delaying the repair protects the schedule but leaves the crew without the preferred device for longer."
+          ],
+          "prompt": "How do you schedule the repair?",
+          "academy_links": [
+            {
+              "course_id": "human-body-microgravity",
+              "course_title": "Human Body in Microgravity",
+              "module_id": "body-m4",
+              "module_title": "Cardiovascular and Musculoskeletal Adaptation"
+            }
+          ],
+          "options": [
+            {
+              "id": "d3-e2-a",
+              "label": "Schedule the repair in a low-demand window and communicate the plan",
+              "summary": "Protect the repair, adjust the schedule, and verify the device before return to service.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The repair is scheduled in a low-demand window. The crew uses approved alternatives while the device is serviced. The team verifies return-to-service criteria and restores the preferred exercise option.",
+                "immediate_results": [
+                  "Station equipment improves toward NOMINAL.",
+                  "The repair task is completed.",
+                  "A return-to-service verification task is added.",
+                  "Crew health remains stable."
+                ],
+                "effects": [
+                  {
+                    "system": "equipment",
+                    "direction": "improve",
+                    "note": "Repair completed in a controlled window."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "Exercise plan maintained."
+                  }
+                ],
+                "tasks_complete": [
+                  "task-d3-ared-repair",
+                  "task-d3-ared-inspect",
+                  "task-d3-ared-priority"
+                ],
+                "tasks_add": [
+                  {
+                    "id": "task-d3-ared-verify",
+                    "label": "Verify the resistance device before return to service",
+                    "due_day": 4,
+                    "category": "Equipment",
+                    "detail": "Complete the approved checkout and record the qualitative result."
+                  }
+                ],
+                "report_note": "Scheduled the repair in a low-demand window and planned return-to-service verification."
+              }
+            },
+            {
+              "id": "d3-e2-b",
+              "label": "Delay the repair until the next day",
+              "summary": "Keep today's schedule intact and accept reduced exercise options.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "The repair is delayed. Today's operations continue, but the crew has fewer exercise options and the equipment remains on watch. The team agrees to revisit the repair tomorrow.",
+                "immediate_results": [
+                  "Station equipment remains WATCH or DEGRADED.",
+                  "The repair task remains open.",
+                  "Crew health remains stable with alternatives."
+                ],
+                "effects": [
+                  {
+                    "system": "equipment",
+                    "direction": "hold",
+                    "note": "Repair deferred."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "Alternatives continue."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Delayed the repair until the next day."
+              }
+            },
+            {
+              "id": "d3-e2-c",
+              "label": "Cancel the repair and rely on the remaining exercise options",
+              "summary": "Free the schedule and accept the loss of the preferred device.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "The repair is cancelled. The schedule is protected, but the crew loses the preferred resistance option and the equipment problem is left unresolved. The team must work around the gap.",
+                "immediate_results": [
+                  "Station equipment worsens to DEGRADED or CRITICAL.",
+                  "Crew health moves to WATCH.",
+                  "The repair task remains open."
+                ],
+                "effects": [
+                  {
+                    "system": "equipment",
+                    "direction": "worsen",
+                    "note": "Repair cancelled."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "worsen",
+                    "note": "Reduced exercise capability."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Cancelled the repair and relied on remaining exercise options."
+              }
+            }
+          ]
+        },
+        {
+          "id": "d3-e3",
+          "title": "Nutrition and Hydration During Reduced Exercise",
+          "event_type": "nutrition",
+          "narrative": [
+            "With the exercise plan temporarily reduced, some crew members suggest eating less to stay in balance.",
+            "The crew still needs adequate energy, protein, calcium, vitamin D, and hydration to support health and recovery."
+          ],
+          "prompt": "How do you adjust nutrition during the exercise disruption?",
+          "academy_links": [
+            {
+              "course_id": "nutrition-diet",
+              "course_title": "Nutrition & Diet",
+              "module_id": "nutrition-m3",
+              "module_title": "Micronutrients, Bone, and Vision"
+            }
+          ],
+          "options": [
+            {
+              "id": "d3-e3-a",
+              "label": "Keep adequate intake and emphasize supportive nutrients",
+              "summary": "Maintain energy and hydration, and emphasize protein, calcium, and vitamin D.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The menu is adjusted without cutting needed energy. The crew emphasizes protein, calcium, vitamin D, and hydration while the exercise plan is modified. Nutrition supports recovery and crew morale.",
+                "immediate_results": [
+                  "Nutrition improves or remains NOMINAL.",
+                  "Crew health remains stable.",
+                  "A menu-adjustment task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "nutrition",
+                    "direction": "improve",
+                    "note": "Adequate intake with supportive nutrients."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "Nutrition supports recovery."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d3-menu-adjust",
+                    "label": "Publish the adjusted menu for reduced exercise days",
+                    "due_day": 4,
+                    "category": "Nutrition",
+                    "detail": "Share the menu and explain how it supports crew health during the equipment disruption."
+                  }
+                ],
+                "report_note": "Maintained adequate intake and emphasized supportive nutrients."
+              }
+            },
+            {
+              "id": "d3-e3-b",
+              "label": "Keep the standard menu and monitor hydration",
+              "summary": "Avoid major changes and check that the crew is drinking enough.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "The standard menu continues and hydration is monitored. No deficiency is reported, but the team misses an opportunity to tailor nutrition to the changed exercise load.",
+                "immediate_results": [
+                  "Nutrition remains NOMINAL.",
+                  "Crew health remains stable.",
+                  "No new task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "nutrition",
+                    "direction": "hold",
+                    "note": "Standard menu continues."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "No immediate change."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Kept the standard menu and monitored hydration."
+              }
+            },
+            {
+              "id": "d3-e3-c",
+              "label": "Cut meal portions to compensate for reduced exercise",
+              "summary": "Reduce intake because the crew is moving less.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "Portions are reduced. The crew saves food, but inadequate intake undermines recovery and can worsen fatigue. Nutrition and crew health move in the wrong direction.",
+                "immediate_results": [
+                  "Nutrition worsens from NOMINAL to WATCH.",
+                  "Crew health moves to WATCH.",
+                  "A nutrition review task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "nutrition",
+                    "direction": "worsen",
+                    "note": "Portions reduced without an individual assessment."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "worsen",
+                    "note": "Reduced recovery support."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d3-nutrition-review",
+                    "label": "Review crew intake and restore adequate portions",
+                    "due_day": 4,
+                    "category": "Nutrition",
+                    "detail": "Confirm that energy, protein, and hydration needs are being met."
+                  }
+                ],
+                "report_note": "Cut meal portions to compensate for reduced exercise."
+              }
+            }
+          ]
+        }
+      ],
+      "report_prompts": [
+        "Did the exercise response protect both equipment and crew health?",
+        "What nutrition principles guided the decision?"
+      ]
+    },
+    {
+      "day": 4,
+      "codename": "ORBIT-04",
+      "title": "Crew Fatigue & Schedule Management",
+      "briefing": [
+        "Several crew members report fatigue. The schedule is dense, and the team still has mission objectives to complete.",
+        "Fatigue is a system-level risk. Your task is to adjust the schedule, support communication, and protect the crew's ability to finish the mission safely."
+      ],
+      "situation": "Sleep and fatigue may be WATCH or worse depending on earlier choices. The crew reports reduced alertness and some interpersonal tension. The schedule can be adjusted without abandoning required tasks.",
+      "science_brief": [
+        {
+          "title": "Fatigue is cumulative",
+          "text": "Restricted sleep across several days can accumulate into performance risk. A single nap helps, but it does not replace a protected sleep opportunity.",
+          "course_id": "sleep-circadian-rhythm",
+          "module_id": "sleep-m3"
+        },
+        {
+          "title": "Conflict is a crew signal",
+          "text": "Irritability and disagreement can be early signs of workload and fatigue. Facilitated communication is more effective than simply telling the crew to cooperate.",
+          "course_id": "mental-health-psychology",
+          "module_id": "mind-m3"
+        },
+        {
+          "title": "Light and routine shape sleep",
+          "text": "Dim light, quiet hours, and a predictable wind-down routine support sleep. Bright screens and late communication can delay rest.",
+          "course_id": "sleep-circadian-rhythm",
+          "module_id": "sleep-m4"
+        }
+      ],
+      "events": [
+        {
+          "id": "d4-e1",
+          "title": "Fatigue Reports and Schedule Pressure",
+          "event_type": "fatigue",
+          "narrative": [
+            "Two crew members report feeling unusually tired. The schedule still has several tasks, but none are emergencies.",
+            "The team can redistribute work, protect sleep, and add a fatigue check-in, or push through the schedule as written."
+          ],
+          "prompt": "How do you respond to the fatigue reports?",
+          "academy_links": [
+            {
+              "course_id": "sleep-circadian-rhythm",
+              "course_title": "Sleep & Circadian Rhythm",
+              "module_id": "sleep-m4",
+              "module_title": "Fatigue Countermeasures"
+            }
+          ],
+          "options": [
+            {
+              "id": "d4-e1-a",
+              "label": "Redistribute tasks and protect the next sleep opportunity",
+              "summary": "Treat fatigue as an operational risk, adjust the schedule, and follow up.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The schedule is adjusted and nonessential tasks move. The crew gets a protected sleep opportunity and a fatigue check-in. Alertness and trust improve, and the team finishes the day with a realistic plan.",
+                "immediate_results": [
+                  "Sleep and fatigue improves one level.",
+                  "Crew health improves.",
+                  "A fatigue-management plan task is added.",
+                  "A crew check-in task is completed if it was open."
+                ],
+                "effects": [
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "improve",
+                    "note": "Workload redistributed and sleep protected."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "improve",
+                    "note": "Fatigue reports taken seriously."
+                  }
+                ],
+                "tasks_complete": [
+                  "task-d2-checkin",
+                  "task-d1-fatigue-watch"
+                ],
+                "tasks_add": [
+                  {
+                    "id": "task-d4-fatigue-plan",
+                    "label": "Publish the revised fatigue-management plan",
+                    "due_day": 4,
+                    "category": "Crew",
+                    "detail": "Share the revised schedule and the fatigue check-in process with the crew."
+                  }
+                ],
+                "report_note": "Redistributed work and protected the next sleep opportunity."
+              }
+            },
+            {
+              "id": "d4-e1-b",
+              "label": "Recommend caffeine and a short nap, then continue",
+              "summary": "Use short-term countermeasures without changing the schedule.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "The crew uses caffeine and a short nap. Alertness improves briefly, but the underlying schedule pressure remains. Fatigue stays on watch and may return.",
+                "immediate_results": [
+                  "Sleep and fatigue remains at its current level.",
+                  "Crew health remains stable.",
+                  "A follow-up check is recommended."
+                ],
+                "effects": [
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "hold",
+                    "note": "Short-term countermeasure only."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "No immediate change."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Used caffeine and a short nap without changing the schedule."
+              }
+            },
+            {
+              "id": "d4-e1-c",
+              "label": "Push through the schedule as written",
+              "summary": "Prioritize mission objectives and ask the crew to continue.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "The crew pushes through. The task list shrinks, but fatigue deepens and communication becomes shorter. The risk of error rises, and the team needs a recovery plan.",
+                "immediate_results": [
+                  "Sleep and fatigue worsens one level.",
+                  "Crew health worsens.",
+                  "A mandatory fatigue recovery task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "worsen",
+                    "note": "Fatigue reports overridden by schedule."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "worsen",
+                    "note": "Cumulative fatigue risk increased."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d4-fatigue-recovery",
+                    "label": "Create a mandatory fatigue recovery plan",
+                    "due_day": 5,
+                    "category": "Crew",
+                    "detail": "Protect sleep, reduce nonessential workload, and check in with each crew member."
+                  }
+                ],
+                "report_note": "Pushed through the schedule despite fatigue reports."
+              }
+            }
+          ]
+        },
+        {
+          "id": "d4-e2",
+          "title": "Interpersonal Tension",
+          "event_type": "team_cohesion",
+          "narrative": [
+            "Two crew members disagree about task ownership. The disagreement is polite but persistent, and other crew members are starting to avoid the topic.",
+            "The issue is affecting communication and could affect safety if it is left unaddressed."
+          ],
+          "prompt": "How do you address the interpersonal tension?",
+          "academy_links": [
+            {
+              "course_id": "mental-health-psychology",
+              "course_title": "Mental Health & Psychology",
+              "module_id": "mind-m2",
+              "module_title": "Communication and Team Cohesion"
+            }
+          ],
+          "options": [
+            {
+              "id": "d4-e2-a",
+              "label": "Facilitate a short conversation with clear ground rules",
+              "summary": "Clarify ownership, listen to both perspectives, and agree on a path forward.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "You facilitate a short conversation. Each crew member describes the problem, the team agrees on task ownership, and a follow-up check is scheduled. Tension decreases and communication improves.",
+                "immediate_results": [
+                  "Crew health improves.",
+                  "Sleep and fatigue remains stable.",
+                  "A team agreement task is added for Day 5."
+                ],
+                "effects": [
+                  {
+                    "system": "crew_health",
+                    "direction": "improve",
+                    "note": "Facilitated conversation and clear ownership."
+                  },
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "hold",
+                    "note": "No new fatigue effect recorded."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d4-team-agreement",
+                    "label": "Confirm the team agreement at the Day 5 briefing",
+                    "due_day": 5,
+                    "category": "Crew",
+                    "detail": "Check that task ownership and communication expectations are still working."
+                  }
+                ],
+                "report_note": "Facilitated a conversation and agreed on task ownership."
+              }
+            },
+            {
+              "id": "d4-e2-b",
+              "label": "Separate the crew members for the rest of the day",
+              "summary": "Reduce immediate friction by adjusting assignments.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "The crew members are assigned to separate tasks. The immediate friction decreases, but the underlying disagreement is not resolved and may return.",
+                "immediate_results": [
+                  "Crew health remains NOMINAL.",
+                  "The issue is documented but not resolved.",
+                  "A follow-up task remains open."
+                ],
+                "effects": [
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "Temporary separation."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d4-conflict-followup",
+                    "label": "Follow up on the unresolved task-ownership issue",
+                    "due_day": 5,
+                    "category": "Crew",
+                    "detail": "Revisit the disagreement when the crew is rested and the schedule allows."
+                  }
+                ],
+                "report_note": "Separated the crew members for the rest of the day."
+              }
+            },
+            {
+              "id": "d4-e2-c",
+              "label": "Tell the crew to resolve it privately",
+              "summary": "Keep the schedule moving and avoid intervening.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "The crew is told to resolve the issue privately. The schedule continues, but the tension spreads and communication becomes less reliable. Crew health moves to watch.",
+                "immediate_results": [
+                  "Crew health worsens from NOMINAL to WATCH.",
+                  "Sleep and fatigue moves to WATCH.",
+                  "A conflict follow-up task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "crew_health",
+                    "direction": "worsen",
+                    "note": "Unaddressed interpersonal tension."
+                  },
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "worsen",
+                    "note": "Stress may affect rest."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d4-conflict-followup",
+                    "label": "Follow up on the unresolved task-ownership issue",
+                    "due_day": 5,
+                    "category": "Crew",
+                    "detail": "Revisit the disagreement and restore clear communication."
+                  }
+                ],
+                "report_note": "Told the crew to resolve the disagreement privately."
+              }
+            }
+          ]
+        },
+        {
+          "id": "d4-e3",
+          "title": "Protecting the Sleep Environment",
+          "event_type": "sleep_environment",
+          "narrative": [
+            "The crew's sleep period is approaching. Some tasks are running late, and the station is busier than usual.",
+            "The team can dim the environment and protect quiet hours, or finish the tasks with bright lights and frequent communication."
+          ],
+          "prompt": "How do you protect the sleep environment tonight?",
+          "academy_links": [
+            {
+              "course_id": "sleep-circadian-rhythm",
+              "course_title": "Sleep & Circadian Rhythm",
+              "module_id": "sleep-m2",
+              "module_title": "Circadian Rhythm and Light"
+            }
+          ],
+          "options": [
+            {
+              "id": "d4-e3-a",
+              "label": "Dim the lights, enforce quiet hours, and move urgent tasks",
+              "summary": "Create a predictable wind-down and protect the sleep window.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The station dims and quiet hours begin on time. Urgent tasks move to the next day, and the crew gets a consistent wind-down. Sleep and fatigue improves, and the fatigue plan is completed.",
+                "immediate_results": [
+                  "Sleep and fatigue improves one level.",
+                  "Crew health remains stable or improves.",
+                  "The fatigue-management plan is completed.",
+                  "A sleep-environment check task is added for Day 5."
+                ],
+                "effects": [
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "improve",
+                    "note": "Dim lights and protected quiet hours."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "Supportive rest environment."
+                  }
+                ],
+                "tasks_complete": [
+                  "task-d4-fatigue-plan"
+                ],
+                "tasks_add": [
+                  {
+                    "id": "task-d5-sleep-env",
+                    "label": "Confirm the sleep environment for the final night",
+                    "due_day": 5,
+                    "category": "Crew",
+                    "detail": "Check lighting, noise, and the communication schedule before rest."
+                  }
+                ],
+                "report_note": "Dimmed lights, enforced quiet hours, and protected the sleep window."
+              }
+            },
+            {
+              "id": "d4-e3-b",
+              "label": "Reduce noise but keep the lights on for late tasks",
+              "summary": "Compromise on the environment while finishing priority work.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "Noise is reduced, but the lights stay on for late tasks. The crew finishes more work, yet the wind-down is inconsistent. Sleep and fatigue remains on watch.",
+                "immediate_results": [
+                  "Sleep and fatigue remains at its current level.",
+                  "Crew health remains stable.",
+                  "The sleep environment is only partially protected."
+                ],
+                "effects": [
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "hold",
+                    "note": "Partial reduction in noise, lights remain on."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "No immediate change."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Reduced noise but kept the lights on for late tasks."
+              }
+            },
+            {
+              "id": "d4-e3-c",
+              "label": "Finish the tasks with bright lights and frequent updates",
+              "summary": "Prioritize completion and accept a later, brighter wind-down.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "The tasks are completed under bright lights and frequent communication. The crew gets less wind-down time and reports a harder time settling. Fatigue risk increases.",
+                "immediate_results": [
+                  "Sleep and fatigue worsens one level.",
+                  "Crew health moves to WATCH.",
+                  "A sleep recovery task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "sleep_fatigue",
+                    "direction": "worsen",
+                    "note": "Bright light and late communication before sleep."
+                  },
+                  {
+                    "system": "crew_health",
+                    "direction": "worsen",
+                    "note": "Reduced recovery opportunity."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d5-sleep-recovery",
+                    "label": "Create a sleep recovery plan for the final day",
+                    "due_day": 5,
+                    "category": "Crew",
+                    "detail": "Protect the sleep window and reduce nonessential communication before rest."
+                  }
+                ],
+                "report_note": "Finished tasks with bright lights and late communication."
+              }
+            }
+          ]
+        }
+      ],
+      "report_prompts": [
+        "Did the fatigue response match the crew's reports?",
+        "How did the team address interpersonal tension?"
+      ]
+    },
+    {
+      "day": 5,
+      "codename": "ORBIT-05",
+      "title": "Final Crew & Station Assessment",
+      "briefing": [
+        "The five-day mission reaches its final assessment. The crew is preparing for handover and the station team needs a clear picture of readiness.",
+        "Review the accumulated mission state, close out outstanding tasks where possible, and produce a final report that distinguishes completed work from open items."
+      ],
+      "situation": "Every prior decision is part of the record. Final statuses reflect the cumulative effects of Days 1 through 4. Pending tasks may remain open. The final assessment is based on decision quality, task completion, and the qualitative readiness of monitored systems.",
+      "science_brief": [
+        {
+          "title": "Readiness is multidisciplinary",
+          "text": "Crew health, sleep, nutrition, radiation protection, life support, and equipment are connected. A strong final assessment considers all of them together.",
+          "course_id": "human-body-microgravity",
+          "module_id": "body-m1"
+        },
+        {
+          "title": "Handover requires honest reporting",
+          "text": "A final report should state what was completed, what remains open, and which decisions created the current state. Clear reporting supports the next team.",
+          "course_id": "mental-health-psychology",
+          "module_id": "mind-m5"
+        },
+        {
+          "title": "Hygiene closes the loop",
+          "text": "Personal care, cleaning, and water discipline are part of station readiness. A final inspection should include the systems that support them.",
+          "course_id": "hygiene-personal-care",
+          "module_id": "hygiene-m4"
+        }
+      ],
+      "events": [
+        {
+          "id": "d5-e1",
+          "title": "Final Station Systems Inspection",
+          "event_type": "station_inspection",
+          "narrative": [
+            "The final inspection covers atmosphere, water recovery, power, equipment, and the open maintenance items from earlier in the mission.",
+            "A complete review takes time. A partial spot-check is faster but may miss an open issue."
+          ],
+          "prompt": "How thorough should the final station inspection be?",
+          "academy_links": [
+            {
+              "course_id": "hygiene-personal-care",
+              "course_title": "Hygiene & Personal Care",
+              "module_id": "hygiene-m4",
+              "module_title": "Cleaning, Air, and Microbial Control"
+            }
+          ],
+          "options": [
+            {
+              "id": "d5-e1-a",
+              "label": "Conduct the full inspection and close out open items",
+              "summary": "Use the checklist, verify each system, and document every open item.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The full inspection is completed. Each system is reviewed against the checklist, open items are documented, and the team closes what can be closed. Station readiness is confirmed or clearly bounded.",
+                "immediate_results": [
+                  "Station equipment improves or remains stable.",
+                  "Atmosphere and water recovery are verified.",
+                  "Open tasks are documented with clear ownership.",
+                  "Crew health remains stable."
+                ],
+                "effects": [
+                  {
+                    "system": "equipment",
+                    "direction": "improve",
+                    "note": "Full inspection completed."
+                  },
+                  {
+                    "system": "atmosphere",
+                    "direction": "hold",
+                    "note": "Verified against the scenario checklist."
+                  },
+                  {
+                    "system": "water",
+                    "direction": "hold",
+                    "note": "Verified against the scenario checklist."
+                  }
+                ],
+                "tasks_complete": [
+                  "task-d3-ared-verify",
+                  "task-d5-sleep-env",
+                  "task-d2-rad-survey",
+                  "task-d1-water-log"
+                ],
+                "tasks_add": [],
+                "report_note": "Completed the full station inspection and documented open items."
+              }
+            },
+            {
+              "id": "d5-e1-b",
+              "label": "Run a focused spot-check on the highest-priority systems",
+              "summary": "Review the systems with the most risk and defer the rest.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "A focused spot-check covers the highest-priority systems. The team finds no new issue, but some areas remain unverified. The open-task list is reviewed only briefly.",
+                "immediate_results": [
+                  "Station equipment remains at its current level.",
+                  "Some systems remain unverified.",
+                  "A follow-up inspection task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "equipment",
+                    "direction": "hold",
+                    "note": "Spot-check only."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d5-followup-inspection",
+                    "label": "Schedule a follow-up inspection after handover",
+                    "due_day": 5,
+                    "category": "Equipment",
+                    "detail": "Identify the unverified areas and assign responsibility for the next team."
+                  }
+                ],
+                "report_note": "Ran a focused spot-check and deferred some inspections."
+              }
+            },
+            {
+              "id": "d5-e1-c",
+              "label": "Skip the inspection and rely on the existing status board",
+              "summary": "Trust the current dashboard and move straight to the report.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "The inspection is skipped. The report relies on the existing dashboard, but no final verification is performed. Equipment and atmosphere confidence decrease, and open items may be missed.",
+                "immediate_results": [
+                  "Station equipment worsens to WATCH or DEGRADED.",
+                  "Atmosphere confidence decreases.",
+                  "A follow-up inspection task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "equipment",
+                    "direction": "worsen",
+                    "note": "No final inspection."
+                  },
+                  {
+                    "system": "atmosphere",
+                    "direction": "worsen",
+                    "note": "Unverified final status."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d5-followup-inspection",
+                    "label": "Schedule a follow-up inspection after handover",
+                    "due_day": 5,
+                    "category": "Equipment",
+                    "detail": "Identify the unverified areas and assign responsibility for the next team."
+                  }
+                ],
+                "report_note": "Skipped the final inspection and relied on the existing status board."
+              }
+            }
+          ]
+        },
+        {
+          "id": "d5-e2",
+          "title": "Crew Health and Fitness Debrief",
+          "event_type": "crew_debrief",
+          "narrative": [
+            "The crew is ready for a final health and fitness debrief. The team can review sleep, nutrition, exercise, and behavioral health together, or conduct a quick physical check.",
+            "A complete debrief supports the final report and helps the next team understand the crew's readiness."
+          ],
+          "prompt": "How do you conduct the final crew debrief?",
+          "academy_links": [
+            {
+              "course_id": "human-body-microgravity",
+              "course_title": "Human Body in Microgravity",
+              "module_id": "body-m4",
+              "module_title": "Cardiovascular and Musculoskeletal Adaptation"
+            },
+            {
+              "course_id": "mental-health-psychology",
+              "course_title": "Mental Health & Psychology",
+              "module_id": "mind-m5",
+              "module_title": "Behavioral Health Support and Monitoring"
+            }
+          ],
+          "options": [
+            {
+              "id": "d5-e2-a",
+              "label": "Review sleep, nutrition, exercise, and behavioral health together",
+              "summary": "Use the full multidisciplinary picture and document the findings.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The debrief covers sleep, nutrition, exercise, and behavioral health. The crew shares what worked and what needs follow-up. The final report gains a complete readiness picture, and unresolved issues are documented honestly.",
+                "immediate_results": [
+                  "Crew health improves or remains NOMINAL.",
+                  "Team communication is reinforced.",
+                  "A follow-up task for unresolved crew items is added if needed.",
+                  "The final report can use a complete health summary."
+                ],
+                "effects": [
+                  {
+                    "system": "crew_health",
+                    "direction": "improve",
+                    "note": "Multidisciplinary debrief completed."
+                  }
+                ],
+                "tasks_complete": [
+                  "task-d4-team-agreement",
+                  "task-d4-conflict-followup",
+                  "task-d5-sleep-recovery"
+                ],
+                "tasks_add": [],
+                "report_note": "Completed a multidisciplinary crew health and fitness debrief."
+              }
+            },
+            {
+              "id": "d5-e2-b",
+              "label": "Run a quick physical check and note any concerns",
+              "summary": "Cover the basics and follow up only if something is raised.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "A quick physical check is completed. No urgent concern is reported, but the behavioral and nutritional picture is only lightly reviewed. The report notes the limited scope.",
+                "immediate_results": [
+                  "Crew health remains at its current level.",
+                  "The debrief scope is documented as limited."
+                ],
+                "effects": [
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "Brief physical check only."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Ran a quick physical check with limited scope."
+              }
+            },
+            {
+              "id": "d5-e2-c",
+              "label": "Skip the debrief and finalize the report",
+              "summary": "Save time and rely on earlier notes.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "The crew debrief is skipped. The report is completed faster, but the team loses the chance to identify unresolved health or fitness concerns. Crew health and the report's completeness are weaker.",
+                "immediate_results": [
+                  "Crew health worsens to WATCH.",
+                  "The final report must flag the missing debrief.",
+                  "A post-mission follow-up task is added."
+                ],
+                "effects": [
+                  {
+                    "system": "crew_health",
+                    "direction": "worsen",
+                    "note": "Final debrief skipped."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d5-post-debrief",
+                    "label": "Schedule a post-mission crew debrief",
+                    "due_day": 5,
+                    "category": "Crew",
+                    "detail": "Review health, fitness, and behavioral concerns that were not covered."
+                  }
+                ],
+                "report_note": "Skipped the final crew health and fitness debrief."
+              }
+            }
+          ]
+        },
+        {
+          "id": "d5-e3",
+          "title": "Final Report and Handover",
+          "event_type": "reporting",
+          "narrative": [
+            "The final report must summarize all five days, show completed and pending tasks, include the decision history, and evaluate outcomes using the scenario rules.",
+            "The team can produce a complete integrated handover, a brief summary, or defer the report to the next team."
+          ],
+          "prompt": "What level of final reporting will you provide?",
+          "academy_links": [
+            {
+              "course_id": "mental-health-psychology",
+              "course_title": "Mental Health & Psychology",
+              "module_id": "mind-m5",
+              "module_title": "Behavioral Health Support and Monitoring"
+            }
+          ],
+          "options": [
+            {
+              "id": "d5-e3-a",
+              "label": "Produce the complete integrated report and handover",
+              "summary": "Summarize every day, every decision, open tasks, and lessons for the next team.",
+              "quality": "optimal",
+              "consequences": {
+                "narrative": "The integrated report is completed. It includes all five days, the decision history, completed and pending tasks, and the final status picture. The next team has a clear, honest handover.",
+                "immediate_results": [
+                  "The final report is ready for assessment.",
+                  "All decisions and tasks remain visible in the record.",
+                  "Crew health remains stable.",
+                  "The mission is ready to close."
+                ],
+                "effects": [
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "Complete handover supports continuity."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Produced the complete integrated final report and handover."
+              }
+            },
+            {
+              "id": "d5-e3-b",
+              "label": "Provide a concise summary of the mission",
+              "summary": "Capture the highlights and direct the next team to the detailed record.",
+              "quality": "acceptable",
+              "consequences": {
+                "narrative": "A concise summary is produced. It captures the main events but leaves some detail in the underlying record. The handover is usable, though less complete.",
+                "immediate_results": [
+                  "The final report is ready but notes a limited summary.",
+                  "The decision record remains available for review.",
+                  "No immediate status change."
+                ],
+                "effects": [
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "No health change."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [],
+                "report_note": "Provided a concise mission summary."
+              }
+            },
+            {
+              "id": "d5-e3-c",
+              "label": "Defer the report to the next team",
+              "summary": "Close the simulation and leave the report for later.",
+              "quality": "high_risk",
+              "consequences": {
+                "narrative": "The report is deferred. The mission closes without a complete handover, and the next team must reconstruct the record. The final assessment must account for the missing report.",
+                "immediate_results": [
+                  "The final report is marked incomplete.",
+                  "The mission assessment is capped at Conditional.",
+                  "A handover task remains open."
+                ],
+                "effects": [
+                  {
+                    "system": "crew_health",
+                    "direction": "hold",
+                    "note": "No health change."
+                  }
+                ],
+                "tasks_complete": [],
+                "tasks_add": [
+                  {
+                    "id": "task-d5-handover",
+                    "label": "Complete the deferred handover report",
+                    "due_day": 5,
+                    "category": "Reporting",
+                    "detail": "The next team must reconstruct the record from the decision history."
+                  }
+                ],
+                "report_note": "Deferred the final report to the next team."
+              }
+            }
+          ]
+        }
+      ],
+      "report_prompts": [
+        "Which systems are ready for handover, and which remain on watch?",
+        "What is the most important lesson from the five-day mission?"
+      ]
+    }
+  ],
+  "assessment_rules": {
+    "model_note": "PROPOSED SIMULATION ASSESSMENT MODEL. The original assessment rules for this scenario were not available at build time. This model evaluates decision quality, task completion, and qualitative crew and station readiness. It is not a real NASA evaluation method.",
+    "weights": {
+      "decision_quality": 60,
+      "task_completion": 25,
+      "crew_readiness": 15
+    },
+    "option_points": {
+      "optimal": 1,
+      "acceptable": 0.6,
+      "high_risk": 0
+    },
+    "readiness_points": {
+      "nominal": 1,
+      "watch": 0.7,
+      "degraded": 0.35,
+      "critical": 0
+    },
+    "thresholds": [
+      {
+        "min": 85,
+        "label": "Distinguished Mission",
+        "status": "excellent",
+        "summary": "Outstanding simulated crew operations with strong decision consistency and readiness."
+      },
+      {
+        "min": 70,
+        "label": "Mission Success",
+        "status": "success",
+        "summary": "The mission met the simulated readiness standard with some areas for improvement."
+      },
+      {
+        "min": 55,
+        "label": "Conditional Mission",
+        "status": "conditional",
+        "summary": "The mission completed, but notable risks or open tasks require follow-up."
+      },
+      {
+        "min": 0,
+        "label": "Review Needed",
+        "status": "review",
+        "summary": "The mission produced significant readiness gaps. Review the decisions and run the simulation again."
+      }
+    ],
+    "critical_system_rule": "If any monitored system ends at CRITICAL, the overall outcome is capped at Conditional Mission.",
+    "task_rule": "Task completion is the proportion of all tasks added during the mission that were completed. Overdue tasks remain in the final record.",
+    "learning_rule": "Mission outcomes are educational feedback, not medical or operational judgments."
+  },
+  "final_report": {
+    "title": "Final Mission Report",
+    "sections": [
+      "Mission summary",
+      "Five-day timeline",
+      "System readiness at close",
+      "Decision history",
+      "Completed tasks",
+      "Pending and overdue tasks",
+      "Final assessment",
+      "Learning recommendations"
+    ]
+  }
+}

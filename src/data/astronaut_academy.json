@@ -1,0 +1,3856 @@
+{
+  "meta": {
+    "id": "astronaut-academy",
+    "title": "Astronaut Academy",
+    "subtitle": "Six-Course Junior Astronaut Curriculum",
+    "version": "1.0.0",
+    "content_status": "Platform edition. The original attached curriculum file was not present in the build workspace. This curriculum is a transparent educational reconstruction built from NASA-informed concepts and must be replaced with the team-confirmed source file if supplied.",
+    "disclaimer": "Educational content only. This platform is not an official NASA product and does not provide medical advice or operational spaceflight procedures.",
+    "completion_rules": {
+      "modules_required": 5,
+      "practical_activity_required": true,
+      "final_assessment_required": true,
+      "final_passing_score": 70,
+      "module_quiz_passing_score": 70,
+      "challenge_passing_score": 70,
+      "challenge_prerequisite": "Complete all six courses, including each course practical activity and final assessment.",
+      "badge_rule": "A course badge is awarded only after all five modules, the course practical activity, and a final assessment score of at least 70 percent are complete."
+    }
+  },
+  "courses": [
+    {
+      "id": "sleep-circadian-rhythm",
+      "number": 1,
+      "title": "Sleep & Circadian Rhythm",
+      "short_title": "Sleep & Circadian",
+      "icon": "moon",
+      "accent": "cyan",
+      "tagline": "Protect the crew's internal clock, alertness, and performance.",
+      "introduction": [
+        "Sleep is not downtime. It is an active biological process that supports memory, mood, immune function, metabolism, and the ability to make safe decisions. In space, the usual cues that shape sleep are disrupted.",
+        "This course explores the station sleep environment, the circadian system, fatigue risk, countermeasures, and the operational skill of building a crew sleep plan."
+      ],
+      "objectives": [
+        "Explain why sleep is an operational safety system in spaceflight.",
+        "Describe how light, schedule, noise, and workload influence circadian rhythm.",
+        "Recognize signs of cumulative fatigue and explain why self-report alone is not enough.",
+        "Build a qualitative crew sleep and fatigue plan that protects performance."
+      ],
+      "estimated_minutes": 65,
+      "mission_links": [
+        {
+          "day": 1,
+          "event_id": "d1-e1",
+          "label": "Day 1 - Crew Sleep Schedule Under Pressure"
+        },
+        {
+          "day": 4,
+          "event_id": "d4-e1",
+          "label": "Day 4 - Fatigue Reports and Schedule Pressure"
+        },
+        {
+          "day": 4,
+          "event_id": "d4-e3",
+          "label": "Day 4 - Protecting the Sleep Environment"
+        }
+      ],
+      "modules": [
+        {
+          "id": "sleep-m1",
+          "number": 1,
+          "title": "The Sleep Environment in Space",
+          "summary": "Why sleeping in orbit is different, and what the crew sleep station is designed to control.",
+          "lessons": [
+            {
+              "id": "sleep-m1-l1",
+              "title": "A Day Without a Normal Day",
+              "content": [
+                "The International Space Station orbits Earth roughly every 90 minutes, so the crew experiences many sunrises and sunsets during a 24-hour period. The body still carries an approximately 24-hour internal clock, but the light-dark pattern around the crew no longer matches it.",
+                "Crew schedules use a mission timeline to create a consistent work and rest rhythm. Sleep stations provide a restrained sleeping bag, controlled light, airflow, and a quieter place to rest. These are engineered aids, not a cure for a schedule that does not protect sleep."
+              ],
+              "key_takeaway": "Orbital light patterns are not a normal day-night cycle, so sleep must be protected by design."
+            },
+            {
+              "id": "sleep-m1-l2",
+              "title": "Why Sleep Matters",
+              "content": [
+                "Sleep supports attention, working memory, emotional regulation, immune function, and metabolism. When sleep is restricted, people often notice irritability and slower reactions before they notice a decline in complex decision-making.",
+                "In a hazardous environment, a sleepy crew member may be less able to monitor systems, catch errors, or communicate clearly. That makes sleep a crew safety topic, not a personal preference."
+              ],
+              "key_takeaway": "Sleep protects both the individual and the team's ability to operate safely."
+            }
+          ],
+          "key_points": [
+            "The station's orbital light pattern does not provide a normal 24-hour day.",
+            "Sleep stations control light, noise, airflow, and body restraint.",
+            "Sleep supports attention, mood, memory, immune function, and metabolism."
+          ],
+          "practical_activity": {
+            "title": "Audit Your Sleep Environment",
+            "prompt": "List three things in your sleep environment that affect rest, then choose one realistic change to test for a week.",
+            "steps": [
+              "Record light, noise, temperature, and screen use before bed.",
+              "Identify the factor most likely to delay sleep.",
+              "Choose one change and describe how you will know whether it helped."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "sleep-m1-q1",
+                "question": "Why is sleep scheduling on the space station different from a typical home schedule?",
+                "options": [
+                  "The station has no clocks",
+                  "The orbit produces frequent light-dark changes that do not match a normal day",
+                  "Crew members do not need sleep in space",
+                  "The station is always completely dark"
+                ],
+                "correct_index": 1,
+                "explanation": "The station orbits Earth about every 90 minutes, creating many sunrises and sunsets. The schedule and lighting must compensate for this."
+              },
+              {
+                "id": "sleep-m1-q2",
+                "question": "What is a primary purpose of a crew sleep station?",
+                "options": [
+                  "To provide a place for equipment storage",
+                  "To control light, noise, airflow, and body restraint during rest",
+                  "To replace the need for a sleep schedule",
+                  "To keep the crew awake for monitoring"
+                ],
+                "correct_index": 1,
+                "explanation": "A sleep station creates a controlled rest environment. It does not replace the need for a protected sleep opportunity."
+              },
+              {
+                "id": "sleep-m1-q3",
+                "question": "Which set of signs most suggests accumulated fatigue?",
+                "options": [
+                  "Improved reaction time and increased patience",
+                  "Slower reactions, irritability, and difficulty concentrating",
+                  "A sudden interest in extra exercise",
+                  "Consistently feeling rested after short sleep"
+                ],
+                "correct_index": 1,
+                "explanation": "Slower reactions, irritability, and concentration problems are common fatigue signs. They deserve follow-up, not dismissal."
+              },
+              {
+                "id": "sleep-m1-q4",
+                "question": "What is the strongest first response when a crew member reports persistent fatigue?",
+                "options": [
+                  "Tell them to ignore it until the mission ends",
+                  "Protect sleep opportunity, review workload, and check in again",
+                  "Increase their task load to build stamina",
+                  "Give them a stimulant and take no other action"
+                ],
+                "correct_index": 1,
+                "explanation": "Fatigue is managed by addressing sleep opportunity and workload, then monitoring. Stimulants are not a substitute for recovery."
+              }
+            ]
+          }
+        },
+        {
+          "id": "sleep-m2",
+          "number": 2,
+          "title": "Circadian Rhythm and Light",
+          "summary": "How the internal clock works and how light can be used as an operational tool.",
+          "lessons": [
+            {
+              "id": "sleep-m2-l1",
+              "title": "The Body's Internal Clock",
+              "content": [
+                "The circadian system organizes sleep, alertness, body temperature, hormone release, and metabolism across roughly 24 hours. Light is the strongest external cue that keeps this system aligned with the day.",
+                "In orbit, the crew may see bright sunlight at unusual times. Misalignment between the internal clock and the work schedule can make it harder to fall asleep, stay asleep, and feel alert at the right moments."
+              ],
+              "key_takeaway": "Light is the main cue that keeps the circadian system aligned with the work schedule."
+            },
+            {
+              "id": "sleep-m2-l2",
+              "title": "Lighting as a Tool",
+              "content": [
+                "A well-designed lighting plan provides bright light during the active period and dims it before sleep. Consistent wake times, a predictable wind-down, and reduced screen exposure can support the same rhythm.",
+                "Lighting is not the only factor. Noise, temperature, workload, and stress also shape sleep. A useful plan combines several small controls instead of relying on one intervention."
+              ],
+              "key_takeaway": "Bright active-period light plus a dim, predictable wind-down supports better rest."
+            }
+          ],
+          "key_points": [
+            "The circadian system influences sleep, alertness, temperature, hormones, and metabolism.",
+            "Light timing is more useful than light intensity alone.",
+            "A sleep plan should combine lighting, schedule, noise, temperature, and workload controls."
+          ],
+          "practical_activity": {
+            "title": "Build a Light and Wind-Down Plan",
+            "prompt": "Design a two-hour wind-down routine that reduces bright light and screen use before sleep.",
+            "steps": [
+              "Choose a consistent sleep and wake anchor.",
+              "Plan one hour of dim light and one hour of low-stimulation activity.",
+              "Identify the screen or communication habit you will move earlier."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "sleep-m2-q1",
+                "question": "What is the strongest external cue for the human circadian system?",
+                "options": [
+                  "Sound",
+                  "Light",
+                  "Room shape",
+                  "Exercise only"
+                ],
+                "correct_index": 1,
+                "explanation": "Light exposure, especially its timing, is the dominant cue that aligns the circadian system."
+              },
+              {
+                "id": "sleep-m2-q2",
+                "question": "Which lighting pattern best supports a normal sleep-wake rhythm?",
+                "options": [
+                  "Bright light all night and dim light all day",
+                  "Bright light during the active period and dim light before sleep",
+                  "No light at any time",
+                  "Random changes in light throughout the day"
+                ],
+                "correct_index": 1,
+                "explanation": "A consistent bright active period and a dim wind-down support circadian alignment."
+              },
+              {
+                "id": "sleep-m2-q3",
+                "question": "Why is a consistent wake time useful?",
+                "options": [
+                  "It removes the need for sleep",
+                  "It helps anchor the circadian rhythm and the sleep-wake cycle",
+                  "It guarantees perfect sleep in space",
+                  "It replaces the need for lighting control"
+                ],
+                "correct_index": 1,
+                "explanation": "A regular wake time is an anchor for the circadian system, though it works best with other controls."
+              },
+              {
+                "id": "sleep-m2-q4",
+                "question": "A crew member uses a bright tablet late into the sleep period. What is the most likely concern?",
+                "options": [
+                  "The tablet will damage station power",
+                  "Bright light near sleep can delay the body's sleep signal",
+                  "It will immediately cause dehydration",
+                  "It has no effect on sleep"
+                ],
+                "correct_index": 1,
+                "explanation": "Bright light close to sleep can make it harder to settle. Moving screen use earlier is a practical countermeasure."
+              }
+            ]
+          }
+        },
+        {
+          "id": "sleep-m3",
+          "number": 3,
+          "title": "Sleep Debt, Fatigue, and Performance",
+          "summary": "How small sleep losses accumulate into operational risk.",
+          "lessons": [
+            {
+              "id": "sleep-m3-l1",
+              "title": "Sleep Debt Is Cumulative",
+              "content": [
+                "Sleep debt builds when a person repeatedly gets less sleep than needed. A single long sleep can help, but it may not fully restore performance after several restricted nights.",
+                "The effects can be subtle: a person may feel functional while their attention, reaction time, and error detection are reduced. This is why fatigue management cannot rely only on how the crew says they feel."
+              ],
+              "key_takeaway": "Several short nights can create risk that a single recovery sleep does not fully erase."
+            },
+            {
+              "id": "sleep-m3-l2",
+              "title": "Recognizing Fatigue in a Crew",
+              "content": [
+                "Useful fatigue indicators include slower responses, missed steps, irritability, withdrawn communication, and unusual difficulty with routine tasks. A change from a person's normal behavior is a meaningful signal.",
+                "Team members should feel able to report fatigue without blame. A no-blame report followed by a practical adjustment is safer than waiting for an error to reveal the problem."
+              ],
+              "key_takeaway": "Watch for changes in performance and behavior, and make fatigue reporting safe."
+            }
+          ],
+          "key_points": [
+            "Sleep debt accumulates across days.",
+            "Fatigue can impair performance before a person notices it.",
+            "Behavior change, missed steps, and irritability are operational signals.",
+            "Reporting fatigue should lead to support, not punishment."
+          ],
+          "practical_activity": {
+            "title": "Fatigue Signal Checklist",
+            "prompt": "Create a short checklist a team could use to notice fatigue without diagnosing a medical condition.",
+            "steps": [
+              "Choose three observable behaviors, such as missed steps or shortened communication.",
+              "Add one question that invites a crew member to report fatigue.",
+              "Describe one immediate, low-risk adjustment."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "sleep-m3-q1",
+                "question": "What does sleep debt mean?",
+                "options": [
+                  "A crew member owes the station money",
+                  "The cumulative effect of getting less sleep than needed over time",
+                  "A single night of poor sleep with no lasting effect",
+                  "A measure of station power use"
+                ],
+                "correct_index": 1,
+                "explanation": "Sleep debt is cumulative. Repeated short sleep can create performance risk even if the person feels used to it."
+              },
+              {
+                "id": "sleep-m3-q2",
+                "question": "Why should a fatigue plan not rely only on self-report?",
+                "options": [
+                  "Crew members always lie",
+                  "Fatigue can reduce self-awareness and judgment",
+                  "Self-report is illegal in space",
+                  "Only machines can detect sleep"
+                ],
+                "correct_index": 1,
+                "explanation": "Fatigue can impair the ability to judge one's own performance. Observable behavior and team check-ins add useful information."
+              },
+              {
+                "id": "sleep-m3-q3",
+                "question": "Which is the most useful operational response to a fatigue report?",
+                "options": [
+                  "Record it and take no action",
+                  "Review sleep opportunity and workload, then adjust and follow up",
+                  "Assign extra tasks to test alertness",
+                  "Tell the crew member to keep it private"
+                ],
+                "correct_index": 1,
+                "explanation": "The response should reduce risk through schedule and workload adjustments, with follow-up."
+              },
+              {
+                "id": "sleep-m3-q4",
+                "question": "A crew member who is usually talkative becomes quiet and makes a repeated checklist error. What should the team consider?",
+                "options": [
+                  "Only a personality change with no safety relevance",
+                  "A possible fatigue or workload signal worth checking",
+                  "A reason to remove all their responsibilities immediately",
+                  "Evidence that the checklist is unnecessary"
+                ],
+                "correct_index": 1,
+                "explanation": "Behavior change plus a repeated error is a signal to check in and review workload, not to ignore or immediately punish."
+              }
+            ]
+          }
+        },
+        {
+          "id": "sleep-m4",
+          "number": 4,
+          "title": "Fatigue Countermeasures",
+          "summary": "Practical ways to support alertness and recovery within an operational schedule.",
+          "lessons": [
+            {
+              "id": "sleep-m4-l1",
+              "title": "Sleep Hygiene in Orbit",
+              "content": [
+                "Sleep hygiene is a set of habits that make rest more likely: a consistent schedule, a wind-down routine, a dark and quiet sleep area, and attention to caffeine timing. In orbit, each habit must be adapted to the station environment.",
+                "Caffeine can improve short-term alertness, but it can also make sleep harder if used too late. The useful question is not only whether caffeine helps now, but whether it protects the next sleep opportunity."
+              ],
+              "key_takeaway": "Countermeasures should protect the next sleep opportunity, not just the current shift."
+            },
+            {
+              "id": "sleep-m4-l2",
+              "title": "Naps, Workload, and Chronotype",
+              "content": [
+                "A short planned nap can improve alertness during a long operational period. It works best as a supplement to core sleep, not a replacement for it. Nap timing and length matter, and individual preferences vary.",
+                "Chronotype describes whether a person tends to feel more alert earlier or later in the day. A crew schedule does not need to accommodate every preference, but awareness helps the team place demanding tasks at sensible times."
+              ],
+              "key_takeaway": "Naps and schedule timing are supporting tools, while protected core sleep remains the foundation."
+            }
+          ],
+          "key_points": [
+            "Consistent schedule and wind-down habits support sleep.",
+            "Caffeine timing should protect, not undermine, the next sleep period.",
+            "Short naps can supplement core sleep but should not replace it.",
+            "Chronotype awareness can improve task timing."
+          ],
+          "practical_activity": {
+            "title": "Design a Fatigue Countermeasure Menu",
+            "prompt": "Create a menu of three countermeasures for a tired crew, including when each is appropriate and when it is not.",
+            "steps": [
+              "Choose one schedule control, one rest control, and one environment control.",
+              "State the best time to use each.",
+              "State one situation where the countermeasure would be insufficient."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "sleep-m4-q1",
+                "question": "What is the best use of a short nap during a long mission day?",
+                "options": [
+                  "Replace the main sleep period entirely",
+                  "Supplement alertness while still protecting core sleep",
+                  "Replace all fatigue reporting",
+                  "Guarantee perfect performance for the rest of the mission"
+                ],
+                "correct_index": 1,
+                "explanation": "A short nap can support alertness, but it does not replace the need for adequate core sleep."
+              },
+              {
+                "id": "sleep-m4-q2",
+                "question": "Why does caffeine timing matter?",
+                "options": [
+                  "Caffeine only works in the morning",
+                  "Late caffeine can make it harder to fall asleep and protect the next sleep opportunity",
+                  "Caffeine replaces sleep",
+                  "Caffeine has no effect on sleep"
+                ],
+                "correct_index": 1,
+                "explanation": "Caffeine can improve short-term alertness but may interfere with sleep if used too close to rest."
+              },
+              {
+                "id": "sleep-m4-q3",
+                "question": "What is chronotype?",
+                "options": [
+                  "A station exercise machine",
+                  "A person's tendency toward earlier or later alertness across the day",
+                  "A type of radiation shield",
+                  "A method for measuring water recovery"
+                ],
+                "correct_index": 1,
+                "explanation": "Chronotype describes individual differences in daily timing. It can inform schedule design but is not a diagnosis."
+              },
+              {
+                "id": "sleep-m4-q4",
+                "question": "Which combination best supports a tired crew member?",
+                "options": [
+                  "More caffeine, less sleep, and more tasks",
+                  "Protected sleep, a realistic workload, and a follow-up check",
+                  "A nap and no schedule change",
+                  "Ignore the report until the final assessment"
+                ],
+                "correct_index": 1,
+                "explanation": "The strongest support combines recovery, workload adjustment, and follow-up."
+              }
+            ]
+          }
+        },
+        {
+          "id": "sleep-m5",
+          "number": 5,
+          "title": "Monitoring Sleep and Crew Scheduling",
+          "summary": "How to use qualitative sleep information to build a safer schedule.",
+          "lessons": [
+            {
+              "id": "sleep-m5-l1",
+              "title": "Sleep Logs and Wearable Data",
+              "content": [
+                "Sleep logs capture bedtimes, wake times, rest quality, and fatigue reports. Wearables can add activity and rest patterns. Together they help the team spot trends that a single conversation might miss.",
+                "These tools are not a diagnosis. Their operational value is to prompt a conversation, support schedule changes, and document whether a change helped. Privacy and crew trust matter."
+              ],
+              "key_takeaway": "Sleep monitoring is most useful as a trend-and-conversation tool, not as a label."
+            },
+            {
+              "id": "sleep-m5-l2",
+              "title": "Building a Crew Sleep Plan",
+              "content": [
+                "A good crew sleep plan protects a consistent sleep opportunity, coordinates handovers, manages light and noise, and places demanding tasks where the crew is most likely to be alert. It also says what to do when fatigue is reported.",
+                "The plan should be simple enough to follow during a busy mission. Build in a review point, because a schedule that works on Day 1 may not work after several days of workload."
+              ],
+              "key_takeaway": "A workable sleep plan coordinates the whole crew and includes a review and response process."
+            }
+          ],
+          "key_points": [
+            "Sleep logs and wearables reveal trends but do not diagnose.",
+            "A sleep plan should protect a consistent window and coordinate handovers.",
+            "Demanding tasks should be placed with alertness in mind.",
+            "Every sleep plan needs a review and fatigue-response process."
+          ],
+          "practical_activity": {
+            "title": "Crew Sleep Plan Draft",
+            "prompt": "Draft a one-day crew sleep plan with a protected sleep window, handover times, a lighting plan, and a fatigue check-in.",
+            "steps": [
+              "Set a consistent sleep and wake anchor.",
+              "Place the handover so it does not fragment the sleep window.",
+              "Add one lighting control and one check-in question.",
+              "Name one trigger for adjusting the plan."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "sleep-m5-q1",
+                "question": "What is the best operational use of a crew sleep log?",
+                "options": [
+                  "To diagnose a sleep disorder without medical support",
+                  "To identify trends, prompt a conversation, and evaluate schedule changes",
+                  "To replace all crew check-ins",
+                  "To rank crew members"
+                ],
+                "correct_index": 1,
+                "explanation": "Logs help identify trends and support decisions. They are not a standalone diagnosis."
+              },
+              {
+                "id": "sleep-m5-q2",
+                "question": "Which schedule design best protects sleep?",
+                "options": [
+                  "Frequent handovers throughout the sleep window",
+                  "A consistent protected sleep window with coordinated handovers",
+                  "A different sleep time every day",
+                  "Bright light during the entire rest period"
+                ],
+                "correct_index": 1,
+                "explanation": "Consistency and protection of the sleep window are foundational, with handovers planned around it."
+              },
+              {
+                "id": "sleep-m5-q3",
+                "question": "Why should a sleep plan include a review point?",
+                "options": [
+                  "Because sleep needs never change",
+                  "Because workload and conditions change, and the plan may need adjustment",
+                  "To create more paperwork",
+                  "Because the first plan is always wrong"
+                ],
+                "correct_index": 1,
+                "explanation": "A review keeps the plan responsive to changing workload and crew reports."
+              },
+              {
+                "id": "sleep-m5-q4",
+                "question": "Which is the strongest fatigue-response process?",
+                "options": [
+                  "Wait for an error, then investigate",
+                  "Encourage reporting, assess workload and sleep, adjust, and follow up",
+                  "Ask the crew to hide fatigue to protect morale",
+                  "Use caffeine for every report"
+                ],
+                "correct_index": 1,
+                "explanation": "A safe process makes reporting easy and responds with practical changes and follow-up."
+              }
+            ]
+          }
+        }
+      ],
+      "practical_activity": {
+        "title": "Design a 24-Hour Crew Sleep Plan",
+        "description": "Create a sleep and fatigue plan for a four-person crew during a busy station operations day. Use qualitative reasoning: you do not need to invent clinical measurements.",
+        "steps": [
+          "Define a consistent sleep and wake anchor for the crew.",
+          "Place handovers, communication, and demanding tasks around the protected sleep window.",
+          "Describe the lighting and noise controls for the wind-down period.",
+          "Include a fatigue check-in and a rule for adjusting the schedule.",
+          "Explain one trade-off between mission tasks and crew rest."
+        ],
+        "submission_prompt": "Paste your plan and a short rationale. Explain how it protects alertness and what you would change if the crew reported persistent fatigue.",
+        "minimum_words": 80
+      },
+      "final_assessment": {
+        "title": "Sleep & Circadian Rhythm Final Assessment",
+        "passing_score": 70,
+        "questions": [
+          {
+            "id": "sleep-final-q1",
+            "question": "A crew has had three nights of shortened sleep. Performance is still acceptable, but two members report irritability. What is the best operational interpretation?",
+            "options": [
+              "There is no risk because performance is acceptable",
+              "The reports may signal cumulative fatigue that deserves a schedule and workload review",
+              "The crew should be given more tasks to stay awake",
+              "The reports are irrelevant to safety"
+            ],
+            "correct_index": 1,
+            "explanation": "Cumulative fatigue can affect performance before it is obvious. Irritability and reduced sleep are signals to review and support."
+          },
+          {
+            "id": "sleep-final-q2",
+            "question": "Which change is most likely to support circadian alignment during a station mission?",
+            "options": [
+              "Randomize sleep times to match the orbit",
+              "Use bright light during the active period and dim light before sleep, with a consistent schedule",
+              "Keep all lights bright at all times",
+              "Remove all clocks from the station"
+            ],
+            "correct_index": 1,
+            "explanation": "Consistent timing and appropriate light exposure are core circadian supports."
+          },
+          {
+            "id": "sleep-final-q3",
+            "question": "Why is a no-blame fatigue report valuable?",
+            "options": [
+              "It eliminates the need for sleep",
+              "It surfaces risk early so the team can adjust before an error occurs",
+              "It proves the crew is unfit",
+              "It replaces medical care"
+            ],
+            "correct_index": 1,
+            "explanation": "Early reporting enables practical risk reduction. Blame discourages reporting and hides risk."
+          },
+          {
+            "id": "sleep-final-q4",
+            "question": "A short nap is proposed for a tired crew member before a demanding task. What is the best guidance?",
+            "options": [
+              "Use the nap as a complete replacement for the main sleep period",
+              "Use a short planned nap as a supplement, and still protect core sleep",
+              "Avoid all naps under every circumstance",
+              "Use the nap and skip the fatigue check-in"
+            ],
+            "correct_index": 1,
+            "explanation": "Naps can support alertness but do not replace core sleep. Follow-up remains important."
+          },
+          {
+            "id": "sleep-final-q5",
+            "question": "Which statement about sleep monitoring is most accurate?",
+            "options": [
+              "A wearable diagnosis is always correct",
+              "Logs and wearables are useful trend tools but not a substitute for medical assessment",
+              "Sleep logs should be used to punish crew members",
+              "Monitoring removes the need for a sleep plan"
+            ],
+            "correct_index": 1,
+            "explanation": "Monitoring supports awareness and operational decisions. It does not replace clinical assessment."
+          },
+          {
+            "id": "sleep-final-q6",
+            "question": "What makes a crew sleep plan operationally strong?",
+            "options": [
+              "It protects sleep, coordinates the team, places demanding tasks sensibly, and includes review and response",
+              "It maximizes task time by removing all rest",
+              "It relies on a single countermeasure",
+              "It is written once and never reviewed"
+            ],
+            "correct_index": 0,
+            "explanation": "A strong plan integrates protection, coordination, task timing, and a review process."
+          }
+        ]
+      },
+      "badge": {
+        "id": "badge-sleep",
+        "name": "Circadian Guardian",
+        "description": "Completed all Sleep & Circadian Rhythm requirements and passed the final assessment.",
+        "icon": "moon"
+      },
+      "nasa_resources": [
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        },
+        {
+          "label": "NASA Humans in Space",
+          "url": "https://www.nasa.gov/humans-in-space/"
+        }
+      ]
+    },
+    {
+      "id": "physical-health-exercise",
+      "number": 2,
+      "title": "Physical Health & Exercise",
+      "short_title": "Physical Health",
+      "icon": "dumbbell",
+      "accent": "blue",
+      "tagline": "Use exercise to defend bone, muscle, heart, and mission capability.",
+      "introduction": [
+        "In microgravity, the body no longer receives the same mechanical loading from standing, walking, and carrying weight. Without a countermeasure, bone and muscle can lose strength and the cardiovascular system can decondition.",
+        "This course explains the physiology of unloading, the station exercise tools, how an exercise plan is built, and how crews prevent injury while staying fit."
+      ],
+      "objectives": [
+        "Explain how reduced mechanical loading affects bone, muscle, and the cardiovascular system.",
+        "Identify the purpose of major station exercise devices.",
+        "Describe how frequency, intensity, time, type, and progression shape an exercise plan.",
+        "Apply safety and maintenance thinking to an equipment fault."
+      ],
+      "estimated_minutes": 60,
+      "mission_links": [
+        {
+          "day": 3,
+          "event_id": "d3-e1",
+          "label": "Day 3 - Resistance Device Fault"
+        },
+        {
+          "day": 3,
+          "event_id": "d3-e2",
+          "label": "Day 3 - Repair Scheduling Trade-off"
+        },
+        {
+          "day": 5,
+          "event_id": "d5-e2",
+          "label": "Day 5 - Crew Health and Fitness Debrief"
+        }
+      ],
+      "modules": [
+        {
+          "id": "fitness-m1",
+          "number": 1,
+          "title": "Gravity, Loading, and the Body",
+          "summary": "Why the body needs mechanical load and what changes when gravity is no longer pulling.",
+          "lessons": [
+            {
+              "id": "fitness-m1-l1",
+              "title": "The Load of Everyday Gravity",
+              "content": [
+                "On Earth, standing, walking, climbing, and carrying objects load the skeleton and muscles. The body continually remodels tissue in response to that load. Gravity is a constant training stimulus, even when a person is not exercising.",
+                "In microgravity, that everyday loading is greatly reduced. The body adapts to what it experiences, so without a deliberate countermeasure, tissues and systems that depend on load can weaken."
+              ],
+              "key_takeaway": "Gravity provides continuous loading on Earth; spaceflight requires a deliberate replacement."
+            },
+            {
+              "id": "fitness-m1-l2",
+              "title": "A Whole-Body Adaptation",
+              "content": [
+                "Unloading affects more than muscles. Bone remodeling, blood volume, heart function, balance, and sensorimotor coordination all respond to the changed environment. The body is efficient: it reduces capacity that is not being used.",
+                "Exercise is therefore not only about fitness or appearance. It is a multi-system countermeasure that supports mission capability and the return to gravity."
+              ],
+              "key_takeaway": "Exercise protects multiple systems, not just muscle size."
+            }
+          ],
+          "key_points": [
+            "Gravity provides continuous mechanical loading on Earth.",
+            "Microgravity reduces the load on bone and muscle.",
+            "The cardiovascular and sensorimotor systems also adapt.",
+            "Exercise is a multi-system countermeasure."
+          ],
+          "practical_activity": {
+            "title": "Map Your Daily Loading",
+            "prompt": "List five everyday activities that load your bones or muscles, then explain how each would change in microgravity.",
+            "steps": [
+              "Choose activities such as walking, climbing stairs, or carrying a bag.",
+              "Name the body areas that receive load.",
+              "Identify which station exercise could replace that stimulus."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "fitness-m1-q1",
+                "question": "Why do bones and muscles weaken in microgravity without countermeasures?",
+                "options": [
+                  "The body receives less mechanical loading",
+                  "There is no food in space",
+                  "The crew sleeps too much",
+                  "Gravity becomes stronger"
+                ],
+                "correct_index": 0,
+                "explanation": "Tissue adapts to load. When loading is reduced, bone and muscle can lose capacity."
+              },
+              {
+                "id": "fitness-m1-q2",
+                "question": "Which is an example of everyday loading on Earth?",
+                "options": [
+                  "Floating without contact",
+                  "Walking and carrying objects",
+                  "Sleeping in a restrained bag",
+                  "Watching a screen while weightless"
+                ],
+                "correct_index": 1,
+                "explanation": "Weight-bearing and resistance from daily activity provide ongoing mechanical load."
+              },
+              {
+                "id": "fitness-m1-q3",
+                "question": "Why is exercise in space a multi-system countermeasure?",
+                "options": [
+                  "It only changes muscle size",
+                  "It supports bone, muscle, cardiovascular, and sensorimotor health",
+                  "It replaces all medical care",
+                  "It removes the need for sleep"
+                ],
+                "correct_index": 1,
+                "explanation": "Exercise contributes to several systems that adapt to unloading."
+              },
+              {
+                "id": "fitness-m1-q4",
+                "question": "What does the body tend to do in microgravity?",
+                "options": [
+                  "Maintain every capacity regardless of use",
+                  "Reduce capacity that is not being loaded or used",
+                  "Grow stronger without exercise",
+                  "Lose all coordination immediately"
+                ],
+                "correct_index": 1,
+                "explanation": "The body adapts to the demands placed on it. Reduced demand can lead to reduced capacity."
+              }
+            ]
+          }
+        },
+        {
+          "id": "fitness-m2",
+          "number": 2,
+          "title": "Bone and Muscle in Microgravity",
+          "summary": "The physiology of bone remodeling and muscle maintenance during spaceflight.",
+          "lessons": [
+            {
+              "id": "fitness-m2-l1",
+              "title": "Bone Remodeling",
+              "content": [
+                "Bone is living tissue. Cells build new bone and remove old bone in a continuous remodeling process. Mechanical load is one signal that helps keep the balance toward maintaining bone mass and strength.",
+                "NASA research has documented bone loss during spaceflight, with estimates often described as roughly 1 to 1.5 percent of bone mass per month for some astronauts. Individual responses vary. The key operational point is that load-bearing exercise and nutrition are both part of protection."
+              ],
+              "key_takeaway": "Bone responds to load and nutrition; spaceflight can shift the balance toward loss."
+            },
+            {
+              "id": "fitness-m2-l2",
+              "title": "Muscle Maintenance",
+              "content": [
+                "Muscles that are not used for resistance or postural support can lose mass and strength. In space, the legs may be used differently, and the back and postural muscles may not work against gravity in the same way.",
+                "Resistance exercise provides a loading stimulus. Aerobic exercise supports cardiovascular fitness. A complete plan includes both, rather than choosing one and ignoring the other."
+              ],
+              "key_takeaway": "Resistance work supports muscle and bone; aerobic work supports the cardiovascular system."
+            }
+          ],
+          "key_points": [
+            "Bone remodeling is influenced by mechanical load.",
+            "Spaceflight can cause bone loss, with individual variation.",
+            "Muscles lose mass and strength when loading is reduced.",
+            "A complete plan combines resistance and aerobic exercise."
+          ],
+          "practical_activity": {
+            "title": "Countermeasure Match",
+            "prompt": "Match three body systems to an exercise approach that supports each, and explain the link.",
+            "steps": [
+              "Choose bone, skeletal muscle, and the cardiovascular system.",
+              "Select a resistance or aerobic approach for each.",
+              "Explain why the approach provides the needed stimulus."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "fitness-m2-q1",
+                "question": "What is bone remodeling?",
+                "options": [
+                  "A process where bone is continuously built and removed",
+                  "A method of cleaning station filters",
+                  "A sleep phase",
+                  "A type of radiation shielding"
+                ],
+                "correct_index": 0,
+                "explanation": "Bone is dynamic tissue. Remodeling balances formation and removal and responds to load and nutrition."
+              },
+              {
+                "id": "fitness-m2-q2",
+                "question": "Which exercise type is most directly associated with loading bone and muscle?",
+                "options": [
+                  "Resistance exercise",
+                  "Passive observation",
+                  "Sleeping",
+                  "Listening to music"
+                ],
+                "correct_index": 0,
+                "explanation": "Resistance exercise provides mechanical load that supports bone and muscle maintenance."
+              },
+              {
+                "id": "fitness-m2-q3",
+                "question": "Why is aerobic exercise still important if resistance work protects muscle?",
+                "options": [
+                  "It supports cardiovascular fitness and endurance",
+                  "It replaces the need for sleep",
+                  "It prevents all bone loss",
+                  "It makes resistance exercise unnecessary"
+                ],
+                "correct_index": 0,
+                "explanation": "Aerobic exercise supports the cardiovascular system and endurance. Both types are useful."
+              },
+              {
+                "id": "fitness-m2-q4",
+                "question": "What is a reasonable statement about bone loss in spaceflight?",
+                "options": [
+                  "It is identical for every astronaut",
+                  "It can occur, varies among individuals, and is addressed through exercise and nutrition",
+                  "It never happens",
+                  "It is caused only by dehydration"
+                ],
+                "correct_index": 1,
+                "explanation": "Bone loss is documented and variable. Countermeasures include exercise and nutrition, with individual medical monitoring."
+              }
+            ]
+          }
+        },
+        {
+          "id": "fitness-m3",
+          "number": 3,
+          "title": "Exercise Hardware on Station",
+          "summary": "The purpose, setup, and safety logic of major space station exercise devices.",
+          "lessons": [
+            {
+              "id": "fitness-m3-l1",
+              "title": "Resistance and Aerobic Devices",
+              "content": [
+                "Station exercise hardware is designed for weightlessness. A resistance device can provide loaded exercise without relying on gravity. A treadmill uses a harness system to keep the crew member from floating away while walking or running.",
+                "A cycle ergometer provides aerobic exercise and can support different intensities. Each device has setup, restraint, and maintenance procedures. The crew trains on the equipment, but the equipment also needs inspection and care."
+              ],
+              "key_takeaway": "Station exercise devices use restraints and engineered loading to replace what gravity normally provides."
+            },
+            {
+              "id": "fitness-m3-l2",
+              "title": "Setup, Safety, and Maintenance",
+              "content": [
+                "A safe session begins with correct setup: restraints, harness, seat, foot position, and the intended load. A device that feels different from normal is a signal to stop and report, not to force the session.",
+                "Maintenance is part of exercise readiness. A fault that is ignored can remove the device from service later, reduce exercise options, and create a schedule problem. Documenting the issue early protects the whole plan."
+              ],
+              "key_takeaway": "Correct setup and prompt fault reporting protect both the crew member and the exercise capability."
+            }
+          ],
+          "key_points": [
+            "Resistance devices provide engineered loading in weightlessness.",
+            "A treadmill harness keeps the crew member in position.",
+            "A cycle ergometer supports aerobic exercise.",
+            "Setup, restraint, fault reporting, and maintenance are part of safety."
+          ],
+          "practical_activity": {
+            "title": "Pre-Session Equipment Check",
+            "prompt": "Create a five-item pre-session check for a station exercise device.",
+            "steps": [
+              "Include restraints, setup, load, and the surrounding area.",
+              "Add one question that helps the crew member decide whether to stop.",
+              "Explain why each item matters."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "fitness-m3-q1",
+                "question": "Why does a space station treadmill use a harness?",
+                "options": [
+                  "To keep the crew member from floating away and to provide load",
+                  "To measure radiation",
+                  "To recycle water",
+                  "To replace the need for exercise"
+                ],
+                "correct_index": 0,
+                "explanation": "The harness restrains the crew member and helps create a weight-bearing running or walking stimulus."
+              },
+              {
+                "id": "fitness-m3-q2",
+                "question": "What should a crew member do if an exercise device feels abnormal during a session?",
+                "options": [
+                  "Increase the load to test it",
+                  "Stop, secure the device, and report the fault",
+                  "Continue silently",
+                  "Ask another crew member to use it first"
+                ],
+                "correct_index": 1,
+                "explanation": "Suspected faults require stopping use and reporting. Continuing can increase injury or equipment risk."
+              },
+              {
+                "id": "fitness-m3-q3",
+                "question": "Why is maintenance part of exercise planning?",
+                "options": [
+                  "A neglected device can become unavailable and reduce exercise options",
+                  "Maintenance replaces sleep",
+                  "It makes exercise unnecessary",
+                  "It only matters for appearance"
+                ],
+                "correct_index": 0,
+                "explanation": "Equipment availability directly affects the exercise countermeasure plan."
+              },
+              {
+                "id": "fitness-m3-q4",
+                "question": "Which is a correct setup principle?",
+                "options": [
+                  "Skip restraints when the session is short",
+                  "Use the intended restraints, setup, and load, and check the area before starting",
+                  "Use the highest load on the first session",
+                  "Ignore unusual sounds until the end of the week"
+                ],
+                "correct_index": 1,
+                "explanation": "Consistent setup and restraint checks reduce risk and support a useful session."
+              }
+            ]
+          }
+        },
+        {
+          "id": "fitness-m4",
+          "number": 4,
+          "title": "Exercise Prescription and Progression",
+          "summary": "How to build a balanced plan without inventing individualized medical prescriptions.",
+          "lessons": [
+            {
+              "id": "fitness-m4-l1",
+              "title": "The Building Blocks",
+              "content": [
+                "An exercise plan can be described by frequency, intensity, time, type, and progression. In space, the plan must also account for available equipment, crew time, and the need for both resistance and aerobic work.",
+                "NASA crew schedules commonly include about two hours per day for exercise and related setup, reflecting how important the countermeasure is. The exact plan is individualized and is not a universal prescription."
+              ],
+              "key_takeaway": "A balanced plan uses recognized exercise principles and individual operational constraints."
+            },
+            {
+              "id": "fitness-m4-l2",
+              "title": "Progression and Recovery",
+              "content": [
+                "Progression means gradually increasing the challenge when the body is ready. Too little stimulus may not protect capacity; too much too quickly can cause injury or excessive fatigue.",
+                "Recovery is part of the plan. Sleep, nutrition, hydration, and sensible scheduling all influence how the crew responds. A good plan is reviewed and adjusted rather than copied unchanged from another person."
+              ],
+              "key_takeaway": "Progression must be paired with recovery and individual review."
+            }
+          ],
+          "key_points": [
+            "Frequency, intensity, time, type, and progression guide exercise design.",
+            "Station plans combine resistance and aerobic work.",
+            "Exercise scheduling commonly includes about two hours per day including setup.",
+            "Individualization, recovery, and review are essential."
+          ],
+          "practical_activity": {
+            "title": "Balance the Week",
+            "prompt": "Outline a one-week exercise framework with both resistance and aerobic sessions, plus one recovery day.",
+            "steps": [
+              "Choose a realistic number of sessions for a busy crew schedule.",
+              "Alternate or combine resistance and aerobic work.",
+              "Include a recovery and review point.",
+              "Explain one way you would individualize the plan."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "fitness-m4-q1",
+                "question": "What does progression mean in an exercise plan?",
+                "options": [
+                  "Increasing challenge gradually as capacity improves",
+                  "Doing the same session forever",
+                  "Skipping recovery",
+                  "Changing every variable every day"
+                ],
+                "correct_index": 0,
+                "explanation": "Progression is a gradual increase in challenge, paired with adequate recovery."
+              },
+              {
+                "id": "fitness-m4-q2",
+                "question": "Why does a station exercise plan include both resistance and aerobic work?",
+                "options": [
+                  "They support different body systems and mission capabilities",
+                  "One is always optional",
+                  "Aerobic work only affects mood",
+                  "Resistance work only affects sleep"
+                ],
+                "correct_index": 0,
+                "explanation": "Resistance supports bone and muscle; aerobic supports cardiovascular fitness. Both are valuable."
+              },
+              {
+                "id": "fitness-m4-q3",
+                "question": "What is a realistic statement about exercise time on the station?",
+                "options": [
+                  "Exercise takes no scheduled time",
+                  "NASA schedules substantial daily exercise time, often around two hours including setup",
+                  "Exercise is only done once a month",
+                  "Exercise is optional for all crew members"
+                ],
+                "correct_index": 1,
+                "explanation": "Exercise is a scheduled countermeasure. NASA commonly describes about two hours per day including setup, while individual plans vary."
+              },
+              {
+                "id": "fitness-m4-q4",
+                "question": "Why should an exercise plan be individualized?",
+                "options": [
+                  "Every crew member has different needs, history, and responses",
+                  "Because equipment is never shared",
+                  "Because exercise has no general principles",
+                  "To make scheduling harder"
+                ],
+                "correct_index": 0,
+                "explanation": "Individual health status, experience, and response influence the appropriate plan."
+              }
+            ]
+          }
+        },
+        {
+          "id": "fitness-m5",
+          "number": 5,
+          "title": "Injury Prevention and Team Safety",
+          "summary": "How crews prevent exercise injury and respond to equipment problems.",
+          "lessons": [
+            {
+              "id": "fitness-m5-l1",
+              "title": "Preventing Injury",
+              "content": [
+                "Injury prevention starts before the session: correct restraints, a clear area, appropriate load, and a warm-up. Technique matters, especially when the body is adapting to weightlessness and equipment behaves differently.",
+                "Crew members should stop if they feel sharp pain, unusual instability, or a device malfunction. Reporting is a safety action, not a failure. The team can then adjust the plan and arrange inspection."
+              ],
+              "key_takeaway": "Preparation, technique, and early reporting prevent small problems from becoming mission-limiting ones."
+            },
+            {
+              "id": "fitness-m5-l2",
+              "title": "Team Safety and Equipment Faults",
+              "content": [
+                "A crew member using a faulty device is not the only person at risk. A fault can reduce exercise options for everyone, disrupt the schedule, and create pressure to skip the countermeasure.",
+                "The safe response is coordinated: stop use, secure the equipment, notify the team, document the fault, use approved alternatives, and schedule maintenance. Team safety depends on clear roles and honest reporting."
+              ],
+              "key_takeaway": "A fault is managed by the team through stopping, documenting, substituting, and repairing."
+            }
+          ],
+          "key_points": [
+            "Warm-up, restraints, area checks, and appropriate load reduce injury risk.",
+            "Sharp pain, instability, or equipment abnormality should stop a session.",
+            "Equipment faults affect the whole crew's exercise options.",
+            "Stop use, document, substitute approved activity, and repair."
+          ],
+          "practical_activity": {
+            "title": "Fault Response Drill",
+            "prompt": "Write a five-step team response to a suspected exercise equipment fault.",
+            "steps": [
+              "Make the immediate safety call.",
+              "Protect the equipment and the crew.",
+              "Notify, document, substitute, and schedule repair."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "fitness-m5-q1",
+                "question": "What is the first priority when a crew member reports sharp pain during exercise?",
+                "options": [
+                  "Finish the session to avoid losing time",
+                  "Stop the activity and assess the situation",
+                  "Increase the load to test the pain",
+                  "Ignore it if the crew member is experienced"
+                ],
+                "correct_index": 1,
+                "explanation": "Stopping and assessing is the safe first step. The cause may require follow-up and plan adjustment."
+              },
+              {
+                "id": "fitness-m5-q2",
+                "question": "Why is prompt reporting of an equipment fault important?",
+                "options": [
+                  "It protects the crew and preserves the exercise plan",
+                  "It guarantees the device will not break",
+                  "It replaces maintenance",
+                  "It is only needed for record keeping"
+                ],
+                "correct_index": 0,
+                "explanation": "Early reporting allows the team to stop use, substitute activity, and repair before the problem worsens."
+              },
+              {
+                "id": "fitness-m5-q3",
+                "question": "Which is an approved way to maintain exercise during a device repair?",
+                "options": [
+                  "Use the faulty device at full load",
+                  "Use approved alternative exercise options while the device is serviced",
+                  "Skip exercise entirely",
+                  "Ask the crew to invent a new device"
+                ],
+                "correct_index": 1,
+                "explanation": "Approved alternatives preserve the countermeasure while the faulty device is unavailable."
+              },
+              {
+                "id": "fitness-m5-q4",
+                "question": "What makes an exercise safety culture strong?",
+                "options": [
+                  "Blaming crew members who report faults",
+                  "Clear procedures, no-blame reporting, and consistent follow-through",
+                  "Skipping warm-ups to save time",
+                  "Using equipment without restraints"
+                ],
+                "correct_index": 1,
+                "explanation": "Clear procedures and psychological safety encourage early reporting and consistent risk reduction."
+              }
+            ]
+          }
+        }
+      ],
+      "practical_activity": {
+        "title": "Build a Weekly Microgravity Exercise Circuit",
+        "description": "Design a one-week exercise framework for a station crew. Use approved equipment concepts and qualitative exercise principles. Do not present it as a personalized medical prescription.",
+        "steps": [
+          "Include warm-up, aerobic work, resistance work, mobility, and recovery.",
+          "Explain how you would use the resistance device, treadmill with harness, and cycle ergometer.",
+          "Include a backup plan for one equipment fault.",
+          "Explain how sleep and nutrition support recovery.",
+          "Describe how you would individualize and review the plan."
+        ],
+        "submission_prompt": "Paste your weekly framework and rationale. Explain how it protects bone, muscle, cardiovascular fitness, and crew safety.",
+        "minimum_words": 90
+      },
+      "final_assessment": {
+        "title": "Physical Health & Exercise Final Assessment",
+        "passing_score": 70,
+        "questions": [
+          {
+            "id": "fitness-final-q1",
+            "question": "A crew member's resistance device feels abnormal. What is the best first action?",
+            "options": [
+              "Complete the session and report it tomorrow",
+              "Stop, secure the device, and report the fault while using approved alternatives",
+              "Increase the load to see if it resolves",
+              "Ask the crew member to repair it without procedures"
+            ],
+            "correct_index": 1,
+            "explanation": "Suspected equipment faults require stopping use, documentation, approved substitutions, and maintenance."
+          },
+          {
+            "id": "fitness-final-q2",
+            "question": "Which combination best protects bone and muscle in microgravity?",
+            "options": [
+              "Adequate loading through resistance exercise plus nutrition and recovery",
+              "Only passive stretching",
+              "Cutting calories to reduce body mass",
+              "Avoiding all exercise to prevent injury"
+            ],
+            "correct_index": 0,
+            "explanation": "Bone and muscle benefit from loading, supported by nutrition and recovery."
+          },
+          {
+            "id": "fitness-final-q3",
+            "question": "Why is a two-hour exercise allocation often discussed for station crews?",
+            "options": [
+              "Exercise is a major countermeasure and setup takes time",
+              "Exercise is a leisure activity with no safety role",
+              "It guarantees no bone loss",
+              "It replaces sleep"
+            ],
+            "correct_index": 0,
+            "explanation": "Exercise is a scheduled countermeasure. The time includes exercise and related setup, though individual plans vary."
+          },
+          {
+            "id": "fitness-final-q4",
+            "question": "What is the best way to handle reduced exercise during an equipment fault?",
+            "options": [
+              "Abandon all exercise and nutrition planning",
+              "Use approved alternatives and adjust nutrition to support recovery",
+              "Double the remaining sessions without progression",
+              "Ignore the fault until the end of the mission"
+            ],
+            "correct_index": 1,
+            "explanation": "Approved alternatives keep the countermeasure going, and nutrition supports recovery during the disruption."
+          },
+          {
+            "id": "fitness-final-q5",
+            "question": "Which statement about exercise prescription is most accurate?",
+            "options": [
+              "One plan is perfect for every astronaut",
+              "A plan uses general principles but is individualized and reviewed",
+              "Exercise should always be maximal",
+              "Recovery is optional"
+            ],
+            "correct_index": 1,
+            "explanation": "General principles guide planning, but individual needs and responses require review and adjustment."
+          },
+          {
+            "id": "fitness-final-q6",
+            "question": "What is the strongest safety response to a crew member reporting instability during a session?",
+            "options": [
+              "Encourage them to finish",
+              "Stop the session, check the setup and equipment, and assess before continuing",
+              "Remove the restraints",
+              "Increase the load gradually"
+            ],
+            "correct_index": 1,
+            "explanation": "Instability may indicate a setup, equipment, or health issue. Stopping to assess is the safe response."
+          }
+        ]
+      },
+      "badge": {
+        "id": "badge-fitness",
+        "name": "Fitness Officer",
+        "description": "Completed all Physical Health & Exercise requirements and passed the final assessment.",
+        "icon": "dumbbell"
+      },
+      "nasa_resources": [
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        },
+        {
+          "label": "NASA International Space Station",
+          "url": "https://www.nasa.gov/international-space-station/"
+        }
+      ]
+    },
+    {
+      "id": "nutrition-diet",
+      "number": 3,
+      "title": "Nutrition & Diet",
+      "short_title": "Nutrition",
+      "icon": "nutrition",
+      "accent": "amber",
+      "tagline": "Fuel the crew, support adaptation, and make every meal count.",
+      "introduction": [
+        "Food in space is life support, medicine, morale, and mission logistics at the same time. The crew needs enough energy and the right nutrients to support bone, muscle, cardiovascular health, and recovery.",
+        "This course covers the space food system, energy and macronutrients, micronutrients, hydration and water recovery, and the practical work of menu planning and food safety."
+      ],
+      "objectives": [
+        "Describe the constraints that shape the space food system.",
+        "Explain the roles of energy, protein, carbohydrate, fat, vitamins, minerals, and water.",
+        "Apply nutrition reasoning to reduced exercise and bone health.",
+        "Build a realistic menu plan with variety, inventory awareness, and food-safety practices."
+      ],
+      "estimated_minutes": 60,
+      "mission_links": [
+        {
+          "day": 1,
+          "event_id": "d1-e2",
+          "label": "Day 1 - Food Inventory Confidence"
+        },
+        {
+          "day": 3,
+          "event_id": "d3-e3",
+          "label": "Day 3 - Nutrition and Hydration During Reduced Exercise"
+        },
+        {
+          "day": 5,
+          "event_id": "d5-e2",
+          "label": "Day 5 - Crew Health and Fitness Debrief"
+        }
+      ],
+      "modules": [
+        {
+          "id": "nutrition-m1",
+          "number": 1,
+          "title": "The Space Food System",
+          "summary": "Why space food is engineered, packaged, and planned differently from food on Earth.",
+          "lessons": [
+            {
+              "id": "nutrition-m1-l1",
+              "title": "Food That Works in Orbit",
+              "content": [
+                "Space food must be safe, stable, easy to handle in weightlessness, and practical to store. Common forms include thermostabilized pouches, freeze-dried foods, and shelf-stable items. Fresh foods may be available occasionally but are limited by shelf life and transportation.",
+                "Crumbs are a hazard because they can float into equipment and eyes. Packaging and preparation are designed to keep food contained. Rehydration and heating must fit the station's systems and crew time."
+              ],
+              "key_takeaway": "Space food must be safe, contained, shelf-stable, and practical for the crew to prepare."
+            },
+            {
+              "id": "nutrition-m1-l2",
+              "title": "Menu Variety and Morale",
+              "content": [
+                "A menu can meet nutrient needs and still fail if the crew will not eat it. Variety, familiar foods, cultural preferences, and flavor all affect intake and morale.",
+                "Menu fatigue can develop when the same items repeat. A good food plan rotates options and includes crew input while staying within the real constraints of storage and supply."
+              ],
+              "key_takeaway": "Nutrition planning must consider acceptability and morale, not just nutrient content."
+            }
+          ],
+          "key_points": [
+            "Space food is engineered for safety, shelf life, containment, and preparation.",
+            "Crumbs and floating food can damage equipment or cause injury.",
+            "Variety, familiarity, and crew preference influence intake.",
+            "Menu fatigue is a real planning concern."
+          ],
+          "practical_activity": {
+            "title": "Space Food Constraints",
+            "prompt": "Choose three foods you enjoy and explain how each would need to be adapted for a station food system.",
+            "steps": [
+              "Consider packaging, crumbs, shelf life, and preparation.",
+              "Identify which food would be easiest and which would be hardest.",
+              "Suggest one acceptable alternative for the hardest food."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "nutrition-m1-q1",
+                "question": "Why are crumbs a concern in space food systems?",
+                "options": [
+                  "They make the station colder",
+                  "They can float into equipment, eyes, and air systems",
+                  "They increase radiation",
+                  "They reduce water recovery"
+                ],
+                "correct_index": 1,
+                "explanation": "In weightlessness, crumbs do not fall. They can float into sensitive areas and create hazards."
+              },
+              {
+                "id": "nutrition-m1-q2",
+                "question": "Which is a common characteristic of space food?",
+                "options": [
+                  "It must be shelf-stable and practical to prepare",
+                  "It must always be fresh",
+                  "It must be liquid only",
+                  "It must be high in salt"
+                ],
+                "correct_index": 0,
+                "explanation": "Shelf stability, packaging, and practical preparation are core constraints."
+              },
+              {
+                "id": "nutrition-m1-q3",
+                "question": "Why does menu variety matter?",
+                "options": [
+                  "It supports intake, morale, and reduces menu fatigue",
+                  "It makes food less safe",
+                  "It removes the need for nutrients",
+                  "It reduces crew sleep"
+                ],
+                "correct_index": 0,
+                "explanation": "Variety and preference influence how much and how well the crew eats."
+              },
+              {
+                "id": "nutrition-m1-q4",
+                "question": "What is the best description of space food planning?",
+                "options": [
+                  "A purely financial decision",
+                  "A balance of nutrition, safety, storage, preparation, and crew acceptability",
+                  "A choice based only on flavor",
+                  "A system that ignores shelf life"
+                ],
+                "correct_index": 1,
+                "explanation": "Food planning integrates many constraints, including nutrition and acceptability."
+              }
+            ]
+          }
+        },
+        {
+          "id": "nutrition-m2",
+          "number": 2,
+          "title": "Energy and Macronutrients",
+          "summary": "How energy balance, protein, carbohydrate, and fat support the crew.",
+          "lessons": [
+            {
+              "id": "nutrition-m2-l1",
+              "title": "Energy Balance",
+              "content": [
+                "The body needs enough energy for maintenance, activity, and recovery. In space, energy needs can be influenced by body size, exercise, workload, and individual metabolism. Undereating can undermine muscle, bone, immune function, and mood.",
+                "Energy balance is not about eating as little as possible. A crew member who is losing needed mass or feeling persistently fatigued needs a nutrition review, not a stricter restriction."
+              ],
+              "key_takeaway": "Adequate energy is essential; cutting food is not a generic fix for reduced activity."
+            },
+            {
+              "id": "nutrition-m2-l2",
+              "title": "Protein, Carbohydrate, and Fat",
+              "content": [
+                "Protein provides amino acids for tissue maintenance and repair. Carbohydrate supports energy needs, including during exercise. Fat is energy-dense and helps with nutrient absorption and food acceptability.",
+                "The right balance depends on the individual and the mission phase. A helpful educational rule is to avoid extremes and to connect macronutrient choices to the crew's actual workload, exercise plan, and health monitoring."
+              ],
+              "key_takeaway": "Macronutrients support different functions; balance and adequacy matter more than a single number."
+            }
+          ],
+          "key_points": [
+            "Energy needs vary with body size, activity, workload, and individual factors.",
+            "Undereating can harm muscle, bone, immunity, and mood.",
+            "Protein supports tissue maintenance and repair.",
+            "Carbohydrate and fat support energy and nutrient needs."
+          ],
+          "practical_activity": {
+            "title": "Build a Balanced Plate",
+            "prompt": "Plan one station meal that includes a protein source, an energy source, a fruit or vegetable option, and a hydration component.",
+            "steps": [
+              "Name each component and its role.",
+              "Explain how the meal stays contained and practical.",
+              "Suggest a variation to reduce menu fatigue."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "nutrition-m2-q1",
+                "question": "Why is cutting portions a poor response to reduced exercise?",
+                "options": [
+                  "The crew still needs adequate energy for health and recovery",
+                  "Food has no effect on health",
+                  "Exercise is the only factor in energy needs",
+                  "Portions are unrelated to nutrition"
+                ],
+                "correct_index": 0,
+                "explanation": "Reduced exercise does not automatically mean reduced nutritional needs. Adequacy and individual assessment matter."
+              },
+              {
+                "id": "nutrition-m2-q2",
+                "question": "What is a primary role of protein?",
+                "options": [
+                  "Tissue maintenance and repair",
+                  "Replacing sleep",
+                  "Providing radiation shielding",
+                  "Increasing cabin pressure"
+                ],
+                "correct_index": 0,
+                "explanation": "Protein supplies amino acids used for tissue maintenance and repair."
+              },
+              {
+                "id": "nutrition-m2-q3",
+                "question": "Which statement about energy needs is most accurate?",
+                "options": [
+                  "They are identical for every crew member",
+                  "They vary with body size, activity, workload, and individual factors",
+                  "They are only determined by sleep",
+                  "They do not change during a mission"
+                ],
+                "correct_index": 1,
+                "explanation": "Energy needs are individual and can change with workload and mission phase."
+              },
+              {
+                "id": "nutrition-m2-q4",
+                "question": "What is the best nutrition principle during a workload change?",
+                "options": [
+                  "Maintain adequacy and review the plan with the crew",
+                  "Always cut calories",
+                  "Skip meals to save time",
+                  "Rely only on snacks"
+                ],
+                "correct_index": 0,
+                "explanation": "Adequacy and review are more useful than a blanket restriction."
+              }
+            ]
+          }
+        },
+        {
+          "id": "nutrition-m3",
+          "number": 3,
+          "title": "Micronutrients, Bone, and Vision",
+          "summary": "The supporting nutrients behind bone health, adaptation, and crew monitoring.",
+          "lessons": [
+            {
+              "id": "nutrition-m3-l1",
+              "title": "Calcium, Vitamin D, and Bone",
+              "content": [
+                "Bone health depends on mechanical loading, hormones, and nutrients including calcium and vitamin D. In spaceflight, exercise and nutrition are both part of the countermeasure plan.",
+                "Vitamin D is important for calcium regulation and bone health. Crew nutrition plans include attention to micronutrients, and individual medical monitoring determines whether any supplement or adjustment is appropriate."
+              ],
+              "key_takeaway": "Bone protection combines load, calcium, vitamin D, and individual medical monitoring."
+            },
+            {
+              "id": "nutrition-m3-l2",
+              "title": "Iron, Sodium, and Vision Monitoring",
+              "content": [
+                "Iron supports oxygen transport, and sodium influences fluid balance. Spaceflight can affect how the body handles iron and sodium, so nutrition is part of the broader health picture rather than a set of isolated targets.",
+                "Some astronauts experience vision and eye changes during long-duration spaceflight. Nutrition may be part of the research picture, but no crew member should self-diagnose or self-treat. Changes are monitored by medical teams."
+              ],
+              "key_takeaway": "Micronutrients matter, but eye and health changes require professional monitoring, not self-diagnosis."
+            }
+          ],
+          "key_points": [
+            "Calcium and vitamin D support bone health.",
+            "Exercise and nutrition are combined countermeasures.",
+            "Iron and sodium are part of fluid and blood-health monitoring.",
+            "Vision changes in spaceflight require medical follow-up, not self-treatment."
+          ],
+          "practical_activity": {
+            "title": "Nutrient Support Map",
+            "prompt": "Create a map linking bone health, oxygen transport, and fluid balance to at least one nutrient and one non-nutrition factor.",
+            "steps": [
+              "Choose calcium, iron, and sodium.",
+              "Link each to a body function.",
+              "Add exercise, sleep, or medical monitoring as a supporting factor."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "nutrition-m3-q1",
+                "question": "Which nutrients are most directly associated with bone health?",
+                "options": [
+                  "Calcium and vitamin D",
+                  "Caffeine and sugar",
+                  "Sodium and chlorine only",
+                  "Protein and water only"
+                ],
+                "correct_index": 0,
+                "explanation": "Calcium and vitamin D support bone health, along with loading and other factors."
+              },
+              {
+                "id": "nutrition-m3-q2",
+                "question": "What is the best response to a crew member who reports vision changes?",
+                "options": [
+                  "Tell them to self-treat with supplements",
+                  "Document the change and refer to the medical monitoring process",
+                  "Ignore it until the mission ends",
+                  "Restrict all fluids"
+                ],
+                "correct_index": 1,
+                "explanation": "Vision changes require professional monitoring. Self-diagnosis and self-treatment are unsafe."
+              },
+              {
+                "id": "nutrition-m3-q3",
+                "question": "Why is bone protection more than a calcium supplement?",
+                "options": [
+                  "Bone also responds to mechanical loading and other health factors",
+                  "Calcium has no role in bone",
+                  "Supplements replace exercise",
+                  "Bone health is unrelated to nutrition"
+                ],
+                "correct_index": 0,
+                "explanation": "Bone health integrates loading, nutrition, hormones, and individual factors."
+              },
+              {
+                "id": "nutrition-m3-q4",
+                "question": "What is a reasonable role for iron in crew health?",
+                "options": [
+                  "It supports oxygen transport and is part of blood-health monitoring",
+                  "It replaces exercise",
+                  "It controls cabin pressure",
+                  "It prevents all radiation effects"
+                ],
+                "correct_index": 0,
+                "explanation": "Iron is essential for oxygen transport. Spaceflight can affect iron metabolism, so monitoring matters."
+              }
+            ]
+          }
+        },
+        {
+          "id": "nutrition-m4",
+          "number": 4,
+          "title": "Hydration and Water Recovery",
+          "summary": "Why water balance and water recovery are central to crew health and station operations.",
+          "lessons": [
+            {
+              "id": "nutrition-m4-l1",
+              "title": "Water in the Body",
+              "content": [
+                "Water supports circulation, temperature regulation, digestion, and cellular function. Hydration needs vary with activity, environment, and individual factors. In space, fluid shifts and station conditions can change how the crew feels and what they need.",
+                "A hydration plan should be practical: accessible water, regular reminders, and attention to signs of inadequate intake. It is not a competition to drink the most water."
+              ],
+              "key_takeaway": "Hydration is individual and operational; regular access and attention matter more than a universal target."
+            },
+            {
+              "id": "nutrition-m4-l2",
+              "title": "Recovery and Reuse",
+              "content": [
+                "The station's water recovery system helps reclaim water from sources such as humidity condensate and hygiene use. Recovery reduces the need for resupply, but it requires monitoring, maintenance, and crew discipline.",
+                "Drinking water and hygiene water are managed within the same broader system. Using water carelessly for hygiene can affect the shared supply. The correct operational response is to follow procedures, report anomalies, and coordinate demand."
+              ],
+              "key_takeaway": "Water recovery is a shared system; hygiene and drinking needs must be coordinated."
+            }
+          ],
+          "key_points": [
+            "Hydration supports circulation, temperature regulation, digestion, and cellular function.",
+            "Needs vary by activity, environment, and individual factors.",
+            "Water recovery reduces resupply needs but requires monitoring and discipline.",
+            "Hygiene and drinking water are part of a shared operational system."
+          ],
+          "practical_activity": {
+            "title": "Hydration and Recovery Plan",
+            "prompt": "Design a one-day hydration reminder plan that also respects water recovery constraints.",
+            "steps": [
+              "Choose three reminder points across the day.",
+              "Include one way to check that water is accessible and safe.",
+              "Describe how you would coordinate a hygiene block with the shared system."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "nutrition-m4-q1",
+                "question": "Why is hydration important for crew health?",
+                "options": [
+                  "It supports circulation, temperature regulation, and cellular function",
+                  "It replaces sleep",
+                  "It prevents all bone loss",
+                  "It removes the need for food"
+                ],
+                "correct_index": 0,
+                "explanation": "Water is involved in many core physiological functions."
+              },
+              {
+                "id": "nutrition-m4-q2",
+                "question": "What is the purpose of water recovery on the station?",
+                "options": [
+                  "To reclaim water and reduce resupply needs",
+                  "To create food",
+                  "To increase radiation",
+                  "To replace exercise"
+                ],
+                "correct_index": 0,
+                "explanation": "Recovery systems reclaim water from station sources, reducing the need to launch all water from Earth."
+              },
+              {
+                "id": "nutrition-m4-q3",
+                "question": "Why should hygiene water use be coordinated with the water system?",
+                "options": [
+                  "Hygiene and drinking water are part of a shared operational system",
+                  "Hygiene has no effect on water",
+                  "Drinking water is unrelated to recovery",
+                  "Coordination is only for appearance"
+                ],
+                "correct_index": 0,
+                "explanation": "Shared water systems require coordination to protect both hygiene and drinking needs."
+              },
+              {
+                "id": "nutrition-m4-q4",
+                "question": "Which hydration approach is most reasonable?",
+                "options": [
+                  "Drink as much as possible at one time",
+                  "Use regular access and reminders, and monitor individual needs",
+                  "Avoid water to save the system",
+                  "Rely only on caffeine"
+                ],
+                "correct_index": 1,
+                "explanation": "Regular access and attention to individual needs are practical. Extremes are not helpful."
+              }
+            ]
+          }
+        },
+        {
+          "id": "nutrition-m5",
+          "number": 5,
+          "title": "Menu Planning, Variety, and Food Safety",
+          "summary": "Turning nutrition principles into a workable, safe, and acceptable menu.",
+          "lessons": [
+            {
+              "id": "nutrition-m5-l1",
+              "title": "From Inventory to Menu",
+              "content": [
+                "Menu planning starts with what is actually available. A verified inventory prevents the plan from depending on items that are missing. Perishable or time-limited items should be used in a sensible order.",
+                "A good rotation balances nutrition, variety, crew preference, and preparation time. Involving the crew improves acceptability, but the final plan still has to meet safety and resource constraints."
+              ],
+              "key_takeaway": "Build the menu on verified inventory, then balance nutrition, variety, preference, and time."
+            },
+            {
+              "id": "nutrition-m5-l2",
+              "title": "Food Safety and Sanitation",
+              "content": [
+                "Food safety includes clean preparation surfaces, proper handling, and attention to package integrity. In a closed environment, a foodborne illness can affect the whole crew and the mission.",
+                "Crew members should report compromised packaging or unusual food condition. Cleaning routines and hand hygiene support food safety, and the same discipline protects the station's microbial environment."
+              ],
+              "key_takeaway": "Food safety is crew safety: clean handling, intact packaging, and prompt reporting."
+            }
+          ],
+          "key_points": [
+            "Verify inventory before finalizing a menu.",
+            "Use time-limited items in a sensible order.",
+            "Balance nutrition, variety, preference, and preparation time.",
+            "Clean handling and package integrity protect the crew."
+          ],
+          "practical_activity": {
+            "title": "Three-Day Menu Rotation",
+            "prompt": "Create a three-day menu rotation using only foods you can reasonably assume are available in a station pantry. Include variety and a food-safety note.",
+            "steps": [
+              "List the assumed available items.",
+              "Build three days with different combinations.",
+              "Identify which items should be used first.",
+              "Add one food-safety and one hydration note."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "nutrition-m5-q1",
+                "question": "What is the first step in a reliable menu plan?",
+                "options": [
+                  "Verify what is actually available",
+                  "Choose only desserts",
+                  "Ignore shelf life",
+                  "Order food that has not arrived"
+                ],
+                "correct_index": 0,
+                "explanation": "Verified inventory prevents the plan from relying on missing items."
+              },
+              {
+                "id": "nutrition-m5-q2",
+                "question": "Why is food safety especially important in a closed station?",
+                "options": [
+                  "A foodborne illness can affect the whole crew and mission",
+                  "There are no cleaning supplies",
+                  "Food cannot be stored",
+                  "Illness is impossible in space"
+                ],
+                "correct_index": 0,
+                "explanation": "A confined crew shares risk. Prevention and prompt reporting are critical."
+              },
+              {
+                "id": "nutrition-m5-q3",
+                "question": "Which factor should be balanced with nutrition in a menu plan?",
+                "options": [
+                  "Variety, preference, preparation time, and resources",
+                  "Only color",
+                  "Only cost",
+                  "Nothing else"
+                ],
+                "correct_index": 0,
+                "explanation": "A menu must be acceptable and practical as well as nutritious."
+              },
+              {
+                "id": "nutrition-m5-q4",
+                "question": "What should a crew member do if a food package is compromised?",
+                "options": [
+                  "Eat it quickly",
+                  "Report it and follow food-safety procedures",
+                  "Mix it with another food",
+                  "Ignore the package"
+                ],
+                "correct_index": 1,
+                "explanation": "Compromised packaging is a safety issue and should be reported."
+              }
+            ]
+          }
+        }
+      ],
+      "practical_activity": {
+        "title": "Plan a Three-Day Crew Menu",
+        "description": "Create a three-day menu for a station crew using verified inventory assumptions, variety, hydration, and food-safety reasoning. Do not invent precise nutrient measurements.",
+        "steps": [
+          "List the foods and drinks you assume are available.",
+          "Build three days of meals with variety and crew acceptability in mind.",
+          "Explain how the menu supports energy, protein, bone health, and hydration.",
+          "Identify time-limited items and a use-first plan.",
+          "Add food-safety and inventory-verification notes."
+        ],
+        "submission_prompt": "Paste your three-day menu and rationale. Explain how you would adjust it if exercise is reduced or an inventory item is missing.",
+        "minimum_words": 90
+      },
+      "final_assessment": {
+        "title": "Nutrition & Diet Final Assessment",
+        "passing_score": 70,
+        "questions": [
+          {
+            "id": "nutrition-final-q1",
+            "question": "A crew reduces exercise because of an equipment fault. What is the best nutrition response?",
+            "options": [
+              "Cut all portions to match the lower activity",
+              "Maintain adequate energy and hydration, and emphasize supportive nutrients",
+              "Skip meals to save food",
+              "Increase only caffeine"
+            ],
+            "correct_index": 1,
+            "explanation": "Reduced exercise does not justify cutting needed nutrition. Adequacy and supportive nutrients remain important."
+          },
+          {
+            "id": "nutrition-final-q2",
+            "question": "Why is inventory verification part of nutrition planning?",
+            "options": [
+              "It prevents the menu from relying on items that are not available",
+              "It replaces food safety",
+              "It measures radiation",
+              "It makes food taste better"
+            ],
+            "correct_index": 0,
+            "explanation": "A menu built on unverified stock is unreliable. Verification supports realistic planning."
+          },
+          {
+            "id": "nutrition-final-q3",
+            "question": "Which pair best supports bone health in spaceflight?",
+            "options": [
+              "Mechanical loading and adequate calcium and vitamin D",
+              "Caffeine and reduced sleep",
+              "Skipping meals and avoiding exercise",
+              "High sodium and low hydration"
+            ],
+            "correct_index": 0,
+            "explanation": "Bone health combines loading, nutrition, and medical monitoring."
+          },
+          {
+            "id": "nutrition-final-q4",
+            "question": "What is the best way to handle a food package that looks damaged?",
+            "options": [
+              "Eat it and monitor for symptoms",
+              "Report it and follow food-safety procedures",
+              "Share it with the crew",
+              "Store it for later"
+            ],
+            "correct_index": 1,
+            "explanation": "Damaged packaging is a potential safety issue and should be reported."
+          },
+          {
+            "id": "nutrition-final-q5",
+            "question": "Why does menu variety matter operationally?",
+            "options": [
+              "It supports intake and morale and reduces menu fatigue",
+              "It makes food unsafe",
+              "It replaces hydration",
+              "It removes the need for inventory"
+            ],
+            "correct_index": 0,
+            "explanation": "Crews eat better when menus are acceptable and varied, which supports nutrition and morale."
+          },
+          {
+            "id": "nutrition-final-q6",
+            "question": "Which statement about water recovery is most accurate?",
+            "options": [
+              "It is unrelated to hygiene",
+              "It is a shared system that needs monitoring, maintenance, and coordinated use",
+              "It removes the need for hydration planning",
+              "It only applies to drinking water"
+            ],
+            "correct_index": 1,
+            "explanation": "Water recovery supports multiple uses and requires disciplined shared operation."
+          }
+        ]
+      },
+      "badge": {
+        "id": "badge-nutrition",
+        "name": "Nutrition Officer",
+        "description": "Completed all Nutrition & Diet requirements and passed the final assessment.",
+        "icon": "nutrition"
+      },
+      "nasa_resources": [
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        },
+        {
+          "label": "NASA International Space Station",
+          "url": "https://www.nasa.gov/international-space-station/"
+        }
+      ]
+    },
+    {
+      "id": "mental-health-psychology",
+      "number": 4,
+      "title": "Mental Health & Psychology",
+      "short_title": "Mental Health",
+      "icon": "mind",
+      "accent": "violet",
+      "tagline": "Support the human side of mission performance: trust, communication, and resilience.",
+      "introduction": [
+        "A crew can have excellent hardware and still struggle if communication, workload, or morale break down. Spaceflight psychology is about supporting people in an isolated, confined, and demanding environment.",
+        "This course examines mission stressors, team communication, emotion regulation, workload and rest, and the support systems that help crews perform and stay well."
+      ],
+      "objectives": [
+        "Identify common psychological stressors of spaceflight without diagnosing individuals.",
+        "Describe communication practices that support team cohesion and psychological safety.",
+        "Explain healthy coping and emotion-regulation strategies.",
+        "Design a crew care plan with check-ins, privacy, and escalation pathways."
+      ],
+      "estimated_minutes": 60,
+      "mission_links": [
+        {
+          "day": 2,
+          "event_id": "d2-e3",
+          "label": "Day 2 - Crew Uncertainty and Communication"
+        },
+        {
+          "day": 4,
+          "event_id": "d4-e2",
+          "label": "Day 4 - Interpersonal Tension"
+        },
+        {
+          "day": 5,
+          "event_id": "d5-e2",
+          "label": "Day 5 - Crew Health and Fitness Debrief"
+        }
+      ],
+      "modules": [
+        {
+          "id": "mind-m1",
+          "number": 1,
+          "title": "Stressors of Spaceflight",
+          "summary": "Why isolation, confinement, workload, and uncertainty affect crew performance.",
+          "lessons": [
+            {
+              "id": "mind-m1-l1",
+              "title": "The Environment",
+              "content": [
+                "Space crews live in a small, technically complex environment with limited privacy and a fixed set of people. They are far from home, exposed to operational risk, and dependent on each other for safety.",
+                "Isolation and confinement can amplify ordinary frustrations. Noise, disrupted sleep, and a dense schedule add load. These are environmental stressors, not evidence that a crew member is weak."
+              ],
+              "key_takeaway": "The mission environment creates predictable stressors that affect everyone."
+            },
+            {
+              "id": "mind-m1-l2",
+              "title": "Uncertainty and Meaning",
+              "content": [
+                "Uncertainty about schedules, events, and performance can be more draining than a known challenge. Crew members may also feel the weight of being far from family or of representing a mission.",
+                "Support starts with acknowledging the reality of these pressures. Clear information, meaningful work, connection with home, and predictable routines help people maintain a sense of control."
+              ],
+              "key_takeaway": "Clear information and connection help crews manage uncertainty."
+            }
+          ],
+          "key_points": [
+            "Isolation, confinement, and limited privacy are environmental stressors.",
+            "Noise, sleep disruption, and workload add to the load.",
+            "Uncertainty can be more stressful than a known challenge.",
+            "Support begins with acknowledgment and practical structure."
+          ],
+          "practical_activity": {
+            "title": "Stressor Inventory",
+            "prompt": "List four stressors a station crew might face and one practical support for each.",
+            "steps": [
+              "Choose environmental, workload, communication, and family-related stressors.",
+              "For each, name a support that is realistic in a confined setting.",
+              "Avoid medical labels or diagnoses."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "mind-m1-q1",
+                "question": "Which is an environmental stressor of spaceflight?",
+                "options": [
+                  "Isolation and limited privacy",
+                  "Unlimited access to family",
+                  "A completely quiet station",
+                  "An absence of scheduled tasks"
+                ],
+                "correct_index": 0,
+                "explanation": "Isolation, confinement, and limited privacy are recognized stressors of the spaceflight environment."
+              },
+              {
+                "id": "mind-m1-q2",
+                "question": "Why can uncertainty be stressful?",
+                "options": [
+                  "It reduces a person's sense of control and predictability",
+                  "It always improves performance",
+                  "It removes the need for communication",
+                  "It makes sleep unnecessary"
+                ],
+                "correct_index": 0,
+                "explanation": "Uncertainty can undermine a sense of control. Clear information and routines help."
+              },
+              {
+                "id": "mind-m1-q3",
+                "question": "What is a helpful response to a crew member who is frustrated by confinement?",
+                "options": [
+                  "Dismiss the concern as weakness",
+                  "Acknowledge it and look for practical ways to restore control and privacy",
+                  "Assign more tasks",
+                  "Tell them not to speak about it"
+                ],
+                "correct_index": 1,
+                "explanation": "Acknowledgment plus practical support is more effective than dismissal."
+              },
+              {
+                "id": "mind-m1-q4",
+                "question": "Which statement avoids diagnosing a crew member?",
+                "options": [
+                  "You have a disorder",
+                  "You seem more withdrawn than usual; can we check in and review workload?",
+                  "You are unfit for spaceflight",
+                  "Your personality is the problem"
+                ],
+                "correct_index": 1,
+                "explanation": "Describe observable changes and offer support without assigning a clinical label."
+              }
+            ]
+          }
+        },
+        {
+          "id": "mind-m2",
+          "number": 2,
+          "title": "Communication and Team Cohesion",
+          "summary": "How clear, respectful communication protects performance in a confined crew.",
+          "lessons": [
+            {
+              "id": "mind-m2-l1",
+              "title": "A Shared Mental Model",
+              "content": [
+                "A crew performs best when members share an understanding of the plan, roles, and risks. Briefings, read-backs, and explicit task ownership reduce assumptions.",
+                "Communication is not only about transmitting facts. Tone, timing, and whether people feel safe to speak up affect whether important information reaches the team."
+              ],
+              "key_takeaway": "Shared understanding and psychological safety are operational assets."
+            },
+            {
+              "id": "mind-m2-l2",
+              "title": "Conflict and Repair",
+              "content": [
+                "Conflict is normal in a close team. The risk is not disagreement itself; it is unresolved disagreement that becomes avoidance, silence, or passive resistance.",
+                "A short facilitated conversation can clarify interests, separate people from the problem, and agree on next steps. Follow-up matters because a single conversation may not repair trust."
+              ],
+              "key_takeaway": "Address conflict early with structure and follow-up rather than avoidance."
+            }
+          ],
+          "key_points": [
+            "Shared mental models reduce assumptions and errors.",
+            "Psychological safety helps crew members speak up.",
+            "Conflict is normal; unresolved conflict is the risk.",
+            "Facilitated conversation plus follow-up supports repair."
+          ],
+          "practical_activity": {
+            "title": "Briefing and Read-Back",
+            "prompt": "Write a short briefing for a task handover, then design a read-back question that checks understanding.",
+            "steps": [
+              "State the task, owner, timing, and one risk.",
+              "Ask a question that requires the listener to explain the plan in their own words.",
+              "Add one invitation for questions or concerns."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "mind-m2-q1",
+                "question": "What is a shared mental model?",
+                "options": [
+                  "A common understanding of the plan, roles, and risks",
+                  "A type of station software",
+                  "A medical diagnosis",
+                  "A rule that only leaders speak"
+                ],
+                "correct_index": 0,
+                "explanation": "A shared mental model helps the team coordinate without relying on assumptions."
+              },
+              {
+                "id": "mind-m2-q2",
+                "question": "Why is psychological safety important for a crew?",
+                "options": [
+                  "It helps people speak up about risks and mistakes",
+                  "It eliminates all conflict",
+                  "It replaces task training",
+                  "It guarantees perfect decisions"
+                ],
+                "correct_index": 0,
+                "explanation": "People are more likely to report concerns when they feel safe from blame."
+              },
+              {
+                "id": "mind-m2-q3",
+                "question": "What is the main risk of unresolved conflict?",
+                "options": [
+                  "It can lead to avoidance, silence, and degraded communication",
+                  "It always improves team performance",
+                  "It has no effect in a confined crew",
+                  "It removes the need for briefings"
+                ],
+                "correct_index": 0,
+                "explanation": "Unresolved conflict can damage information flow and trust, which affects safety."
+              },
+              {
+                "id": "mind-m2-q4",
+                "question": "Which is a good conflict-response step?",
+                "options": [
+                  "Ignore it until the mission ends",
+                  "Facilitate a conversation, clarify ownership, and schedule follow-up",
+                  "Assign blame publicly",
+                  "Separate the crew permanently"
+                ],
+                "correct_index": 1,
+                "explanation": "Structured conversation and follow-up address the issue without escalating blame."
+              }
+            ]
+          }
+        },
+        {
+          "id": "mind-m3",
+          "number": 3,
+          "title": "Emotion Regulation and Coping",
+          "summary": "Practical strategies for managing stress without pretending it does not exist.",
+          "lessons": [
+            {
+              "id": "mind-m3-l1",
+              "title": "Name It to Manage It",
+              "content": [
+                "Recognizing and naming an emotion can reduce its intensity and help a person choose a response. This is not about forcing positivity; it is about creating a little space between feeling and action.",
+                "Useful strategies include slow breathing, brief physical activity, journaling, talking with a trusted person, and breaking a large task into smaller steps. Different people prefer different tools."
+              ],
+              "key_takeaway": "Naming a feeling and choosing a deliberate response is more effective than suppressing it."
+            },
+            {
+              "id": "mind-m3-l2",
+              "title": "Limits of Self-Help",
+              "content": [
+                "Coping strategies are useful, but they are not a substitute for professional support when distress is persistent or affecting safety. A crew member who is not sleeping, withdrawing, or feeling unable to function needs a supportive escalation path.",
+                "Asking for help is a professional skill. A crew culture that treats support as normal is safer than one that expects people to hide struggle."
+              ],
+              "key_takeaway": "Self-help has a place, but persistent distress requires professional support."
+            }
+          ],
+          "key_points": [
+            "Naming emotions can support regulation.",
+            "Breathing, movement, journaling, and connection are practical tools.",
+            "Coping strategies are not a substitute for professional care.",
+            "Asking for help is a professional skill."
+          ],
+          "practical_activity": {
+            "title": "Personal Coping Menu",
+            "prompt": "Create a three-item coping menu for a stressful moment, plus one signal that would prompt you to seek support.",
+            "steps": [
+              "Choose one body-based, one cognitive, and one social strategy.",
+              "Describe when each is useful.",
+              "Name a signal that self-help is not enough."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "mind-m3-q1",
+                "question": "What is a healthy purpose of naming an emotion?",
+                "options": [
+                  "To create space for a deliberate response",
+                  "To eliminate all feelings",
+                  "To prove a person is weak",
+                  "To avoid communication"
+                ],
+                "correct_index": 0,
+                "explanation": "Naming can reduce intensity and support a chosen response."
+              },
+              {
+                "id": "mind-m3-q2",
+                "question": "Which is a practical coping strategy?",
+                "options": [
+                  "Slow breathing and breaking a task into smaller steps",
+                  "Ignoring persistent distress",
+                  "Hiding all concerns from the team",
+                  "Working without rest"
+                ],
+                "correct_index": 0,
+                "explanation": "Breathing and task chunking are practical regulation tools."
+              },
+              {
+                "id": "mind-m3-q3",
+                "question": "When is self-help not enough?",
+                "options": [
+                  "When distress is persistent or affecting safety and function",
+                  "Whenever a person feels tired",
+                  "Only after the mission ends",
+                  "Never"
+                ],
+                "correct_index": 0,
+                "explanation": "Persistent distress or functional impairment calls for professional support."
+              },
+              {
+                "id": "mind-m3-q4",
+                "question": "What does a healthy crew culture say about asking for help?",
+                "options": [
+                  "It is a professional skill and should be normalized",
+                  "It is a sign of failure",
+                  "It should be punished",
+                  "It should only happen after an error"
+                ],
+                "correct_index": 0,
+                "explanation": "Normalizing support encourages early action and reduces risk."
+              }
+            ]
+          }
+        },
+        {
+          "id": "mind-m4",
+          "number": 4,
+          "title": "Workload, Rest, and Fatigue",
+          "summary": "Balancing demands and resources to protect performance and well-being.",
+          "lessons": [
+            {
+              "id": "mind-m4-l1",
+              "title": "Demands and Resources",
+              "content": [
+                "Workload is a relationship between demands and resources. High demand can be manageable with adequate time, support, control, and rest. The same demand can become harmful when those resources are missing.",
+                "Crews often face both overload and monotony. Long periods of monitoring can be tiring in a different way from a burst of intense work. Both require thoughtful scheduling."
+              ],
+              "key_takeaway": "Workload risk depends on demands relative to time, support, control, and rest."
+            },
+            {
+              "id": "mind-m4-l2",
+              "title": "Rest and Recovery",
+              "content": [
+                "Rest is not only sleep. Breaks, changes of task, connection with home, and moments of privacy help people recover. A schedule that leaves no room for any of these can erode performance.",
+                "The crew and operations team should review workload regularly. If fatigue or distress is rising, the plan needs a real adjustment, not just an encouragement to try harder."
+              ],
+              "key_takeaway": "Recovery needs schedule space and real adjustments, not just encouragement."
+            }
+          ],
+          "key_points": [
+            "Workload is demands relative to resources.",
+            "Both overload and monotony can increase risk.",
+            "Rest includes breaks, privacy, connection, and sleep.",
+            "Regular review should lead to real schedule adjustments."
+          ],
+          "practical_activity": {
+            "title": "Workload Review",
+            "prompt": "Take a busy day and identify one demand, one resource, and one recovery opportunity you could add.",
+            "steps": [
+              "List the day's main demands.",
+              "Identify which resources are missing or stretched.",
+              "Add one realistic recovery opportunity and explain its effect."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "mind-m4-q1",
+                "question": "What makes a workload high-risk?",
+                "options": [
+                  "High demands without adequate time, support, control, or rest",
+                  "Any task that requires concentration",
+                  "A schedule with breaks",
+                  "A crew member asking for help"
+                ],
+                "correct_index": 0,
+                "explanation": "Risk depends on the balance between demands and resources."
+              },
+              {
+                "id": "mind-m4-q2",
+                "question": "Why can monotony be tiring?",
+                "options": [
+                  "Long periods of low stimulation can reduce vigilance and motivation",
+                  "It always improves attention",
+                  "It removes the need for sleep",
+                  "It increases physical strength"
+                ],
+                "correct_index": 0,
+                "explanation": "Monotony can reduce vigilance and motivation, especially during long monitoring periods."
+              },
+              {
+                "id": "mind-m4-q3",
+                "question": "Which is a form of recovery beyond sleep?",
+                "options": [
+                  "A break, privacy, or connection with home",
+                  "More caffeine",
+                  "Skipping meals",
+                  "Ignoring fatigue"
+                ],
+                "correct_index": 0,
+                "explanation": "Recovery includes breaks, privacy, connection, and other restorative activities."
+              },
+              {
+                "id": "mind-m4-q4",
+                "question": "What should happen when workload review shows rising fatigue?",
+                "options": [
+                  "Make a real schedule or support adjustment",
+                  "Tell the crew to try harder",
+                  "Add more tasks",
+                  "Stop reviewing"
+                ],
+                "correct_index": 0,
+                "explanation": "Review should lead to action. Encouragement alone does not reduce risk."
+              }
+            ]
+          }
+        },
+        {
+          "id": "mind-m5",
+          "number": 5,
+          "title": "Behavioral Health Support and Monitoring",
+          "summary": "How crews and support teams promote well-being, privacy, and appropriate escalation.",
+          "lessons": [
+            {
+              "id": "mind-m5-l1",
+              "title": "Support That People Will Use",
+              "content": [
+                "Behavioral health support includes regular check-ins, access to private conversations, sleep and workload review, and clear pathways for escalating a concern. It should be normalized as part of crew care.",
+                "Privacy and trust are essential. A crew member is more likely to use support if they believe concerns will be handled respectfully and not used against them."
+              ],
+              "key_takeaway": "Accessible, private, and trusted support is more important than a policy on paper."
+            },
+            {
+              "id": "mind-m5-l2",
+              "title": "Monitoring Without Diagnosing",
+              "content": [
+                "Crew monitoring looks for changes in sleep, mood, behavior, communication, and performance. The purpose is to offer support and adjust the mission plan, not to label a person.",
+                "When a concern exceeds the crew's ability to support, the team escalates through the appropriate medical and behavioral health channel. In this educational simulation, no real diagnosis or treatment is provided."
+              ],
+              "key_takeaway": "Monitor for change, support early, and escalate appropriately without diagnosing."
+            }
+          ],
+          "key_points": [
+            "Regular check-ins and private support should be normal crew care.",
+            "Privacy and trust determine whether support is used.",
+            "Monitoring looks for changes, not labels.",
+            "Escalation pathways should be clear and respectful."
+          ],
+          "practical_activity": {
+            "title": "Crew Care Plan",
+            "prompt": "Design a crew care plan with a daily check-in, a privacy rule, a conflict step, and an escalation trigger.",
+            "steps": [
+              "Choose a check-in format that fits a busy schedule.",
+              "State how privacy will be protected.",
+              "Describe how a concern moves to professional support."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "mind-m5-q1",
+                "question": "What makes behavioral health support more likely to be used?",
+                "options": [
+                  "Privacy, trust, and normalizing check-ins",
+                  "Public ranking of crew members",
+                  "Threats of punishment",
+                  "Avoiding all conversations"
+                ],
+                "correct_index": 0,
+                "explanation": "Trust and privacy encourage early use of support."
+              },
+              {
+                "id": "mind-m5-q2",
+                "question": "What is the purpose of crew behavioral monitoring in this course?",
+                "options": [
+                  "To label people with diagnoses",
+                  "To notice changes and offer support or adjustment",
+                  "To replace medical care",
+                  "To rank crew performance"
+                ],
+                "correct_index": 1,
+                "explanation": "Monitoring supports early help and mission adjustment, not labeling."
+              },
+              {
+                "id": "mind-m5-q3",
+                "question": "When should a concern be escalated?",
+                "options": [
+                  "When it exceeds the crew's ability to support or affects safety",
+                  "Never",
+                  "Only after the mission",
+                  "Whenever someone is tired"
+                ],
+                "correct_index": 0,
+                "explanation": "Clear escalation is needed when concerns exceed crew-level support or affect safety."
+              },
+              {
+                "id": "mind-m5-q4",
+                "question": "Which is a respectful check-in question?",
+                "options": [
+                  "Why are you failing?",
+                  "How are sleep and workload affecting you today, and what support would help?",
+                  "Are you sure you are fit for this mission?",
+                  "Why can't you handle it?"
+                ],
+                "correct_index": 1,
+                "explanation": "The question invites information and support without blame or diagnosis."
+              }
+            ]
+          }
+        }
+      ],
+      "practical_activity": {
+        "title": "Crew Care and Communication Plan",
+        "description": "Create a plan for supporting a four-person crew during a five-day simulated mission. Keep it educational and non-clinical.",
+        "steps": [
+          "Design a daily check-in that fits a busy schedule.",
+          "Describe a communication practice that supports psychological safety.",
+          "Outline a step-by-step response to interpersonal tension.",
+          "State how privacy will be protected.",
+          "Identify when a concern would be escalated to professional support."
+        ],
+        "submission_prompt": "Paste your plan and explain how it would help a crew member report fatigue, conflict, or isolation early.",
+        "minimum_words": 90
+      },
+      "final_assessment": {
+        "title": "Mental Health & Psychology Final Assessment",
+        "passing_score": 70,
+        "questions": [
+          {
+            "id": "mind-final-q1",
+            "question": "Two crew members are in a persistent disagreement that is affecting communication. What is the best response?",
+            "options": [
+              "Ignore it until the mission ends",
+              "Facilitate a structured conversation, clarify ownership, and follow up",
+              "Publicly assign blame",
+              "Tell them to stop talking to each other"
+            ],
+            "correct_index": 1,
+            "explanation": "Structured conversation and follow-up address the issue while preserving team function."
+          },
+          {
+            "id": "mind-final-q2",
+            "question": "What is the best way to support a crew member who is withdrawn and sleeping poorly?",
+            "options": [
+              "Label them as unfit",
+              "Check in privately, review workload and sleep, and offer appropriate support",
+              "Ignore the change",
+              "Assign extra tasks"
+            ],
+            "correct_index": 1,
+            "explanation": "A private, supportive check-in and practical review are appropriate first steps."
+          },
+          {
+            "id": "mind-final-q3",
+            "question": "Why is psychological safety operationally important?",
+            "options": [
+              "It helps crew members speak up about risks and mistakes",
+              "It guarantees no mistakes",
+              "It replaces training",
+              "It eliminates all stress"
+            ],
+            "correct_index": 0,
+            "explanation": "Psychological safety supports honest reporting, which is essential for safety."
+          },
+          {
+            "id": "mind-final-q4",
+            "question": "Which statement about self-help is most accurate?",
+            "options": [
+              "It is always sufficient",
+              "It is useful, but persistent distress requires professional support",
+              "It should replace all crew communication",
+              "It is a sign of weakness"
+            ],
+            "correct_index": 1,
+            "explanation": "Self-help has value but has limits. Persistent distress needs professional support."
+          },
+          {
+            "id": "mind-final-q5",
+            "question": "What should a crew care plan include?",
+            "options": [
+              "Check-ins, privacy, conflict steps, and escalation pathways",
+              "Only a list of rules",
+              "A ranking of crew members",
+              "No mention of support"
+            ],
+            "correct_index": 0,
+            "explanation": "A practical plan includes access, privacy, conflict response, and escalation."
+          },
+          {
+            "id": "mind-final-q6",
+            "question": "How should a leader communicate during an uncertain event?",
+            "options": [
+              "Delay all communication until everything is resolved",
+              "Share what is known, acknowledge uncertainty, and set an update rhythm",
+              "Provide false certainty",
+              "Stop talking to the crew"
+            ],
+            "correct_index": 1,
+            "explanation": "Honest, structured communication reduces uncertainty and maintains trust."
+          }
+        ]
+      },
+      "badge": {
+        "id": "badge-mind",
+        "name": "Mind & Crew",
+        "description": "Completed all Mental Health & Psychology requirements and passed the final assessment.",
+        "icon": "mind"
+      },
+      "nasa_resources": [
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        },
+        {
+          "label": "NASA Humans in Space",
+          "url": "https://www.nasa.gov/humans-in-space/"
+        }
+      ]
+    },
+    {
+      "id": "hygiene-personal-care",
+      "number": 5,
+      "title": "Hygiene & Personal Care",
+      "short_title": "Hygiene",
+      "icon": "hygiene",
+      "accent": "teal",
+      "tagline": "Protect health, dignity, and life support with smart personal care.",
+      "introduction": [
+        "Hygiene in space is a life-support topic. Water is limited and recycled, surfaces are shared, and airflow behaves differently. Personal care routines must protect both the crew and the station systems.",
+        "This course covers water conservation, body and oral care without a shower, cleaning and microbial control, and the routines that support privacy and morale."
+      ],
+      "objectives": [
+        "Explain why hygiene water must be coordinated with the station's recovery system.",
+        "Describe practical body, oral, and skin care approaches in microgravity.",
+        "Apply cleaning and airflow principles to shared station spaces.",
+        "Design a low-water personal care routine that respects privacy and crew preferences."
+      ],
+      "estimated_minutes": 55,
+      "mission_links": [
+        {
+          "day": 1,
+          "event_id": "d1-e3",
+          "label": "Day 1 - Water Recovery and Hygiene Coordination"
+        },
+        {
+          "day": 5,
+          "event_id": "d5-e1",
+          "label": "Day 5 - Final Station Systems Inspection"
+        }
+      ],
+      "modules": [
+        {
+          "id": "hygiene-m1",
+          "number": 1,
+          "title": "Water: A Precious Resource",
+          "summary": "Why hygiene planning starts with the water system.",
+          "lessons": [
+            {
+              "id": "hygiene-m1-l1",
+              "title": "Every Drop Is Planned",
+              "content": [
+                "Water on the station is used for drinking, food preparation, hygiene, and other operational needs. Recovery systems reclaim water from sources such as humidity condensate and used hygiene water, reducing how much must be launched from Earth.",
+                "Because the system is shared, a hygiene decision can affect the whole crew. Sequencing activities, using conservative techniques, and reporting anomalies are part of personal care."
+              ],
+              "key_takeaway": "Hygiene water is part of a shared recovery system, not an unlimited personal supply."
+            },
+            {
+              "id": "hygiene-m1-l2",
+              "title": "Conservation Without Sacrifice",
+              "content": [
+                "Conservation does not mean skipping hygiene. It means using methods that clean effectively with less water: wipes, rinse-free products, controlled dispensing, and reusable cloths where appropriate.",
+                "The goal is a sustainable routine that protects skin, mouth, and shared surfaces while keeping demand predictable. Crew members should know which products are approved for the station environment."
+              ],
+              "key_takeaway": "The aim is effective, low-water hygiene, not zero hygiene."
+            }
+          ],
+          "key_points": [
+            "Station water supports drinking, food, hygiene, and operations.",
+            "Recovery systems reclaim water and reduce resupply.",
+            "Hygiene demand is shared and must be coordinated.",
+            "Low-water methods can be effective when used correctly."
+          ],
+          "practical_activity": {
+            "title": "Water Use Audit",
+            "prompt": "List your normal hygiene routine and identify two places where water use could be reduced without compromising cleanliness.",
+            "steps": [
+              "Include showering, oral care, handwashing, and laundry.",
+              "Identify one high-use step and one easy substitution.",
+              "Explain how you would confirm the substitute is effective."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "hygiene-m1-q1",
+                "question": "Why is hygiene water a shared operational concern on the station?",
+                "options": [
+                  "It is part of the same recovery system used by the crew",
+                  "It is only used for drinking",
+                  "It never needs recycling",
+                  "It is unlimited"
+                ],
+                "correct_index": 0,
+                "explanation": "Water is recovered and reused within a shared system, so demand affects the whole crew."
+              },
+              {
+                "id": "hygiene-m1-q2",
+                "question": "What is the best description of water conservation in space?",
+                "options": [
+                  "Skipping all hygiene",
+                  "Using effective low-water methods and coordinated demand",
+                  "Using more water to save time",
+                  "Ignoring the recovery system"
+                ],
+                "correct_index": 1,
+                "explanation": "Conservation means maintaining effective hygiene with less water and predictable demand."
+              },
+              {
+                "id": "hygiene-m1-q3",
+                "question": "Which source can water recovery systems reclaim water from?",
+                "options": [
+                  "Humidity condensate and used hygiene water",
+                  "Only fresh Earth water",
+                  "Only food packaging",
+                  "Only urine from plants"
+                ],
+                "correct_index": 0,
+                "explanation": "Recovery systems reclaim water from station sources such as condensate and hygiene water."
+              },
+              {
+                "id": "hygiene-m1-q4",
+                "question": "What should a crew member do if a water system anomaly is noticed?",
+                "options": [
+                  "Ignore it and continue",
+                  "Report it and follow the coordinated response",
+                  "Use more water to flush it",
+                  "Turn off all hygiene permanently"
+                ],
+                "correct_index": 1,
+                "explanation": "Reporting and following procedures protect the crew and the system."
+              }
+            ]
+          }
+        },
+        {
+          "id": "hygiene-m2",
+          "number": 2,
+          "title": "Body Hygiene Without a Shower",
+          "summary": "How crews stay clean using wipes, rinse-free products, and controlled airflow.",
+          "lessons": [
+            {
+              "id": "hygiene-m2-l1",
+              "title": "Cleaning in Weightlessness",
+              "content": [
+                "Water does not fall or pool in microgravity. Crews use rinse-free shampoo, body wipes, and cloths, then manage the used materials carefully. Airflow helps remove moisture and keep surfaces dry.",
+                "The goal is to clean the skin without leaving excess moisture in a closed environment. Products must be approved, and used wipes must be disposed of properly to avoid microbial growth."
+              ],
+              "key_takeaway": "Low-water cleaning works when products, airflow, and waste handling are planned together."
+            },
+            {
+              "id": "hygiene-m2-l2",
+              "title": "Skin and Comfort",
+              "content": [
+                "Skin can become dry or irritated in a closed, low-humidity environment. Gentle cleansing and moisturizing can help, but persistent rashes or irritation should be reported to the medical team.",
+                "Comfort and dignity matter. A predictable hygiene routine helps crew members feel human and maintain morale during a demanding mission."
+              ],
+              "key_takeaway": "Skin care is both a health and a morale issue; persistent problems need medical review."
+            }
+          ],
+          "key_points": [
+            "Water does not fall or pool in microgravity.",
+            "Rinse-free products, wipes, and airflow support body hygiene.",
+            "Used materials must be disposed of properly.",
+            "Persistent skin problems should be reported."
+          ],
+          "practical_activity": {
+            "title": "No-Shower Routine",
+            "prompt": "Design a five-step body hygiene routine for a station crew member using low-water products.",
+            "steps": [
+              "Sequence cleansing, drying, and waste disposal.",
+              "Include one skin-comfort step.",
+              "Explain how you would keep the area dry."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "hygiene-m2-q1",
+                "question": "Why is a traditional shower not practical on the station?",
+                "options": [
+                  "Water does not fall or pool in microgravity",
+                  "Water is not available at all",
+                  "Crew members do not need to clean",
+                  "Showers use no water"
+                ],
+                "correct_index": 0,
+                "explanation": "Weightless water behaves unpredictably. Low-water methods and airflow are used instead."
+              },
+              {
+                "id": "hygiene-m2-q2",
+                "question": "What is a useful body-cleaning method in microgravity?",
+                "options": [
+                  "Rinse-free products and wipes with controlled airflow",
+                  "A full shower with open water",
+                  "Using no cleaning products",
+                  "Spraying water freely"
+                ],
+                "correct_index": 0,
+                "explanation": "Rinse-free products, wipes, and airflow support hygiene without free water."
+              },
+              {
+                "id": "hygiene-m2-q3",
+                "question": "Why must used wipes be managed carefully?",
+                "options": [
+                  "They can support microbial growth if left in the environment",
+                  "They are food",
+                  "They create oxygen",
+                  "They improve airflow"
+                ],
+                "correct_index": 0,
+                "explanation": "Used materials must be contained and disposed of properly to protect the station environment."
+              },
+              {
+                "id": "hygiene-m2-q4",
+                "question": "What should happen if a crew member develops a persistent skin rash?",
+                "options": [
+                  "Ignore it",
+                  "Report it for medical review and follow care guidance",
+                  "Use more perfume",
+                  "Stop all hygiene"
+                ],
+                "correct_index": 1,
+                "explanation": "Persistent skin problems need medical review. Self-treatment can be unsafe."
+              }
+            ]
+          }
+        },
+        {
+          "id": "hygiene-m3",
+          "number": 3,
+          "title": "Oral and Skin Care",
+          "summary": "The small routines that protect health and comfort every day.",
+          "lessons": [
+            {
+              "id": "hygiene-m3-l1",
+              "title": "Oral Care in Orbit",
+              "content": [
+                "Oral care follows familiar principles: brush, clean between teeth, and maintain regular routines. In microgravity, the challenge is managing water and foam without a sink that drains normally.",
+                "Crews use small amounts of water and approved products, then wipe or swallow safely according to procedures. Good oral care protects the crew from preventable dental problems during a mission."
+              ],
+              "key_takeaway": "Oral care is familiar but must be adapted to manage water and foam."
+            },
+            {
+              "id": "hygiene-m3-l2",
+              "title": "Skin, Nails, and Grooming",
+              "content": [
+                "Grooming is part of personal care and morale. Nail clippings and hair must be contained because loose material can float into eyes or equipment. Mirrors, lighting, and restraints help crew members groom safely.",
+                "Skin and nail changes should be monitored. A small problem can become more serious in a confined environment, so reporting is part of prevention."
+              ],
+              "key_takeaway": "Contain loose material and report skin or nail changes early."
+            }
+          ],
+          "key_points": [
+            "Oral care follows regular brushing and cleaning principles.",
+            "Water and foam must be managed without a normal sink.",
+            "Hair and nail clippings must be contained.",
+            "Skin and nail changes should be reported early."
+          ],
+          "practical_activity": {
+            "title": "Oral Care Procedure",
+            "prompt": "Write a short oral-care procedure for microgravity that manages water, foam, and waste.",
+            "steps": [
+              "List the supplies.",
+              "Describe the sequence and water control.",
+              "Explain how waste is contained."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "hygiene-m3-q1",
+                "question": "What makes oral care different in microgravity?",
+                "options": [
+                  "Water and foam must be managed without a draining sink",
+                  "Teeth do not need cleaning",
+                  "Toothbrushes do not work",
+                  "There is no need for water at all"
+                ],
+                "correct_index": 0,
+                "explanation": "The principles are familiar, but water and foam require controlled handling."
+              },
+              {
+                "id": "hygiene-m3-q2",
+                "question": "Why must hair and nail clippings be contained?",
+                "options": [
+                  "They can float into eyes or equipment",
+                  "They are used as food",
+                  "They improve airflow",
+                  "They are part of the water system"
+                ],
+                "correct_index": 0,
+                "explanation": "Loose material can become a hazard in weightlessness."
+              },
+              {
+                "id": "hygiene-m3-q3",
+                "question": "What is the best response to a changing skin or nail condition?",
+                "options": [
+                  "Report it for review",
+                  "Ignore it until the mission ends",
+                  "Cover it and say nothing",
+                  "Use an unapproved product"
+                ],
+                "correct_index": 0,
+                "explanation": "Early reporting supports prevention and appropriate care."
+              },
+              {
+                "id": "hygiene-m3-q4",
+                "question": "Why do grooming and hygiene support morale?",
+                "options": [
+                  "They help crew members feel comfortable and maintain routine",
+                  "They replace sleep",
+                  "They increase radiation",
+                  "They eliminate all stress"
+                ],
+                "correct_index": 0,
+                "explanation": "Personal care supports dignity, comfort, and a sense of normal routine."
+              }
+            ]
+          }
+        },
+        {
+          "id": "hygiene-m4",
+          "number": 4,
+          "title": "Cleaning, Air, and Microbial Control",
+          "summary": "How shared surfaces, airflow, and cleaning routines protect a closed environment.",
+          "lessons": [
+            {
+              "id": "hygiene-m4-l1",
+              "title": "A Shared Microbial Environment",
+              "content": [
+                "A closed station contains people, surfaces, equipment, and airflow. Microorganisms travel on hands, droplets, and dust. Cleaning and hand hygiene reduce the chance that a small contamination becomes a shared problem.",
+                "Station teams monitor the microbial environment and follow cleaning schedules. Crew members support this by cleaning shared surfaces, handling waste correctly, and reporting spills or unusual growth."
+              ],
+              "key_takeaway": "Cleaning is a shared responsibility in a closed environment."
+            },
+            {
+              "id": "hygiene-m4-l2",
+              "title": "Airflow and Filters",
+              "content": [
+                "Airflow helps distribute air, remove moisture, and carry particles toward filters. Blocking vents or leaving wet materials in the open can undermine that system.",
+                "Filters and life-support equipment need maintenance. Crews should keep areas clear, follow stowage rules, and report unusual odors, condensation, or airflow changes."
+              ],
+              "key_takeaway": "Keep airflow paths clear and report changes in moisture, odor, or airflow."
+            }
+          ],
+          "key_points": [
+            "Microorganisms travel through a shared closed environment.",
+            "Hand hygiene and surface cleaning reduce contamination.",
+            "Airflow and filters need clear paths and maintenance.",
+            "Report spills, unusual growth, odors, or airflow changes."
+          ],
+          "practical_activity": {
+            "title": "Shared Space Cleaning Plan",
+            "prompt": "Create a daily cleaning plan for a shared station area, including surfaces, airflow, and waste.",
+            "steps": [
+              "List high-touch surfaces and one cleaning frequency.",
+              "Identify one airflow hazard to avoid.",
+              "Describe how waste and wet materials are handled."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "hygiene-m4-q1",
+                "question": "Why is cleaning a shared responsibility on the station?",
+                "options": [
+                  "Microorganisms can spread through shared surfaces and airflow",
+                  "Only one crew member uses the station",
+                  "Cleaning has no effect on health",
+                  "The station is sterile"
+                ],
+                "correct_index": 0,
+                "explanation": "A closed environment connects people and surfaces, so contamination can spread."
+              },
+              {
+                "id": "hygiene-m4-q2",
+                "question": "What can block effective airflow?",
+                "options": [
+                  "Blocking vents and leaving wet materials in the open",
+                  "Cleaning filters",
+                  "Using approved stowage",
+                  "Reporting odors"
+                ],
+                "correct_index": 0,
+                "explanation": "Clear airflow paths and controlled moisture support the environmental system."
+              },
+              {
+                "id": "hygiene-m4-q3",
+                "question": "Which change should be reported?",
+                "options": [
+                  "Unusual odors, condensation, or airflow changes",
+                  "A normal clean surface",
+                  "A completed cleaning task",
+                  "A stored tool"
+                ],
+                "correct_index": 0,
+                "explanation": "These can signal a life-support or microbial issue that needs attention."
+              },
+              {
+                "id": "hygiene-m4-q4",
+                "question": "What is a good hand-hygiene principle?",
+                "options": [
+                  "Clean hands at key transitions and before food handling",
+                  "Only clean hands when visibly dirty",
+                  "Never use approved cleaning products",
+                  "Use food as a cleaning agent"
+                ],
+                "correct_index": 0,
+                "explanation": "Key transitions and food handling are important moments for hand hygiene."
+              }
+            ]
+          }
+        },
+        {
+          "id": "hygiene-m5",
+          "number": 5,
+          "title": "Personal Care Routines and Privacy",
+          "summary": "Designing routines that protect health, dignity, and crew cohesion.",
+          "lessons": [
+            {
+              "id": "hygiene-m5-l1",
+              "title": "Routine and Privacy",
+              "content": [
+                "A predictable personal care routine helps crew members feel in control. Privacy is limited on a station, so schedules and designated areas matter. Crew members should be able to manage hygiene with reasonable dignity.",
+                "Preferences vary. A good plan respects individual needs while keeping shared resources and schedules workable. Small accommodations can have a meaningful effect on morale."
+              ],
+              "key_takeaway": "Personal care planning should protect both resources and dignity."
+            },
+            {
+              "id": "hygiene-m5-l2",
+              "title": "Clothing and Shared Responsibilities",
+              "content": [
+                "Clothing is limited and laundry is not like home. Crews manage clothing rotation, cleanliness, and stowage. Clean clothing and bedding support skin health and comfort.",
+                "Shared responsibilities such as cleaning schedules and supply tracking keep the environment functioning. Everyone contributes, and concerns should be raised before they become conflicts."
+              ],
+              "key_takeaway": "Clothing, cleaning, and supply routines are shared crew responsibilities."
+            }
+          ],
+          "key_points": [
+            "Predictable routines support a sense of control.",
+            "Privacy and dignity should be designed into hygiene schedules.",
+            "Clothing and bedding need rotation and stowage planning.",
+            "Shared responsibilities prevent small issues from becoming conflicts."
+          ],
+          "practical_activity": {
+            "title": "Low-Water Hygiene Routine",
+            "prompt": "Design a 24-hour personal care routine for a crew member, including privacy, clothing, and waste handling.",
+            "steps": [
+              "Schedule hygiene around the crew's shared water plan.",
+              "Include body care, oral care, and grooming.",
+              "Describe one privacy protection and one waste-handling step."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "hygiene-m5-q1",
+                "question": "Why does privacy matter in personal care planning?",
+                "options": [
+                  "It supports dignity, comfort, and morale",
+                  "It increases water use",
+                  "It replaces cleaning",
+                  "It has no effect on crew performance"
+                ],
+                "correct_index": 0,
+                "explanation": "Privacy and dignity are part of a healthy crew environment."
+              },
+              {
+                "id": "hygiene-m5-q2",
+                "question": "How should clothing be managed on a station?",
+                "options": [
+                  "With rotation, cleanliness, and stowage planning",
+                  "By wearing the same clothes indefinitely",
+                  "By discarding all clothing after one use",
+                  "By storing dirty clothing in airflow paths"
+                ],
+                "correct_index": 0,
+                "explanation": "Limited laundry and storage require a planned rotation."
+              },
+              {
+                "id": "hygiene-m5-q3",
+                "question": "What is a good way to handle shared cleaning duties?",
+                "options": [
+                  "Use a clear schedule and raise concerns early",
+                  "Assume someone else will do everything",
+                  "Ignore the schedule",
+                  "Argue privately until the mission ends"
+                ],
+                "correct_index": 0,
+                "explanation": "Clear responsibilities and early communication prevent conflict."
+              },
+              {
+                "id": "hygiene-m5-q4",
+                "question": "What makes a personal care routine sustainable?",
+                "options": [
+                  "It respects resources, privacy, individual needs, and shared schedules",
+                  "It uses maximum water",
+                  "It has no schedule",
+                  "It ignores waste handling"
+                ],
+                "correct_index": 0,
+                "explanation": "A sustainable routine balances effectiveness, resources, privacy, and teamwork."
+              }
+            ]
+          }
+        }
+      ],
+      "practical_activity": {
+        "title": "Design a Low-Water Hygiene Routine",
+        "description": "Create a 24-hour hygiene and personal care plan for a station crew member. Use low-water methods and respect shared life-support constraints.",
+        "steps": [
+          "List body, oral, skin, and grooming needs.",
+          "Choose low-water products and methods.",
+          "Coordinate the routine with a shared water-recovery schedule.",
+          "Include privacy, waste handling, and one skin-health check.",
+          "Explain how the routine supports morale as well as cleanliness."
+        ],
+        "submission_prompt": "Paste your routine and rationale. Explain how it protects both the crew member and the station environment.",
+        "minimum_words": 80
+      },
+      "final_assessment": {
+        "title": "Hygiene & Personal Care Final Assessment",
+        "passing_score": 70,
+        "questions": [
+          {
+            "id": "hygiene-final-q1",
+            "question": "Water recovery is on watch and the crew wants a full hygiene block. What is the best plan?",
+            "options": [
+              "Run all hygiene tasks immediately",
+              "Confirm status, sequence essential hygiene, use low-water methods, and log use",
+              "Cancel all hygiene permanently",
+              "Use drinking water without coordination"
+            ],
+            "correct_index": 1,
+            "explanation": "Confirm the shared system status, sequence demand, and use low-water methods."
+          },
+          {
+            "id": "hygiene-final-q2",
+            "question": "Why is a traditional shower not used on the station?",
+            "options": [
+              "Water behaves unpredictably in microgravity",
+              "The crew does not sweat",
+              "Water is not needed for hygiene",
+              "Showers are forbidden by the crew"
+            ],
+            "correct_index": 0,
+            "explanation": "Weightless water does not fall or drain normally, so low-water methods and airflow are used."
+          },
+          {
+            "id": "hygiene-final-q3",
+            "question": "What is the best way to contain hair and nail clippings?",
+            "options": [
+              "Let them float away",
+              "Use controlled grooming and contain the waste",
+              "Put them in the airflow",
+              "Store them in food packaging"
+            ],
+            "correct_index": 1,
+            "explanation": "Loose material can become a hazard, so grooming must contain waste."
+          },
+          {
+            "id": "hygiene-final-q4",
+            "question": "Which observation should be reported to the team?",
+            "options": [
+              "Unusual odors, condensation, or airflow changes",
+              "A clean, dry surface",
+              "A completed cleaning schedule",
+              "A normally stored tool"
+            ],
+            "correct_index": 0,
+            "explanation": "These can indicate environmental or microbial issues."
+          },
+          {
+            "id": "hygiene-final-q5",
+            "question": "Why is privacy part of a good hygiene plan?",
+            "options": [
+              "It supports dignity and morale",
+              "It increases water demand",
+              "It removes the need for cleaning",
+              "It is unrelated to crew performance"
+            ],
+            "correct_index": 0,
+            "explanation": "Privacy is a basic element of respectful personal care."
+          },
+          {
+            "id": "hygiene-final-q6",
+            "question": "What is the strongest hygiene philosophy for a station crew?",
+            "options": [
+              "Use as much water as possible",
+              "Effective low-water care, shared coordination, and early reporting",
+              "Skip hygiene to save time",
+              "Hide skin or cleaning problems"
+            ],
+            "correct_index": 1,
+            "explanation": "Effective care, coordination, and early reporting protect both crew and station."
+          }
+        ]
+      },
+      "badge": {
+        "id": "badge-hygiene",
+        "name": "Hygiene Officer",
+        "description": "Completed all Hygiene & Personal Care requirements and passed the final assessment.",
+        "icon": "hygiene"
+      },
+      "nasa_resources": [
+        {
+          "label": "NASA International Space Station",
+          "url": "https://www.nasa.gov/international-space-station/"
+        },
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        }
+      ]
+    },
+    {
+      "id": "human-body-microgravity",
+      "number": 6,
+      "title": "Human Body in Microgravity",
+      "short_title": "Microgravity",
+      "icon": "body",
+      "accent": "rose",
+      "tagline": "Understand how the body adapts to weightlessness and returns to gravity.",
+      "introduction": [
+        "Microgravity is not a single change; it is a whole-body experiment. Fluids shift, the vestibular system receives conflicting signals, the heart and blood vessels adapt, and bone and muscle lose loading.",
+        "This course explains the major adaptations, the difference between adaptation and disease, and why monitoring and reconditioning matter during and after spaceflight."
+      ],
+      "objectives": [
+        "Describe the major physiological changes that occur in microgravity.",
+        "Explain headward fluid shift and space adaptation symptoms.",
+        "Connect cardiovascular, musculoskeletal, neuro-ocular, and immune changes to crew health.",
+        "Build an educational crew adaptation briefing that avoids diagnosis and invented measurements."
+      ],
+      "estimated_minutes": 65,
+      "mission_links": [
+        {
+          "day": 2,
+          "event_id": "d2-e1",
+          "label": "Day 2 - Select a Radiation Protection Posture"
+        },
+        {
+          "day": 3,
+          "event_id": "d3-e2",
+          "label": "Day 3 - Repair Scheduling Trade-off"
+        },
+        {
+          "day": 5,
+          "event_id": "d5-e2",
+          "label": "Day 5 - Crew Health and Fitness Debrief"
+        }
+      ],
+      "modules": [
+        {
+          "id": "body-m1",
+          "number": 1,
+          "title": "Gravity and the Human Body",
+          "summary": "How gravity shapes the body and why removing it changes multiple systems.",
+          "lessons": [
+            {
+              "id": "body-m1-l1",
+              "title": "A Body Built for Gravity",
+              "content": [
+                "Human physiology is adapted to a gravity environment. Gravity influences how blood is distributed, how the skeleton is loaded, how balance is organized, and how movement is planned.",
+                "When gravity is removed, the body does not simply switch off. It begins a process of adaptation. Some changes are short-term adjustments; others become more pronounced during long-duration spaceflight."
+              ],
+              "key_takeaway": "Microgravity triggers a coordinated adaptation across many body systems."
+            },
+            {
+              "id": "body-m1-l2",
+              "title": "Adaptation Is Not Automatically Harmful",
+              "content": [
+                "Some changes in space are normal adaptations to the environment. For example, the cardiovascular system may adjust its volume and the vestibular system may recalibrate. The operational concern is whether adaptation reduces capability during the mission or during return to gravity.",
+                "Monitoring helps the team distinguish expected adaptation from a concerning change. In this course, we describe patterns and support principles, not individual diagnoses."
+              ],
+              "key_takeaway": "Distinguish expected adaptation from a change that needs medical review."
+            }
+          ],
+          "key_points": [
+            "Gravity influences fluid distribution, bone, muscle, balance, and movement.",
+            "Microgravity produces a coordinated whole-body adaptation.",
+            "Some changes are expected adaptations; others require monitoring.",
+            "Educational content cannot replace medical assessment."
+          ],
+          "practical_activity": {
+            "title": "Gravity Systems Map",
+            "prompt": "Draw a simple map linking gravity to three body systems and one change that occurs when gravity is reduced.",
+            "steps": [
+              "Choose fluid distribution, bone and muscle, and balance.",
+              "Describe a likely adaptation for each.",
+              "Add one way the crew could monitor or support it."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "body-m1-q1",
+                "question": "Why does microgravity affect multiple body systems?",
+                "options": [
+                  "Gravity influences fluid distribution, loading, balance, and movement",
+                  "Only the muscles are affected",
+                  "The body stops adapting",
+                  "Gravity only affects plants"
+                ],
+                "correct_index": 0,
+                "explanation": "Gravity is a whole-body stimulus, so removing it produces a coordinated adaptation."
+              },
+              {
+                "id": "body-m1-q2",
+                "question": "Which statement is most accurate?",
+                "options": [
+                  "All changes in space are diseases",
+                  "Some changes are expected adaptations, while others need monitoring",
+                  "No changes occur in space",
+                  "Adaptation never affects performance"
+                ],
+                "correct_index": 1,
+                "explanation": "The course distinguishes expected adaptation from concerning change."
+              },
+              {
+                "id": "body-m1-q3",
+                "question": "What is the role of monitoring during adaptation?",
+                "options": [
+                  "To notice changes and support informed decisions",
+                  "To replace all exercise",
+                  "To label every crew member",
+                  "To eliminate uncertainty"
+                ],
+                "correct_index": 0,
+                "explanation": "Monitoring supports awareness and timely support, not labeling."
+              },
+              {
+                "id": "body-m1-q4",
+                "question": "Why is an educational course not a medical diagnosis?",
+                "options": [
+                  "It cannot assess an individual's clinical status",
+                  "Because spaceflight has no health effects",
+                  "Because all symptoms are identical",
+                  "Because monitoring is unnecessary"
+                ],
+                "correct_index": 0,
+                "explanation": "Individual assessment requires qualified medical evaluation."
+              }
+            ]
+          }
+        },
+        {
+          "id": "body-m2",
+          "number": 2,
+          "title": "Fluid Shifts and the Head",
+          "summary": "Why fluids move toward the head and how the body responds.",
+          "lessons": [
+            {
+              "id": "body-m2-l1",
+              "title": "The Headward Shift",
+              "content": [
+                "On Earth, gravity pulls body fluids downward. In microgravity, that pull is removed, so fluids shift toward the head and upper body. Crew members may notice facial puffiness, nasal congestion, or a feeling of fullness in the head.",
+                "The body begins to adjust fluid volume over time. These changes are part of the adaptation picture, but they can also interact with vision, sleep, and comfort. Monitoring helps the team understand the pattern."
+              ],
+              "key_takeaway": "Removing gravity's downward pull shifts fluids toward the head and upper body."
+            },
+            {
+              "id": "body-m2-l2",
+              "title": "Pressure and Vision Research",
+              "content": [
+                "Researchers study how the headward fluid shift and pressure changes may relate to eye and vision changes in some astronauts. The exact mechanisms are still an active area of research.",
+                "Crew members do not diagnose themselves. Vision changes are documented and evaluated by medical teams. The educational takeaway is that fluid shift is a whole-body adaptation with effects beyond how the face looks."
+              ],
+              "key_takeaway": "Fluid shift can affect comfort and vision, and vision changes need professional evaluation."
+            }
+          ],
+          "key_points": [
+            "Gravity normally pulls fluids downward.",
+            "Microgravity causes a headward fluid shift.",
+            "Facial puffiness and congestion are common descriptions.",
+            "Vision changes require medical monitoring, not self-diagnosis."
+          ],
+          "practical_activity": {
+            "title": "Fluid Shift Explainer",
+            "prompt": "Explain headward fluid shift in plain language and describe two crew-relevant effects.",
+            "steps": [
+              "Use the idea of gravity no longer pulling fluids down.",
+              "Name two possible effects, such as facial fullness or vision monitoring.",
+              "State why medical follow-up matters for persistent symptoms."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "body-m2-q1",
+                "question": "Why do fluids shift toward the head in microgravity?",
+                "options": [
+                  "Gravity no longer pulls them downward",
+                  "The body produces extra fluid",
+                  "The heart stops working",
+                  "The crew is always upside down"
+                ],
+                "correct_index": 0,
+                "explanation": "Without the usual downward pull, fluids redistribute toward the upper body."
+              },
+              {
+                "id": "body-m2-q2",
+                "question": "Which is a commonly described effect of headward fluid shift?",
+                "options": [
+                  "Facial puffiness or nasal congestion",
+                  "Loss of all vision",
+                  "Immediate bone fracture",
+                  "Complete loss of hearing"
+                ],
+                "correct_index": 0,
+                "explanation": "Crew members may describe facial fullness or congestion as fluids shift."
+              },
+              {
+                "id": "body-m2-q3",
+                "question": "What should a crew member do about a vision change?",
+                "options": [
+                  "Self-diagnose and self-treat",
+                  "Report it for professional monitoring and evaluation",
+                  "Ignore it until return to Earth",
+                  "Stop drinking water"
+                ],
+                "correct_index": 1,
+                "explanation": "Vision changes require professional evaluation. Self-treatment is unsafe."
+              },
+              {
+                "id": "body-m2-q4",
+                "question": "What is the best summary of fluid shift research?",
+                "options": [
+                  "It is fully understood and has no open questions",
+                  "It is an active research area with effects on comfort and vision",
+                  "It only affects appearance",
+                  "It is unrelated to spaceflight"
+                ],
+                "correct_index": 1,
+                "explanation": "Fluid shift and related vision changes are active research areas."
+              }
+            ]
+          }
+        },
+        {
+          "id": "body-m3",
+          "number": 3,
+          "title": "Balance, Movement, and Space Adaptation",
+          "summary": "Why the vestibular system struggles at first and how crews adapt.",
+          "lessons": [
+            {
+              "id": "body-m3-l1",
+              "title": "Conflicting Balance Signals",
+              "content": [
+                "The vestibular system in the inner ear helps sense head position and motion. On Earth, it works with visual and body-position cues. In microgravity, those cues no longer agree in the usual way.",
+                "The brain receives conflicting information. Some crew members experience nausea, dizziness, or disorientation during the first days of spaceflight. This is often described as space adaptation syndrome, but individual symptoms need medical review."
+              ],
+              "key_takeaway": "Microgravity creates sensory conflict that can cause temporary disorientation or nausea."
+            },
+            {
+              "id": "body-m3-l2",
+              "title": "Moving Safely While Adapting",
+              "content": [
+                "Crews use handrails, move slowly, and orient themselves deliberately while adapting. Visual cues and consistent reference points help. Tasks that require precise movement may need extra care early in the mission.",
+                "Adaptation is usually gradual, but the timeline varies. A crew member who feels unwell should report it and follow medical guidance rather than pushing through a risky task."
+              ],
+              "key_takeaway": "Slow, deliberate movement and early reporting support safety during adaptation."
+            }
+          ],
+          "key_points": [
+            "The vestibular system senses head position and motion.",
+            "Microgravity creates conflict between balance, visual, and body cues.",
+            "Nausea and disorientation can occur during adaptation.",
+            "Handrails, slow movement, and reporting support safety."
+          ],
+          "practical_activity": {
+            "title": "Adaptation Safety Brief",
+            "prompt": "Write a short safety brief for a crew member during the first days of microgravity adaptation.",
+            "steps": [
+              "Explain sensory conflict in plain language.",
+              "Give three movement or orientation tips.",
+              "State when to stop and report symptoms."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "body-m3-q1",
+                "question": "Why can crew members feel disoriented early in spaceflight?",
+                "options": [
+                  "The vestibular, visual, and body-position cues conflict",
+                  "The inner ear disappears",
+                  "Gravity becomes stronger",
+                  "The crew forgets how to move"
+                ],
+                "correct_index": 0,
+                "explanation": "Sensory systems that normally agree now provide conflicting information."
+              },
+              {
+                "id": "body-m3-q2",
+                "question": "Which is a safe movement strategy during adaptation?",
+                "options": [
+                  "Move quickly and ignore symptoms",
+                  "Use handrails, move deliberately, and use visual reference points",
+                  "Remove all restraints",
+                  "Attempt complex tasks immediately"
+                ],
+                "correct_index": 1,
+                "explanation": "Deliberate movement and stable references support safety while adapting."
+              },
+              {
+                "id": "body-m3-q3",
+                "question": "What should a crew member do if nausea or disorientation is affecting a task?",
+                "options": [
+                  "Push through the task",
+                  "Stop, report it, and follow medical guidance",
+                  "Hide it from the team",
+                  "Increase task complexity"
+                ],
+                "correct_index": 1,
+                "explanation": "Symptoms that affect task performance should be reported and managed."
+              },
+              {
+                "id": "body-m3-q4",
+                "question": "What is space adaptation syndrome?",
+                "options": [
+                  "A descriptive term for symptoms during adaptation to microgravity",
+                  "A station power failure",
+                  "A type of exercise device",
+                  "A permanent diagnosis for every astronaut"
+                ],
+                "correct_index": 0,
+                "explanation": "It describes a set of adaptation symptoms. Individual assessment still requires medical judgment."
+              }
+            ]
+          }
+        },
+        {
+          "id": "body-m4",
+          "number": 4,
+          "title": "Cardiovascular and Musculoskeletal Adaptation",
+          "summary": "How the heart, blood vessels, bone, and muscle respond to unloading.",
+          "lessons": [
+            {
+              "id": "body-m4-l1",
+              "title": "The Cardiovascular System",
+              "content": [
+                "The cardiovascular system adapts to the changed fluid distribution and workload of spaceflight. Blood volume and heart function can change, and some crew members experience orthostatic intolerance after returning to gravity.",
+                "Exercise, hydration, and monitored reconditioning are part of the response. The goal is to maintain capability during the mission and support the return to gravity."
+              ],
+              "key_takeaway": "Cardiovascular adaptation affects both the mission and the return to gravity."
+            },
+            {
+              "id": "body-m4-l2",
+              "title": "Bone and Muscle",
+              "content": [
+                "Reduced mechanical loading contributes to bone loss and muscle atrophy. Resistance exercise provides a loading stimulus, while aerobic exercise supports cardiovascular fitness. Nutrition supports the tissue-repair environment.",
+                "The changes vary by individual and mission duration. Monitoring, exercise, and nutrition are combined, and rehabilitation continues after return."
+              ],
+              "key_takeaway": "Bone and muscle protection combines loading, nutrition, monitoring, and rehabilitation."
+            }
+          ],
+          "key_points": [
+            "The cardiovascular system adapts to fluid and workload changes.",
+            "Orthostatic intolerance can occur after return to gravity.",
+            "Bone loss and muscle atrophy are linked to unloading.",
+            "Exercise, nutrition, monitoring, and rehabilitation are combined."
+          ],
+          "practical_activity": {
+            "title": "Return-to-Gravity Brief",
+            "prompt": "Explain three ways the cardiovascular and musculoskeletal systems can be supported during and after spaceflight.",
+            "steps": [
+              "Choose exercise, hydration, and monitored reconditioning.",
+              "Explain the purpose of each.",
+              "Add one reason individual variation matters."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "body-m4-q1",
+                "question": "Why can orthostatic intolerance occur after returning to gravity?",
+                "options": [
+                  "The cardiovascular system has adapted to microgravity",
+                  "The body has too much bone",
+                  "Gravity disappears on Earth",
+                  "The crew did not sleep"
+                ],
+                "correct_index": 0,
+                "explanation": "Cardiovascular adaptation can make it harder to maintain blood pressure when standing again."
+              },
+              {
+                "id": "body-m4-q2",
+                "question": "What supports bone and muscle during spaceflight?",
+                "options": [
+                  "Resistance exercise, nutrition, and monitoring",
+                  "Avoiding all movement",
+                  "Cutting all protein",
+                  "Sleeping more than 12 hours"
+                ],
+                "correct_index": 0,
+                "explanation": "Loading through exercise, nutrition, and monitoring are combined countermeasures."
+              },
+              {
+                "id": "body-m4-q3",
+                "question": "Why does rehabilitation continue after return?",
+                "options": [
+                  "The body needs time to readapt to gravity",
+                  "Rehabilitation is only for athletes",
+                  "Gravity has no effect on the body",
+                  "Exercise becomes unnecessary"
+                ],
+                "correct_index": 0,
+                "explanation": "Readaptation to gravity takes time and may require monitored exercise and support."
+              },
+              {
+                "id": "body-m4-q4",
+                "question": "Which statement about individual variation is correct?",
+                "options": [
+                  "Every crew member adapts identically",
+                  "Adaptation and recovery vary between individuals",
+                  "Only mission duration matters",
+                  "Monitoring is unnecessary because variation is small"
+                ],
+                "correct_index": 1,
+                "explanation": "Individual responses differ, so monitoring and individualized plans matter."
+              }
+            ]
+          }
+        },
+        {
+          "id": "body-m5",
+          "number": 5,
+          "title": "Neuro-ocular and Immune Changes; Return to Gravity",
+          "summary": "The research frontier: vision, immunity, and reconditioning after spaceflight.",
+          "lessons": [
+            {
+              "id": "body-m5-l1",
+              "title": "Vision and the Brain",
+              "content": [
+                "Some astronauts experience changes in vision and eye structure during long-duration spaceflight. Researchers use the term Spaceflight Associated Neuro-ocular Syndrome, or SANS, to describe a pattern of findings that is still being studied.",
+                "The cause is not fully understood. Fluid shift, pressure, and individual factors are part of the research. Crew members undergo monitoring, and any change is evaluated by medical professionals."
+              ],
+              "key_takeaway": "SANS is an active research area; vision changes require professional monitoring."
+            },
+            {
+              "id": "body-m5-l2",
+              "title": "Immune Changes and Reconditioning",
+              "content": [
+                "Spaceflight can be associated with changes in immune function, and some latent viruses can reactivate without causing illness. The practical takeaway is that crew health monitoring, sleep, nutrition, exercise, and hygiene all support resilience.",
+                "Returning to gravity is its own adaptation. Crews may experience balance, blood-pressure, and strength changes. A structured reconditioning plan helps the body rebuild capacity safely."
+              ],
+              "key_takeaway": "Immune resilience and return-to-gravity recovery are supported by integrated crew health practices."
+            }
+          ],
+          "key_points": [
+            "SANS describes a pattern of eye and vision findings under study.",
+            "The causes of vision changes are not fully understood.",
+            "Immune changes can occur; monitoring and healthy routines matter.",
+            "Return to gravity requires reconditioning and follow-up."
+          ],
+          "practical_activity": {
+            "title": "Crew Adaptation Briefing",
+            "prompt": "Prepare a five-point briefing on fluid shift, balance, cardiovascular fitness, bone and muscle, and vision monitoring for a new crew.",
+            "steps": [
+              "Use plain language and avoid diagnoses.",
+              "Include one monitoring action and one countermeasure for each area.",
+              "End with the importance of reporting changes."
+            ]
+          },
+          "quiz": {
+            "passing_score": 70,
+            "questions": [
+              {
+                "id": "body-m5-q1",
+                "question": "What is SANS?",
+                "options": [
+                  "A pattern of eye and vision findings in spaceflight that researchers are studying",
+                  "A station exercise machine",
+                  "A type of radiation shield",
+                  "A confirmed cure for vision loss"
+                ],
+                "correct_index": 0,
+                "explanation": "SANS describes a research pattern. It is not a self-diagnosis or a complete explanation."
+              },
+              {
+                "id": "body-m5-q2",
+                "question": "What is a reasonable statement about immune changes in spaceflight?",
+                "options": [
+                  "They can occur, and crew health practices support resilience",
+                  "They never occur",
+                  "They guarantee illness",
+                  "They are unrelated to sleep or nutrition"
+                ],
+                "correct_index": 0,
+                "explanation": "Immune changes are an area of research. Sleep, nutrition, exercise, and hygiene support overall resilience."
+              },
+              {
+                "id": "body-m5-q3",
+                "question": "Why is reconditioning important after return to gravity?",
+                "options": [
+                  "The body must readapt after microgravity",
+                  "Gravity has no effect",
+                  "Exercise should stop after landing",
+                  "Vision changes are the only concern"
+                ],
+                "correct_index": 0,
+                "explanation": "Balance, blood pressure, and strength may need structured recovery after return."
+              },
+              {
+                "id": "body-m5-q4",
+                "question": "What should a crew member do about a persistent vision change?",
+                "options": [
+                  "Report it for professional evaluation",
+                  "Self-treat with unapproved supplements",
+                  "Ignore it",
+                  "Stop all exercise without advice"
+                ],
+                "correct_index": 0,
+                "explanation": "Persistent vision changes require professional evaluation."
+              }
+            ]
+          }
+        }
+      ],
+      "practical_activity": {
+        "title": "Create a Crew Adaptation Briefing",
+        "description": "Prepare an educational briefing for a new crew on how the human body adapts to microgravity and returns to gravity. Keep it descriptive and non-clinical.",
+        "steps": [
+          "Cover fluid shift, balance and movement, cardiovascular fitness, bone and muscle, and vision monitoring.",
+          "Explain the difference between expected adaptation and a change that needs review.",
+          "Include one countermeasure and one monitoring action for each area.",
+          "Add a return-to-gravity reconditioning section.",
+          "State clearly that the briefing is educational, not medical advice."
+        ],
+        "submission_prompt": "Paste your briefing and explain how it would help a crew member recognize when to report a change.",
+        "minimum_words": 100
+      },
+      "final_assessment": {
+        "title": "Human Body in Microgravity Final Assessment",
+        "passing_score": 70,
+        "questions": [
+          {
+            "id": "body-final-q1",
+            "question": "Why does headward fluid shift occur in microgravity?",
+            "options": [
+              "Gravity no longer pulls fluids toward the feet",
+              "The body makes too much blood",
+              "The heart stops",
+              "The crew drinks too much water"
+            ],
+            "correct_index": 0,
+            "explanation": "Removing gravity's downward pull allows fluids to redistribute toward the upper body."
+          },
+          {
+            "id": "body-final-q2",
+            "question": "What is the best response to nausea and disorientation during early adaptation?",
+            "options": [
+              "Push through complex tasks",
+              "Move deliberately, use references, and report symptoms that affect safety",
+              "Ignore all symptoms",
+              "Remove handrails"
+            ],
+            "correct_index": 1,
+            "explanation": "Safe movement and reporting support adaptation and reduce risk."
+          },
+          {
+            "id": "body-final-q3",
+            "question": "Which combination best supports bone and muscle during spaceflight?",
+            "options": [
+              "Resistance exercise, nutrition, and monitoring",
+              "Complete bed rest",
+              "Cutting protein and calcium",
+              "Avoiding all loading"
+            ],
+            "correct_index": 0,
+            "explanation": "Loading through exercise, nutrition, and monitoring are combined countermeasures."
+          },
+          {
+            "id": "body-final-q4",
+            "question": "What is a responsible statement about SANS?",
+            "options": [
+              "It is fully understood and easily self-treated",
+              "It is a research area involving eye and vision changes that requires professional monitoring",
+              "It has no effect on astronauts",
+              "It is caused only by exercise"
+            ],
+            "correct_index": 1,
+            "explanation": "SANS is an active research area. Vision changes require professional evaluation."
+          },
+          {
+            "id": "body-final-q5",
+            "question": "Why does return to gravity require reconditioning?",
+            "options": [
+              "The body has adapted to microgravity and must readapt",
+              "Gravity is stronger than before",
+              "Exercise becomes harmful",
+              "The crew no longer needs sleep"
+            ],
+            "correct_index": 0,
+            "explanation": "Cardiovascular, balance, and musculoskeletal systems need time to readapt."
+          },
+          {
+            "id": "body-final-q6",
+            "question": "Which is the best overall approach to crew adaptation?",
+            "options": [
+              "Monitor, support with exercise and nutrition, and report concerning changes",
+              "Ignore all changes until landing",
+              "Use unapproved treatments",
+              "Avoid all physical activity"
+            ],
+            "correct_index": 0,
+            "explanation": "Integrated monitoring and support protect crew health across adaptation and return."
+          }
+        ]
+      },
+      "badge": {
+        "id": "badge-body",
+        "name": "Microgravity Expert",
+        "description": "Completed all Human Body in Microgravity requirements and passed the final assessment.",
+        "icon": "body"
+      },
+      "nasa_resources": [
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        },
+        {
+          "label": "NASA Humans in Space",
+          "url": "https://www.nasa.gov/humans-in-space/"
+        }
+      ]
+    }
+  ],
+  "final_training_challenge": {
+    "id": "final-training-challenge",
+    "title": "Final Training Challenge",
+    "subtitle": "Integrated Crew Readiness Board",
+    "description": "Bring the six Academy disciplines together in one final scenario. You will answer integrated questions and submit a Crew Readiness Brief that explains how you would support a crew across sleep, exercise, nutrition, mental health, hygiene, and microgravity adaptation.",
+    "prerequisite": "Complete all six Academy courses.",
+    "passing_score": 70,
+    "practical_activity": {
+      "title": "Crew Readiness Brief",
+      "prompt": "Write a concise brief for a crew preparing for a five-day station mission. Explain how you would support sleep, exercise, nutrition, mental health, hygiene, and human adaptation in microgravity. Identify one risk from each area and one practical countermeasure. End with how you would use the Academy knowledge during the mission simulation.",
+      "minimum_words": 150,
+      "submission_label": "Submit Crew Readiness Brief"
+    },
+    "questions": [
+      {
+        "id": "ftc-q1",
+        "question": "A crew member has slept poorly for three nights and now reports irritability and slower reactions. What is the strongest first response?",
+        "options": [
+          "Tell the crew member to use more caffeine and continue the schedule",
+          "Reduce nonessential workload, protect the next sleep opportunity, and check in again",
+          "Wait for the final assessment before making any change",
+          "Assume the behavior is a personality issue"
+        ],
+        "correct_index": 1,
+        "explanation": "Cumulative fatigue affects performance and mood. The priority is to reduce risk, protect sleep, and follow up. Caffeine is not a substitute for recovery."
+      },
+      {
+        "id": "ftc-q2",
+        "question": "A resistance exercise device behaves abnormally during a session. What should happen first?",
+        "options": [
+          "Increase the load to test whether the fault clears",
+          "Continue the session and report the fault at the end of the week",
+          "Stop use, document the fault, and use approved alternatives while arranging inspection",
+          "Ask the crew to repair it without procedures"
+        ],
+        "correct_index": 2,
+        "explanation": "Suspect hardware is removed from service and documented. Exercise continues through approved alternatives while the equipment is inspected."
+      },
+      {
+        "id": "ftc-q3",
+        "question": "Exercise is temporarily reduced because of an equipment fault. How should nutrition change?",
+        "options": [
+          "Cut meal portions so the crew eats less",
+          "Skip hydration to reduce water use",
+          "Maintain adequate energy and hydration, with attention to protein, calcium, and vitamin D",
+          "Replace meals with snacks only"
+        ],
+        "correct_index": 2,
+        "explanation": "Reduced exercise does not mean cutting needed nutrition. Adequate intake and supportive nutrients remain important."
+      },
+      {
+        "id": "ftc-q4",
+        "question": "During a solar particle event, what is the best combination of actions?",
+        "options": [
+          "Continue all external work and delay communication until the event ends",
+          "Use shielding and time protection, pause nonessential work, and brief the crew clearly",
+          "Ignore the event because the station is always safe",
+          "Move the crew to the exercise area and increase workload"
+        ],
+        "correct_index": 1,
+        "explanation": "Protection uses shielding, time, and distance. Clear communication reduces uncertainty, and nonessential work can wait."
+      },
+      {
+        "id": "ftc-q5",
+        "question": "Water recovery is on watch while the crew wants to run a full hygiene block. What is the most responsible plan?",
+        "options": [
+          "Run every hygiene task at once to finish quickly",
+          "Confirm the qualitative recovery status, sequence essential hygiene, and log use",
+          "Cancel all hygiene until the end of the mission",
+          "Use drinking water for cleaning without coordination"
+        ],
+        "correct_index": 1,
+        "explanation": "Confirm status, sequence demand, and document use. Hygiene still matters, but it must be coordinated with the shared water system."
+      },
+      {
+        "id": "ftc-q6",
+        "question": "Why do astronauts experience headward fluid shift in microgravity?",
+        "options": [
+          "Gravity no longer pulls body fluids toward the feet",
+          "The body produces too much blood in space",
+          "The heart stops pumping blood",
+          "The crew is always dehydrated"
+        ],
+        "correct_index": 0,
+        "explanation": "Without the usual downward pull of gravity, fluids shift toward the head and upper body. The body then adapts over time."
+      },
+      {
+        "id": "ftc-q7",
+        "question": "Two crew members are in a persistent disagreement that is affecting communication. What is the best response?",
+        "options": [
+          "Ignore it until the mission ends",
+          "Tell them to resolve it privately without support",
+          "Facilitate a short conversation with ground rules, clarify ownership, and schedule a follow-up",
+          "Move one crew member to a different mission permanently"
+        ],
+        "correct_index": 2,
+        "explanation": "Facilitated communication addresses the issue while preserving psychological safety and team performance."
+      },
+      {
+        "id": "ftc-q8",
+        "question": "Which statement correctly distinguishes NASA Mars Trek from a fictional mission scenario?",
+        "options": [
+          "Mars Trek is a fictional game created for this platform",
+          "Mars Trek is an official NASA resource for exploring Mars data, while the station simulation is a fictional educational scenario",
+          "Both are official NASA operational tools",
+          "The simulation contains real operational procedures that can be used in spaceflight"
+        ],
+        "correct_index": 1,
+        "explanation": "NASA Mars Trek is an official NASA resource. The five-day station mission is a fictional educational simulation and must be labeled as such."
+      },
+      {
+        "id": "ftc-q9",
+        "question": "What belongs in an honest final mission handover?",
+        "options": [
+          "Only the successful decisions",
+          "A summary of every day, the decision history, completed and pending tasks, and the final readiness picture",
+          "A list of tasks the next team should guess about",
+          "A promise that no risks remain"
+        ],
+        "correct_index": 1,
+        "explanation": "A complete handover preserves the record, including open risks and unfinished tasks, so the next team can act responsibly."
+      },
+      {
+        "id": "ftc-q10",
+        "question": "How should Academy learning connect to the mission simulator?",
+        "options": [
+          "The Academy is optional and unrelated to mission decisions",
+          "Mission events should link to relevant Academy modules so knowledge can be applied to decisions",
+          "The simulator should replace all Academy content",
+          "Only the final assessment matters"
+        ],
+        "correct_index": 1,
+        "explanation": "The Academy teaches the knowledge; the simulator tests application. Relevant mission events surface targeted learning recommendations."
+      }
+    ],
+    "badge": {
+      "id": "badge-junior-astronaut",
+      "name": "Junior Astronaut",
+      "description": "Completed all six Academy courses and passed the integrated Final Training Challenge.",
+      "icon": "award"
+    }
+  }
+}

@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "title": "Science Library",
+    "version": "1.0.0",
+    "content_status": "Platform edition. Articles summarize concepts used in the Academy curriculum and link to official NASA resources for further reading.",
+    "disclaimer": "External links open official NASA pages. The platform is not an official NASA product. External content can change and should be checked at the source."
+  },
+  "categories": [
+    {
+      "id": "human-spaceflight",
+      "name": "Human Spaceflight",
+      "icon": "rocket",
+      "accent": "cyan",
+      "description": "How people live, work, and stay safe beyond Earth.",
+      "nasa_resources": [
+        {
+          "label": "NASA Humans in Space",
+          "url": "https://www.nasa.gov/humans-in-space/"
+        },
+        {
+          "label": "NASA International Space Station",
+          "url": "https://www.nasa.gov/international-space-station/"
+        }
+      ],
+      "articles": [
+        {
+          "id": "human-spaceflight-crew-roles",
+          "title": "Crew Roles in a Space Station Mission",
+          "summary": "A station mission depends on coordinated roles, clear communication, and shared responsibility for safety.",
+          "sections": [
+            {
+              "heading": "Specialists, not solo heroes",
+              "body": [
+                "Space station crews work as teams. Members may specialize in command, flight engineering, science, medicine, or other areas, but everyone contributes to housekeeping, maintenance, and safety.",
+                "A Crew Operations Support Officer supports the human side of the mission: schedules, crew readiness, resources, and communication. The role in this platform is an educational simulation role, not an official NASA position."
+              ]
+            },
+            {
+              "heading": "Training builds shared mental models",
+              "body": [
+                "Crews train for normal operations, emergencies, and the unexpected. Repetition and realistic simulations help team members share an understanding of roles, procedures, and risks.",
+                "The Academy and mission simulator on this platform use that same learning pattern: study the science, then apply it to decisions with consequences."
+              ]
+            }
+          ],
+          "related_courses": [
+            "sleep-circadian-rhythm",
+            "physical-health-exercise",
+            "mental-health-psychology"
+          ],
+          "source_note": "General NASA human spaceflight and station education concepts."
+        }
+      ]
+    },
+    {
+      "id": "astronaut-health",
+      "name": "Astronaut Health",
+      "icon": "heart",
+      "accent": "rose",
+      "description": "Whole-body health monitoring before, during, and after spaceflight.",
+      "nasa_resources": [
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        }
+      ],
+      "articles": [
+        {
+          "id": "astronaut-health-monitoring",
+          "title": "Monitoring Crew Health Without Inventing Numbers",
+          "summary": "Health monitoring combines crew reports, clinical checks, exercise records, sleep information, and environmental data.",
+          "sections": [
+            {
+              "heading": "Trends matter",
+              "body": [
+                "A single measurement rarely tells the whole story. Crew health monitoring looks at trends over time: how sleep is changing, how exercise is tolerated, how nutrition and hydration are going, and whether mood or communication has shifted.",
+                "In this platform, systems use qualitative statuses rather than invented measurements. That reflects an educational boundary: a simulation should not pretend to know a crew member's clinical values."
+              ]
+            },
+            {
+              "heading": "Escalation is part of care",
+              "body": [
+                "Crew members and support teams need clear pathways for raising a concern. Early support can prevent a small problem from becoming a mission-limiting one.",
+                "Nothing on this platform is a diagnosis or treatment. Real health questions belong with qualified medical professionals."
+              ]
+            }
+          ],
+          "related_courses": [
+            "human-body-microgravity",
+            "mental-health-psychology",
+            "physical-health-exercise"
+          ],
+          "source_note": "Summarized from NASA Human Research Program themes."
+        }
+      ]
+    },
+    {
+      "id": "sleep-circadian-rhythm",
+      "name": "Sleep and Circadian Rhythm",
+      "icon": "moon",
+      "accent": "blue",
+      "description": "How light, schedule, and fatigue shape crew performance.",
+      "nasa_resources": [
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        }
+      ],
+      "articles": [
+        {
+          "id": "sleep-circadian-basics",
+          "title": "Why Sleep Is a Mission System",
+          "summary": "Sleep supports attention, memory, mood, immunity, and metabolism. In orbit, the normal light-dark cycle is disrupted.",
+          "sections": [
+            {
+              "heading": "A day without a normal day",
+              "body": [
+                "The space station orbits Earth roughly every 90 minutes, producing many sunrises and sunsets in 24 hours. The crew's internal clock still expects a daily rhythm, so schedules and lighting must compensate.",
+                "A protected sleep opportunity is not a luxury. It is a countermeasure that supports safe performance."
+              ]
+            },
+            {
+              "heading": "Fatigue is cumulative",
+              "body": [
+                "Several short nights can create sleep debt. A tired crew member may not notice reduced vigilance, and self-report alone can miss risk. Team check-ins, sleep logs, and schedule review add useful information.",
+                "Caffeine and naps can support short-term alertness, but they do not replace core sleep."
+              ]
+            }
+          ],
+          "related_courses": [
+            "sleep-circadian-rhythm"
+          ],
+          "source_note": "NASA-informed sleep and circadian education concepts."
+        }
+      ]
+    },
+    {
+      "id": "exercise-in-space",
+      "name": "Exercise in Space",
+      "icon": "dumbbell",
+      "accent": "teal",
+      "description": "Protecting bone, muscle, heart, and mission capability through loading.",
+      "nasa_resources": [
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        },
+        {
+          "label": "NASA International Space Station",
+          "url": "https://www.nasa.gov/international-space-station/"
+        }
+      ],
+      "articles": [
+        {
+          "id": "exercise-countermeasures",
+          "title": "Exercise as a Countermeasure",
+          "summary": "Station crews use resistance and aerobic exercise to replace some of the loading that gravity normally provides.",
+          "sections": [
+            {
+              "heading": "Unloading changes the body",
+              "body": [
+                "Without the continuous load of standing and moving against gravity, bone and muscle can lose capacity. The cardiovascular system also adapts to the changed environment.",
+                "Exercise hardware is engineered for weightlessness. A resistance device provides loading, a treadmill uses a harness to keep the crew member in place, and a cycle ergometer supports aerobic work."
+              ]
+            },
+            {
+              "heading": "Equipment is part of the plan",
+              "body": [
+                "A faulty device is a safety and readiness issue. The response is to stop use, document the fault, use approved alternatives, and arrange inspection.",
+                "NASA schedules substantial exercise time for crews, commonly around two hours per day including setup. Individual plans vary and are monitored by the crew's health team."
+              ]
+            }
+          ],
+          "related_courses": [
+            "physical-health-exercise"
+          ],
+          "source_note": "NASA exercise countermeasure education themes."
+        }
+      ]
+    },
+    {
+      "id": "space-nutrition",
+      "name": "Space Nutrition",
+      "icon": "nutrition",
+      "accent": "amber",
+      "description": "Food systems, nutrients, hydration, and the morale of eating well.",
+      "nasa_resources": [
+        {
+          "label": "NASA International Space Station",
+          "url": "https://www.nasa.gov/international-space-station/"
+        },
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        }
+      ],
+      "articles": [
+        {
+          "id": "space-food-and-nutrition",
+          "title": "Food That Supports the Mission",
+          "summary": "Space food must be safe, shelf-stable, contained, and acceptable to the crew.",
+          "sections": [
+            {
+              "heading": "Engineering meets nutrition",
+              "body": [
+                "Food is packaged to prevent crumbs and spills in weightlessness. Shelf-stable and rehydratable foods make up much of the menu, with fresh foods available occasionally.",
+                "Nutrition planning balances energy, protein, carbohydrate, fat, vitamins, minerals, and water with what the crew will actually eat. Variety and familiar foods support intake and morale."
+              ]
+            },
+            {
+              "heading": "Do not cut nutrition by default",
+              "body": [
+                "When exercise is reduced temporarily, cutting portions is not a general solution. Crew members still need adequate energy and hydration, with attention to supportive nutrients such as protein, calcium, and vitamin D.",
+                "Food safety matters in a closed environment. Compromised packaging and unusual food conditions should be reported."
+              ]
+            }
+          ],
+          "related_courses": [
+            "nutrition-diet"
+          ],
+          "source_note": "NASA space food and crew nutrition education concepts."
+        }
+      ]
+    },
+    {
+      "id": "mental-health",
+      "name": "Mental Health",
+      "icon": "mind",
+      "accent": "violet",
+      "description": "Communication, resilience, workload, and support in isolated teams.",
+      "nasa_resources": [
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        }
+      ],
+      "articles": [
+        {
+          "id": "behavioral-health-in-space",
+          "title": "Supporting the Human Side of Spaceflight",
+          "summary": "Isolation, confinement, workload, and uncertainty create predictable psychological demands.",
+          "sections": [
+            {
+              "heading": "Normal stress in an unusual place",
+              "body": [
+                "A crew lives in a small environment with limited privacy and a fixed set of people. Ordinary frustrations can be amplified, and separation from family can be difficult.",
+                "These are environmental and human factors, not evidence that a crew member is weak. Clear information, meaningful work, connection with home, and predictable routines support resilience."
+              ]
+            },
+            {
+              "heading": "Talk early, support appropriately",
+              "body": [
+                "Shared mental models, psychological safety, and structured conflict resolution help teams function. A facilitated conversation can repair communication before it becomes a safety issue.",
+                "Self-help strategies are useful, but persistent distress requires professional support. This platform provides education, not diagnosis or treatment."
+              ]
+            }
+          ],
+          "related_courses": [
+            "mental-health-psychology"
+          ],
+          "source_note": "NASA behavioral health and team performance education themes."
+        }
+      ]
+    },
+    {
+      "id": "hygiene-in-space",
+      "name": "Hygiene in Space",
+      "icon": "hygiene",
+      "accent": "teal",
+      "description": "Low-water personal care, cleaning, and microbial control.",
+      "nasa_resources": [
+        {
+          "label": "NASA International Space Station",
+          "url": "https://www.nasa.gov/international-space-station/"
+        }
+      ],
+      "articles": [
+        {
+          "id": "hygiene-water-and-microbes",
+          "title": "Clean Without a Shower",
+          "summary": "Crews use rinse-free products, wipes, airflow, and careful waste handling instead of traditional showers.",
+          "sections": [
+            {
+              "heading": "Water behaves differently",
+              "body": [
+                "In microgravity, water does not fall or pool the way it does on Earth. Hygiene uses controlled amounts of water, rinse-free products, and wipes, with airflow to manage moisture.",
+                "Water is recovered and reused within a shared system. Sequencing hygiene demand and reporting anomalies protects the whole crew."
+              ]
+            },
+            {
+              "heading": "A closed environment connects everyone",
+              "body": [
+                "Shared surfaces, airflow, and waste handling influence the microbial environment. Cleaning schedules and hand hygiene reduce the chance that a small contamination becomes a shared problem.",
+                "Personal care is also about dignity and morale. Privacy, predictable routines, and crew preferences matter."
+              ]
+            }
+          ],
+          "related_courses": [
+            "hygiene-personal-care"
+          ],
+          "source_note": "NASA station hygiene and life-support education concepts."
+        }
+      ]
+    },
+    {
+      "id": "microgravity",
+      "name": "Microgravity",
+      "icon": "body",
+      "accent": "rose",
+      "description": "How the body and materials behave when gravity's pull is removed.",
+      "nasa_resources": [
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        }
+      ],
+      "articles": [
+        {
+          "id": "microgravity-body-adaptation",
+          "title": "A Whole-Body Adaptation",
+          "summary": "Fluids shift, balance cues conflict, and bone and muscle lose loading in microgravity.",
+          "sections": [
+            {
+              "heading": "Fluids move upward",
+              "body": [
+                "Without gravity pulling fluids toward the feet, body fluids shift toward the head. Crew members may notice facial puffiness or nasal congestion. The body adjusts over time.",
+                "Researchers study how fluid shift and pressure changes relate to eye and vision findings in some astronauts. Vision changes require professional monitoring."
+              ]
+            },
+            {
+              "heading": "Movement and return",
+              "body": [
+                "The vestibular system receives conflicting signals during early adaptation, which can contribute to nausea or disorientation. Handrails, slow movement, and visual references help.",
+                "After return to gravity, the body must readapt again. Balance, blood pressure, and strength may need structured reconditioning."
+              ]
+            }
+          ],
+          "related_courses": [
+            "human-body-microgravity"
+          ],
+          "source_note": "NASA microgravity physiology education concepts."
+        }
+      ]
+    },
+    {
+      "id": "space-station-systems",
+      "name": "Space Station Systems",
+      "icon": "equipment",
+      "accent": "blue",
+      "description": "The life-support, power, and equipment systems behind daily operations.",
+      "nasa_resources": [
+        {
+          "label": "NASA International Space Station",
+          "url": "https://www.nasa.gov/international-space-station/"
+        }
+      ],
+      "articles": [
+        {
+          "id": "station-life-support",
+          "title": "A System of Systems",
+          "summary": "A station keeps people alive through interconnected atmosphere, water, power, thermal, and equipment systems.",
+          "sections": [
+            {
+              "heading": "Life support is integrated",
+              "body": [
+                "Atmosphere monitoring, oxygen generation, carbon-dioxide removal, water recovery, and thermal control work together. A change in one area can affect another.",
+                "The mission simulator uses qualitative statuses for these systems. It does not invent oxygen, water, or power quantities."
+              ]
+            },
+            {
+              "heading": "Maintenance is continuous",
+              "body": [
+                "Filters, pumps, exercise devices, and other equipment need inspection and repair. Crews follow procedures, document faults, and coordinate maintenance with the operations schedule.",
+                "A status dashboard is a summary, not a substitute for a proper inspection."
+              ]
+            }
+          ],
+          "related_courses": [
+            "hygiene-personal-care",
+            "physical-health-exercise"
+          ],
+          "source_note": "NASA station systems education concepts, simplified for a qualitative simulation."
+        }
+      ]
+    },
+    {
+      "id": "radiation-awareness",
+      "name": "Radiation Awareness",
+      "icon": "radiation",
+      "accent": "amber",
+      "description": "Why radiation is a spaceflight consideration and how protection is planned.",
+      "nasa_resources": [
+        {
+          "label": "NASA Human Research Program",
+          "url": "https://www.nasa.gov/hrp/"
+        },
+        {
+          "label": "NASA Science",
+          "url": "https://science.nasa.gov/"
+        }
+      ],
+      "articles": [
+        {
+          "id": "radiation-protection-principles",
+          "title": "Time, Distance, and Shielding",
+          "summary": "Radiation protection uses the same broad principles in space as on Earth, applied to a different environment.",
+          "sections": [
+            {
+              "heading": "The space environment",
+              "body": [
+                "Earth's atmosphere and magnetic field provide substantial protection at the surface. Crews in low Earth orbit are still exposed to a different radiation environment than people on the ground, and missions farther from Earth face different conditions.",
+                "Solar particle events can change the radiation environment quickly. Monitoring and protection planning are part of mission operations."
+              ]
+            },
+            {
+              "heading": "Protection is layered",
+              "body": [
+                "Shielding, limiting time in higher-exposure areas, and increasing distance from a source are protective concepts. A spacecraft's structure and stowage can provide shielding in some areas.",
+                "This platform uses qualitative radiation statuses. It does not provide dose estimates or real operational thresholds, and it must not be used for actual mission planning."
+              ]
+            }
+          ],
+          "related_courses": [
+            "human-body-microgravity"
+          ],
+          "source_note": "General NASA radiation education concepts; no operational values provided."
+        }
+      ]
+    },
+    {
+      "id": "mars-exploration",
+      "name": "Mars Exploration",
+      "icon": "mars",
+      "accent": "orange",
+      "description": "NASA missions, landing regions, and the tools used to explore Mars.",
+      "nasa_resources": [
+        {
+          "label": "NASA Mars Trek",
+          "url": "https://trek.nasa.gov/mars/"
+        },
+        {
+          "label": "NASA Mars Exploration Program",
+          "url": "https://science.nasa.gov/mars/"
+        },
+        {
+          "label": "NASA Mars 2020 Perseverance",
+          "url": "https://science.nasa.gov/mission/mars-2020-perseverance/"
+        }
+      ],
+      "articles": [
+        {
+          "id": "mars-landing-regions",
+          "title": "Landing Regions and Rover Science",
+          "summary": "Jezero Crater and Gale Crater are real Mars landing regions with distinct scientific stories.",
+          "sections": [
+            {
+              "heading": "Jezero Crater",
+              "body": [
+                "NASA's Perseverance rover landed in Jezero Crater on February 18, 2021. The region contains evidence of an ancient river delta and lake system. The mission seeks signs of ancient microbial life and is collecting samples for possible future return.",
+                "Jezero is not just a landing spot; it is a place to read the history of water and habitability on early Mars."
+              ]
+            },
+            {
+              "heading": "Gale Crater",
+              "body": [
+                "NASA's Curiosity rover landed in Gale Crater in 2012. It has explored sedimentary layers around Mount Sharp, revealing a record of ancient environments that could have supported microbial life.",
+                "Mars Trek lets you explore these regions using NASA map data and imagery. The platform does not invent coordinates or scientific observations; use the official layers and mission pages."
+              ]
+            }
+          ],
+          "related_courses": [
+            "human-body-microgravity",
+            "physical-health-exercise"
+          ],
+          "source_note": "NASA Mars mission facts. Open official sources for current details."
+        }
+      ]
+    },
+    {
+      "id": "planetary-science",
+      "name": "Planetary Science",
+      "icon": "globe",
+      "accent": "violet",
+      "description": "Reading planets through geology, atmospheres, and comparative worlds.",
+      "nasa_resources": [
+        {
+          "label": "NASA Science",
+          "url": "https://science.nasa.gov/"
+        },
+        {
+          "label": "NASA Mars Trek",
+          "url": "https://trek.nasa.gov/mars/"
+        }
+      ],
+      "articles": [
+        {
+          "id": "planetary-science-observation",
+          "title": "How Scientists Read a Planet",
+          "summary": "Planetary science combines images, spectra, topography, chemistry, and comparative planetology.",
+          "sections": [
+            {
+              "heading": "Multiple lines of evidence",
+              "body": [
+                "A single image can suggest a story, but scientists test it with other data: mineral signatures, elevation, sediment layers, chemistry, and the context of the surrounding landscape.",
+                "Mars Trek provides access to NASA map layers and imagery. Use the official tools to observe, compare, and ask questions rather than assuming a feature's origin from one view."
+              ]
+            },
+            {
+              "heading": "Earth is a reference, not a copy",
+              "body": [
+                "Comparing Mars with Earth helps scientists understand processes such as volcanism, erosion, and sedimentation. But Mars has its own history, atmosphere, and conditions.",
+                "Planetary science is an exercise in evidence and uncertainty. Good observations are paired with clear questions and honest limits."
+              ]
+            }
+          ],
+          "related_courses": [
+            "human-body-microgravity"
+          ],
+          "source_note": "General NASA planetary science education concepts."
+        }
+      ]
+    }
+  ]
+}
